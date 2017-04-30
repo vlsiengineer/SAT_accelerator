@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Mon Apr 03 22:52:43 2017
+Quartus Prime Version : 16.1.0 Build 196 10/24/2016 SJ Standard Edition
+Revision Name : SAT_accelerator
+Top-level Entity Name : SAT_accelerator_top
+Family : Arria 10
+Logic utilization (in ALMs) : N/A
+Total registers : 11
+Total pins : 11
+Total virtual pins : 0
+Total block memory bits : 0
+Total DSP Blocks : 0
+Total HSSI RX channels : 0
+Total HSSI TX channels : 0
+Total PLLs : 0

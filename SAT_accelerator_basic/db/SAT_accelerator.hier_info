@@ -1,0 +1,91 @@
+|SAT_accelerator_top
+outSATRes << outSATRes~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk => clk.IN5
+resetN => resetN.IN1
+stateVal[0] => stateVal[0].IN1
+stateVal[1] => stateVal[1].IN1
+varPos[0] => varPos[0].IN4
+varPos[1] => varPos[1].IN4
+varPos[2] => varPos[2].IN4
+varPos[3] => varPos[3].IN4
+varPos[4] => varPos[4].IN4
+negCtrl => negCtrl.IN4
+
+
+|SAT_accelerator_top|SAT_synchronizer:SAT_sync
+ResetN_Clause <= ResetN_Clause.DB_MAX_OUTPUT_PORT_TYPE
+ResetN_CNF <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+Clause_En <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+CNF_En <= CNF_En.DB_MAX_OUTPUT_PORT_TYPE
+clk => state[0].CLK
+clk => state[1].CLK
+resetN => state[0].ACLR
+resetN => state[1].ACLR
+stateVal[0] => state[0].DATAIN
+stateVal[1] => state[1].DATAIN
+
+
+|SAT_accelerator_top|SAT_accelerator:generate_blocks[0].SAT_acc
+outCNF <= outCNF~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk => outCNF~reg0.CLK
+clk => clauseOut.CLK
+resetClause => clauseOut.ACLR
+negCtrl => WideOr0.IN1
+enableClause => clauseOut.ENA
+varPos[0] => ~NO_FANOUT~
+varPos[1] => ~NO_FANOUT~
+varPos[2] => ~NO_FANOUT~
+varPos[3] => ~NO_FANOUT~
+varPos[4] => ~NO_FANOUT~
+resetCNF => outCNF~reg0.PRESET
+enableCNF => outCNF~reg0.ENA
+
+
+|SAT_accelerator_top|SAT_accelerator:generate_blocks[1].SAT_acc
+outCNF <= outCNF~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk => outCNF~reg0.CLK
+clk => clauseOut.CLK
+resetClause => clauseOut.ACLR
+negCtrl => inORgate[0].OUTPUTSELECT
+enableClause => clauseOut.ENA
+varPos[0] => Mux0.IN36
+varPos[1] => Mux0.IN35
+varPos[2] => Mux0.IN34
+varPos[3] => Mux0.IN33
+varPos[4] => Mux0.IN32
+resetCNF => outCNF~reg0.PRESET
+enableCNF => outCNF~reg0.ENA
+
+
+|SAT_accelerator_top|SAT_accelerator:generate_blocks[2].SAT_acc
+outCNF <= outCNF~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk => outCNF~reg0.CLK
+clk => clauseOut.CLK
+resetClause => clauseOut.ACLR
+negCtrl => inORgate[0].OUTPUTSELECT
+enableClause => clauseOut.ENA
+varPos[0] => Mux0.IN36
+varPos[1] => Mux0.IN35
+varPos[2] => Mux0.IN34
+varPos[3] => Mux0.IN33
+varPos[4] => Mux0.IN32
+resetCNF => outCNF~reg0.PRESET
+enableCNF => outCNF~reg0.ENA
+
+
+|SAT_accelerator_top|SAT_accelerator:generate_blocks[3].SAT_acc
+outCNF <= outCNF~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk => outCNF~reg0.CLK
+clk => clauseOut.CLK
+resetClause => clauseOut.ACLR
+negCtrl => inORgate[0].OUTPUTSELECT
+enableClause => clauseOut.ENA
+varPos[0] => Mux0.IN36
+varPos[1] => Mux0.IN35
+varPos[2] => Mux0.IN34
+varPos[3] => Mux0.IN33
+varPos[4] => Mux0.IN32
+resetCNF => outCNF~reg0.PRESET
+enableCNF => outCNF~reg0.ENA
+
+

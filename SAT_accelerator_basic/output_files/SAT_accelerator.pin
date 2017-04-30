@@ -1,0 +1,1595 @@
+ -- Copyright (C) 2016  Intel Corporation. All rights reserved.
+ -- Your use of Intel Corporation's design tools, logic functions 
+ -- and other software and tools, and its AMPP partner logic 
+ -- functions, and any output files from any of the foregoing 
+ -- (including device programming or simulation files), and any 
+ -- associated documentation or information are expressly subject 
+ -- to the terms and conditions of the Intel Program License 
+ -- Subscription Agreement, the Intel Quartus Prime License Agreement,
+ -- the Intel MegaCore Function License Agreement, or other 
+ -- applicable license agreement, including, without limitation, 
+ -- that your use is for the sole purpose of programming logic 
+ -- devices manufactured by Intel and sold by Intel or its 
+ -- authorized distributors.  Please refer to the applicable 
+ -- agreement for further details.
+ -- 
+ -- This is a Quartus Prime output file. It is for reporting purposes only, and is
+ -- not intended for use as a Quartus Prime input file. This file cannot be used
+ -- to make Quartus Prime pin assignments - for instructions on how to make pin
+ -- assignments, please see Quartus Prime help.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- NC            : No Connect. This pin has no internal connection to the device.
+ -- DNU           : Do Not Use. This pin MUST NOT be connected.
+ -- VCCPGM        : Dedicated power pin for configuration, which MUST be connected to 1.8V.
+ -- VCCIO         : Dedicated power pin, which MUST be connected to VCC
+ --                 of its bank.
+ --                  Bank 2L:       1.8V
+ --                  Bank 2K:  1.8V
+ --                  Bank 2F:  1.8V
+ --                  Bank 2A:  1.8V
+ --                  Bank 3H:  1.8V
+ --                  Bank 3G:  1.8V
+ --                  Bank 3B:  1.8V
+ --                  Bank 3A:  1.8V
+ -- RREF          : External reference resistor for the quad, MUST be connected to
+ --                 GND via a 2k Ohm resistor.
+ -- GND           : Dedicated ground pin. Dedicated GND pins MUST be connected to GND.
+ --                  It can also be used to report unused dedicated pins. The connection
+ --                  on the board for unused dedicated pins depends on whether this will
+ --                  be used in a future design. One example is device migration. When
+ --                  using device migration, refer to the device pin-tables. If it is a
+ --                  GND pin in the pin table or if it will not be used in a future design
+ --                  for another purpose the it MUST be connected to GND. If it is an unused
+ --                  dedicated pin, then it can be connected to a valid signal on the board
+ --                  (low, high, or toggling) if that signal is required for a different
+ --                  revision of the design.
+ -- GND+          : Unused input pin. It can also be used to report unused dual-purpose pins.
+ --                  This pin should be connected to GND. It may also be connected  to a
+ --                  valid signal  on the board  (low, high, or toggling)  if that signal
+ --                  is required for a different revision of the design.
+ -- GND*          : Unused  I/O  pin.   For transceiver I/O banks, connect each pin marked GND*
+ --                  either individually through a 10k Ohm resistor to GND or tie all pins
+ --                  together and connect through a single 10k Ohm resistor to GND.
+ -- RESERVED      : Unused I/O pin, which MUST be left unconnected.
+ -- RESERVED_INPUT    : Pin is tri-stated and should be connected to the board.
+ -- RESERVED_INPUT_WITH_WEAK_PULLUP    : Pin is tri-stated with internal weak pull-up resistor.
+ -- RESERVED_INPUT_WITH_BUS_HOLD       : Pin is tri-stated with bus-hold circuitry.
+ -- RESERVED_OUTPUT_DRIVEN_HIGH        : Pin is output driven high.
+ -- GXB_GND*      : Unused GXB Receiver or dedicated reference clock pin. This pin
+ --                 must be connected directly to GND.
+ -- GXB_NC        : Unused GXB Transmitter or dedicated clock output pin. This pin
+ --                 must not be connected.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- Pin directions (input, output or bidir) are based on device operating in user mode.
+ ---------------------------------------------------------------------------------
+
+Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Standard Edition
+CHIP  "SAT_accelerator"  ASSIGNED TO AN: 10AX115R4F40I3SG
+
+Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
+-------------------------------------------------------------------------------------------------------------
+GND                          : A2        : gnd    :                   :         :           :                
+GXB_NC                       : A3        :        :                   :         : 4J        :                
+GXB_NC                       : A4        :        :                   :         : 4J        :                
+GND                          : A5        : gnd    :                   :         :           :                
+GND                          : A6        : gnd    :                   :         :           :                
+GXB_NC                       : A7        :        :                   :         : 4J        :                
+GXB_NC                       : A8        :        :                   :         : 4J        :                
+GND                          : A9        : gnd    :                   :         :           :                
+GND                          : A10       : gnd    :                   :         :           :                
+GND                          : A11       : gnd    :                   :         :           :                
+GND                          : A12       :        :                   :         :           :                
+GND                          : A13       : gnd    :                   :         :           :                
+GND                          : A14       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : A15       :        :                   :         : 3H        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : A16       :        :                   :         : 3H        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : A17       :        :                   :         : 3H        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : A18       :        :                   :         : 3H        :                
+GND                          : A19       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : A20       :        :                   :         : 2L        :                
+clk                          : A21       : input  : 1.8 V             :         : 2L        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : A22       :        :                   :         : 2L        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : A23       :        :                   :         : 2L        :                
+GND                          : A24       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : A25       :        :                   :         : 2L        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : A26       :        :                   :         : 2L        :                
+GND                          : A27       : gnd    :                   :         :           :                
+GND                          : A28       :        :                   :         :           :                
+GND                          : A29       : gnd    :                   :         :           :                
+GND                          : A30       : gnd    :                   :         :           :                
+GND                          : A31       : gnd    :                   :         :           :                
+GXB_NC                       : A32       :        :                   :         : 1H        :                
+GXB_NC                       : A33       :        :                   :         : 1H        :                
+GND                          : A34       : gnd    :                   :         :           :                
+GND                          : A35       : gnd    :                   :         :           :                
+GXB_NC                       : A36       :        :                   :         : 1H        :                
+GXB_NC                       : A37       :        :                   :         : 1H        :                
+GND                          : A38       : gnd    :                   :         :           :                
+GND                          : AA1       : gnd    :                   :         :           :                
+GND                          : AA2       : gnd    :                   :         :           :                
+GXB_GND*                     : AA3       :        :                   :         : 4G        :                
+GXB_GND*                     : AA4       :        :                   :         : 4G        :                
+GND                          : AA5       : gnd    :                   :         :           :                
+GND                          : AA6       : gnd    :                   :         :           :                
+GXB_GND*                     : AA7       :        :                   :         : 4G        :                
+GXB_GND*                     : AA8       :        :                   :         : 4G        :                
+GND                          : AA9       : gnd    :                   :         :           :                
+GND                          : AA10      : gnd    :                   :         :           :                
+NC                           : AA11      :        :                   :         :           :                
+DNU                          : AA12      :        :                   :         :           :                
+VCC                          : AA13      : power  :                   : 0.9V    :           :                
+GND                          : AA14      : gnd    :                   :         :           :                
+VCC                          : AA15      : power  :                   : 0.9V    :           :                
+VCC                          : AA16      : power  :                   : 0.9V    :           :                
+VCCERAM                      : AA17      : power  :                   : 0.9V    :           :                
+VCCERAM                      : AA18      : power  :                   : 0.9V    :           :                
+GND                          : AA19      : gnd    :                   :         :           :                
+VCC                          : AA20      : power  :                   : 0.9V    :           :                
+GND                          : AA21      : gnd    :                   :         :           :                
+VCCERAM                      : AA22      : power  :                   : 0.9V    :           :                
+VCCERAM                      : AA23      : power  :                   : 0.9V    :           :                
+GND                          : AA24      : gnd    :                   :         :           :                
+VCC                          : AA25      : power  :                   : 0.9V    :           :                
+NC                           : AA26      :        :                   :         :           :                
+NC                           : AA27      :        :                   :         :           :                
+NC                           : AA28      :        :                   :         :           :                
+GND                          : AA29      : gnd    :                   :         :           :                
+GND                          : AA30      : gnd    :                   :         :           :                
+GND                          : AA31      : gnd    :                   :         :           :                
+GXB_GND*                     : AA32      :        :                   :         : 1E        :                
+GXB_GND*                     : AA33      :        :                   :         : 1E        :                
+GND                          : AA34      : gnd    :                   :         :           :                
+GND                          : AA35      : gnd    :                   :         :           :                
+GXB_GND*                     : AA36      :        :                   :         : 1E        :                
+GXB_GND*                     : AA37      :        :                   :         : 1E        :                
+GND                          : AA38      : gnd    :                   :         :           :                
+GND                          : AA39      : gnd    :                   :         :           :                
+GXB_NC                       : AB1       :        :                   :         : 4G        :                
+GXB_NC                       : AB2       :        :                   :         : 4G        :                
+GND                          : AB3       : gnd    :                   :         :           :                
+GND                          : AB4       : gnd    :                   :         :           :                
+GXB_GND*                     : AB5       :        :                   :         : 4G        :                
+GXB_GND*                     : AB6       :        :                   :         : 4G        :                
+GND                          : AB7       :        :                   :         :           :                
+GND                          : AB8       :        :                   :         :           :                
+GND                          : AB9       :        :                   :         :           :                
+NC                           : AB10      :        :                   :         :           :                
+NC                           : AB11      :        :                   :         :           :                
+GND                          : AB12      : gnd    :                   :         :           :                
+VCCA_FPLL                    : AB13      : power  :                   : 1.8V    :           :                
+VCCA_FPLL                    : AB14      : power  :                   : 1.8V    :           :                
+VCCA_FPLL                    : AB15      : power  :                   : 1.8V    :           :                
+VCCA_FPLL                    : AB16      : power  :                   : 1.8V    :           :                
+GND                          : AB17      : gnd    :                   :         :           :                
+VCCERAM                      : AB18      : power  :                   : 0.9V    :           :                
+VCC                          : AB19      : power  :                   : 0.9V    :           :                
+VCC                          : AB20      : power  :                   : 0.9V    :           :                
+VCC                          : AB21      : power  :                   : 0.9V    :           :                
+GND                          : AB22      : gnd    :                   :         :           :                
+VCC                          : AB23      : power  :                   : 0.9V    :           :                
+VCCA_FPLL                    : AB24      : power  :                   : 1.8V    :           :                
+VCCA_FPLL                    : AB25      : power  :                   : 1.8V    :           :                
+VCCA_FPLL                    : AB26      : power  :                   : 1.8V    :           :                
+GND                          : AB27      : gnd    :                   :         :           :                
+NC                           : AB28      :        :                   :         :           :                
+NC                           : AB29      :        :                   :         :           :                
+NC                           : AB30      :        :                   :         :           :                
+GND                          : AB31      :        :                   :         :           :                
+GND                          : AB32      :        :                   :         :           :                
+GND                          : AB33      :        :                   :         :           :                
+GXB_GND*                     : AB34      :        :                   :         : 1E        :                
+GXB_GND*                     : AB35      :        :                   :         : 1E        :                
+GND                          : AB36      : gnd    :                   :         :           :                
+GND                          : AB37      : gnd    :                   :         :           :                
+GXB_NC                       : AB38      :        :                   :         : 1E        :                
+GXB_NC                       : AB39      :        :                   :         : 1E        :                
+GND                          : AC1       : gnd    :                   :         :           :                
+GND                          : AC2       : gnd    :                   :         :           :                
+GXB_GND*                     : AC3       :        :                   :         : 4G        :                
+GXB_GND*                     : AC4       :        :                   :         : 4G        :                
+GND                          : AC5       : gnd    :                   :         :           :                
+GND                          : AC6       : gnd    :                   :         :           :                
+GXB_GND*                     : AC7       :        :                   :         : 4G        :                
+GXB_GND*                     : AC8       :        :                   :         : 4G        :                
+GND                          : AC9       :        :                   :         :           :                
+GND                          : AC10      : gnd    :                   :         :           :                
+NC                           : AC11      :        :                   :         :           :                
+DNU                          : AC12      :        :                   :         :           :                
+NC                           : AC13      :        :                   :         :           :                
+VCCPT_2                      : AC14      : power  :                   : 1.8V    :           :                
+GND                          : AC15      : gnd    :                   :         :           :                
+NC                           : AC16      :        :                   :         :           :                
+NC                           : AC17      :        :                   :         :           :                
+NC                           : AC18      :        :                   :         :           :                
+NC                           : AC19      :        :                   :         :           :                
+GND                          : AC20      : gnd    :                   :         :           :                
+NC                           : AC21      :        :                   :         :           :                
+NC                           : AC22      :        :                   :         :           :                
+NC                           : AC23      :        :                   :         :           :                
+NC                           : AC24      :        :                   :         :           :                
+GND                          : AC25      : gnd    :                   :         :           :                
+DNU                          : AC26      :        :                   :         :           :                
+NC                           : AC27      :        :                   :         :           :                
+NC                           : AC28      :        :                   :         :           :                
+NC                           : AC29      :        :                   :         :           :                
+GND                          : AC30      : gnd    :                   :         :           :                
+GND                          : AC31      :        :                   :         :           :                
+GXB_GND*                     : AC32      :        :                   :         : 1E        :                
+GXB_GND*                     : AC33      :        :                   :         : 1E        :                
+GND                          : AC34      : gnd    :                   :         :           :                
+GND                          : AC35      : gnd    :                   :         :           :                
+GXB_GND*                     : AC36      :        :                   :         : 1E        :                
+GXB_GND*                     : AC37      :        :                   :         : 1E        :                
+GND                          : AC38      : gnd    :                   :         :           :                
+GND                          : AC39      : gnd    :                   :         :           :                
+GXB_NC                       : AD1       :        :                   :         : 4G        :                
+GXB_NC                       : AD2       :        :                   :         : 4G        :                
+GND                          : AD3       : gnd    :                   :         :           :                
+GND                          : AD4       : gnd    :                   :         :           :                
+GXB_GND*                     : AD5       :        :                   :         : 4G        :                
+GXB_GND*                     : AD6       :        :                   :         : 4G        :                
+GND                          : AD7       : gnd    :                   :         :           :                
+GND                          : AD8       : gnd    :                   :         :           :                
+GND                          : AD9       :        :                   :         :           :                
+GND                          : AD10      : gnd    :                   :         :           :                
+NC                           : AD11      :        :                   :         :           :                
+DNU                          : AD12      :        :                   :         :           :                
+GND                          : AD13      : gnd    :                   :         :           :                
+VCCPT_2                      : AD14      : power  :                   : 1.8V    :           :                
+VCCPT_2                      : AD15      : power  :                   : 1.8V    :           :                
+NC                           : AD16      :        :                   :         :           :                
+NC                           : AD17      :        :                   :         :           :                
+GND                          : AD18      : gnd    :                   :         :           :                
+NC                           : AD19      :        :                   :         :           :                
+NC                           : AD20      :        :                   :         :           :                
+VCCPT_2                      : AD21      : power  :                   : 1.8V    :           :                
+VCCPT_2                      : AD22      : power  :                   : 1.8V    :           :                
+GND                          : AD23      : gnd    :                   :         :           :                
+VCCPT_2                      : AD24      : power  :                   : 1.8V    :           :                
+VCCPT_2                      : AD25      : power  :                   : 1.8V    :           :                
+DNU                          : AD26      :        :                   :         :           :                
+NC                           : AD27      :        :                   :         :           :                
+GND                          : AD28      : gnd    :                   :         :           :                
+NC                           : AD29      :        :                   :         :           :                
+GND                          : AD30      : gnd    :                   :         :           :                
+GND                          : AD31      :        :                   :         :           :                
+GND                          : AD32      : gnd    :                   :         :           :                
+GND                          : AD33      : gnd    :                   :         :           :                
+GXB_GND*                     : AD34      :        :                   :         : 1E        :                
+GXB_GND*                     : AD35      :        :                   :         : 1E        :                
+GND                          : AD36      : gnd    :                   :         :           :                
+GND                          : AD37      : gnd    :                   :         :           :                
+GXB_NC                       : AD38      :        :                   :         : 1E        :                
+GXB_NC                       : AD39      :        :                   :         : 1E        :                
+GND                          : AE1       : gnd    :                   :         :           :                
+GND                          : AE2       : gnd    :                   :         :           :                
+GXB_GND*                     : AE3       :        :                   :         : 4F        :                
+GXB_GND*                     : AE4       :        :                   :         : 4F        :                
+GND                          : AE5       : gnd    :                   :         :           :                
+GND                          : AE6       : gnd    :                   :         :           :                
+GXB_GND*                     : AE7       :        :                   :         : 4F        :                
+GXB_GND*                     : AE8       :        :                   :         : 4F        :                
+GND                          : AE9       : gnd    :                   :         :           :                
+GND                          : AE10      : gnd    :                   :         :           :                
+GND                          : AE11      : gnd    :                   :         :           :                
+DNU                          : AE12      :        :                   :         :           :                
+DNU                          : AE13      :        :                   :         :           :                
+DNU                          : AE14      :        :                   :         :           :                
+NC                           : AE15      :        :                   :         :           :                
+GND                          : AE16      : gnd    :                   :         :           :                
+NC                           : AE17      :        :                   :         :           :                
+NC                           : AE18      :        :                   :         :           :                
+NC                           : AE19      :        :                   :         :           :                
+NC                           : AE20      :        :                   :         :           :                
+GND                          : AE21      : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE22      :        :                   :         : 2A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE23      :        :                   :         : 2A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE24      :        :                   :         : 2A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE25      :        :                   :         : 2F        :                
+VCCIO2AF                     : AE26      : power  :                   : 1.8V    : 2A, 2F    :                
+VREFB2FN0                    : AE27      : power  :                   :         : 2F        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE28      :        :                   :         : 2F        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE29      :        :                   :         : 2F        :                
+GND                          : AE30      : gnd    :                   :         :           :                
+GND                          : AE31      : gnd    :                   :         :           :                
+GXB_GND*                     : AE32      :        :                   :         : 1D        :                
+GXB_GND*                     : AE33      :        :                   :         : 1D        :                
+GND                          : AE34      : gnd    :                   :         :           :                
+GND                          : AE35      : gnd    :                   :         :           :                
+GXB_GND*                     : AE36      :        :                   :         : 1D        :                
+GXB_GND*                     : AE37      :        :                   :         : 1D        :                
+GND                          : AE38      : gnd    :                   :         :           :                
+GND                          : AE39      : gnd    :                   :         :           :                
+GXB_NC                       : AF1       :        :                   :         : 4G        :                
+GXB_NC                       : AF2       :        :                   :         : 4G        :                
+GND                          : AF3       : gnd    :                   :         :           :                
+GND                          : AF4       : gnd    :                   :         :           :                
+GXB_GND*                     : AF5       :        :                   :         : 4F        :                
+GXB_GND*                     : AF6       :        :                   :         : 4F        :                
+GND                          : AF7       :        :                   :         :           :                
+GND                          : AF8       :        :                   :         :           :                
+GND                          : AF9       :        :                   :         :           :                
+NC                           : AF10      :        :                   :         :           :                
+NC                           : AF11      :        :                   :         :           :                
+DNU                          : AF12      :        :                   :         :           :                
+DNU                          : AF13      :        :                   :         :           :                
+GND                          : AF14      : gnd    :                   :         :           :                
+DNU                          : AF15      :        :                   :         :           :                
+NC                           : AF16      :        :                   :         :           :                
+DNU                          : AF17      :        :                   :         :           :                
+NC                           : AF18      :        :                   :         :           :                
+GND                          : AF19      : gnd    :                   :         :           :                
+VCCPGM                       : AF20      : power  :                   : 1.2V/1.5V/1.8V :           :                
+DNU                          : AF21      :        :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AF22      :        :                   :         : 2A        :                
+VREFB2AN0                    : AF23      : power  :                   :         : 2A        :                
+GND                          : AF24      : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AF25      :        :                   :         : 2F        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AF26      :        :                   :         : 2F        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AF27      :        :                   :         : 2F        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AF28      :        :                   :         : 2F        :                
+GND                          : AF29      : gnd    :                   :         :           :                
+NC                           : AF30      :        :                   :         :           :                
+GND                          : AF31      :        :                   :         :           :                
+GND                          : AF32      :        :                   :         :           :                
+GND                          : AF33      :        :                   :         :           :                
+GXB_GND*                     : AF34      :        :                   :         : 1D        :                
+GXB_GND*                     : AF35      :        :                   :         : 1D        :                
+GND                          : AF36      : gnd    :                   :         :           :                
+GND                          : AF37      : gnd    :                   :         :           :                
+GXB_NC                       : AF38      :        :                   :         : 1E        :                
+GXB_NC                       : AF39      :        :                   :         : 1E        :                
+GND                          : AG1       : gnd    :                   :         :           :                
+GND                          : AG2       : gnd    :                   :         :           :                
+GXB_GND*                     : AG3       :        :                   :         : 4F        :                
+GXB_GND*                     : AG4       :        :                   :         : 4F        :                
+GND                          : AG5       : gnd    :                   :         :           :                
+GND                          : AG6       : gnd    :                   :         :           :                
+GXB_GND*                     : AG7       :        :                   :         : 4F        :                
+GXB_GND*                     : AG8       :        :                   :         : 4F        :                
+GND                          : AG9       :        :                   :         :           :                
+GND                          : AG10      : gnd    :                   :         :           :                
+DNU                          : AG11      :        :                   :         :           :                
+GND                          : AG12      : gnd    :                   :         :           :                
+DNU                          : AG13      :        :                   :         :           :                
+DNU                          : AG14      :        :                   :         :           :                
+DNU                          : AG15      :        :                   :         :           :                
+DNU                          : AG16      :        :                   :         :           :                
+GND                          : AG17      : gnd    :                   :         :           :                
+DNU                          : AG18      :        :                   :         :           :                
+VCCBAT                       : AG19      : power  :                   : 1.8V    :           :                
+VCCPGM                       : AG20      : power  :                   : 1.2V/1.5V/1.8V :           :                
+DNU                          : AG21      :        :                   :         :           :                
+GND                          : AG22      : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AG23      :        :                   :         : 2A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AG24      :        :                   :         : 2F        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AG25      :        :                   :         : 2F        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AG26      :        :                   :         : 2F        :                
+GND                          : AG27      : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AG28      :        :                   :         : 2F        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AG29      :        :                   :         : 2F        :                
+GND                          : AG30      : gnd    :                   :         :           :                
+GND                          : AG31      :        :                   :         :           :                
+GXB_GND*                     : AG32      :        :                   :         : 1D        :                
+GXB_GND*                     : AG33      :        :                   :         : 1D        :                
+GND                          : AG34      : gnd    :                   :         :           :                
+GND                          : AG35      : gnd    :                   :         :           :                
+GXB_GND*                     : AG36      :        :                   :         : 1D        :                
+GXB_GND*                     : AG37      :        :                   :         : 1D        :                
+GND                          : AG38      : gnd    :                   :         :           :                
+GND                          : AG39      : gnd    :                   :         :           :                
+GXB_NC                       : AH1       :        :                   :         : 4G        :                
+GXB_NC                       : AH2       :        :                   :         : 4G        :                
+GND                          : AH3       : gnd    :                   :         :           :                
+GND                          : AH4       : gnd    :                   :         :           :                
+GXB_GND*                     : AH5       :        :                   :         : 4F        :                
+GXB_GND*                     : AH6       :        :                   :         : 4F        :                
+GND                          : AH7       : gnd    :                   :         :           :                
+GND                          : AH8       : gnd    :                   :         :           :                
+GND                          : AH9       :        :                   :         :           :                
+GND                          : AH10      : gnd    :                   :         :           :                
+DNU                          : AH11      :        :                   :         :           :                
+DNU                          : AH12      :        :                   :         :           :                
+DNU                          : AH13      :        :                   :         :           :                
+DNU                          : AH14      :        :                   :         :           :                
+GND                          : AH15      : gnd    :                   :         :           :                
+DNU                          : AH16      :        :                   :         :           :                
+DNU                          : AH17      :        :                   :         :           :                
+DNU                          : AH18      :        :                   :         :           :                
+DNU                          : AH19      :        :                   :         :           :                
+GND                          : AH20      : gnd    :                   :         :           :                
+DNU                          : AH21      :        :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AH22      :        :                   :         : 2A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AH23      :        :                   :         : 2A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AH24      :        :                   :         : 2F        :                
+VCCIO2AF                     : AH25      : power  :                   : 1.8V    : 2A, 2F    :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AH26      :        :                   :         : 2F        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AH27      :        :                   :         : 2F        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AH28      :        :                   :         : 2F        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AH29      :        :                   :         : 2F        :                
+GND                          : AH30      : gnd    :                   :         :           :                
+GND                          : AH31      :        :                   :         :           :                
+GND                          : AH32      : gnd    :                   :         :           :                
+GND                          : AH33      : gnd    :                   :         :           :                
+GXB_GND*                     : AH34      :        :                   :         : 1D        :                
+GXB_GND*                     : AH35      :        :                   :         : 1D        :                
+GND                          : AH36      : gnd    :                   :         :           :                
+GND                          : AH37      : gnd    :                   :         :           :                
+GXB_NC                       : AH38      :        :                   :         : 1E        :                
+GXB_NC                       : AH39      :        :                   :         : 1E        :                
+GND                          : AJ1       : gnd    :                   :         :           :                
+GND                          : AJ2       : gnd    :                   :         :           :                
+GXB_GND*                     : AJ3       :        :                   :         : 4F        :                
+GXB_GND*                     : AJ4       :        :                   :         : 4F        :                
+GND                          : AJ5       : gnd    :                   :         :           :                
+GND                          : AJ6       : gnd    :                   :         :           :                
+GXB_GND*                     : AJ7       :        :                   :         : 4E        :                
+GXB_GND*                     : AJ8       :        :                   :         : 4E        :                
+GND                          : AJ9       : gnd    :                   :         :           :                
+GND                          : AJ10      : gnd    :                   :         :           :                
+DNU                          : AJ11      :        :                   :         :           :                
+DNU                          : AJ12      :        :                   :         :           :                
+GND                          : AJ13      : gnd    :                   :         :           :                
+DNU                          : AJ14      :        :                   :         :           :                
+DNU                          : AJ15      :        :                   :         :           :                
+nCSO1                        : AJ16      :        :                   :         : CSS       :                
+nCONFIG                      : AJ17      : input  :                   :         : CSS       :                
+GND                          : AJ18      : gnd    :                   :         :           :                
+MSEL0                        : AJ19      : input  :                   :         : CSS       :                
+TMS                          : AJ20      : input  :                   :         : CSS       :                
+MSEL2                        : AJ21      : input  :                   :         : CSS       :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AJ22      :        :                   :         : 2A        :                
+VCCIO2AF                     : AJ23      : power  :                   : 1.8V    : 2A, 2F    :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AJ24      :        :                   :         : 2F        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AJ25      :        :                   :         : 2F        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AJ26      :        :                   :         : 2F        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AJ27      :        :                   :         : 2F        :                
+GND                          : AJ28      : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AJ29      :        :                   :         : 2F        :                
+NC                           : AJ30      :        :                   :         :           :                
+GND                          : AJ31      : gnd    :                   :         :           :                
+GXB_GND*                     : AJ32      :        :                   :         : 1C        :                
+GXB_GND*                     : AJ33      :        :                   :         : 1C        :                
+GND                          : AJ34      : gnd    :                   :         :           :                
+GND                          : AJ35      : gnd    :                   :         :           :                
+GXB_GND*                     : AJ36      :        :                   :         : 1D        :                
+GXB_GND*                     : AJ37      :        :                   :         : 1D        :                
+GND                          : AJ38      : gnd    :                   :         :           :                
+GND                          : AJ39      : gnd    :                   :         :           :                
+GXB_NC                       : AK1       :        :                   :         : 4F        :                
+GXB_NC                       : AK2       :        :                   :         : 4F        :                
+GND                          : AK3       : gnd    :                   :         :           :                
+GND                          : AK4       : gnd    :                   :         :           :                
+GXB_GND*                     : AK5       :        :                   :         : 4F        :                
+GXB_GND*                     : AK6       :        :                   :         : 4F        :                
+GND                          : AK7       :        :                   :         :           :                
+GND                          : AK8       :        :                   :         :           :                
+GND                          : AK9       :        :                   :         :           :                
+NC                           : AK10      :        :                   :         :           :                
+GND                          : AK11      : gnd    :                   :         :           :                
+DNU                          : AK12      :        :                   :         :           :                
+DNU                          : AK13      :        :                   :         :           :                
+DNU                          : AK14      :        :                   :         :           :                
+DNU                          : AK15      :        :                   :         :           :                
+GND                          : AK16      : gnd    :                   :         :           :                
+CONF_DONE                    : AK17      : bidir  :                   :         : CSS       :                
+TDI                          : AK18      : input  :                   :         : CSS       :                
+nCE                          : AK19      :        :                   :         : CSS       :                
+GND                          : AK20      :        :                   :         : CSS       :                
+GND                          : AK21      : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AK22      :        :                   :         : 2A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AK23      :        :                   :         : 2A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AK24      :        :                   :         : 2A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AK25      :        :                   :         : 2F        :                
+VCCIO2AF                     : AK26      : power  :                   : 1.8V    : 2A, 2F    :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AK27      :        :                   :         : 2F        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AK28      :        :                   :         : 2F        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AK29      :        :                   :         : 2F        :                
+GND                          : AK30      : gnd    :                   :         :           :                
+GND                          : AK31      :        :                   :         :           :                
+GND                          : AK32      :        :                   :         :           :                
+GND                          : AK33      :        :                   :         :           :                
+GXB_GND*                     : AK34      :        :                   :         : 1D        :                
+GXB_GND*                     : AK35      :        :                   :         : 1D        :                
+GND                          : AK36      : gnd    :                   :         :           :                
+GND                          : AK37      : gnd    :                   :         :           :                
+GXB_NC                       : AK38      :        :                   :         : 1D        :                
+GXB_NC                       : AK39      :        :                   :         : 1D        :                
+GND                          : AL1       : gnd    :                   :         :           :                
+GND                          : AL2       : gnd    :                   :         :           :                
+GXB_NC                       : AL3       :        :                   :         : 4F        :                
+GXB_NC                       : AL4       :        :                   :         : 4F        :                
+GND                          : AL5       : gnd    :                   :         :           :                
+GND                          : AL6       : gnd    :                   :         :           :                
+GXB_GND*                     : AL7       :        :                   :         : 4E        :                
+GXB_GND*                     : AL8       :        :                   :         : 4E        :                
+GND                          : AL9       :        :                   :         :           :                
+NC                           : AL10      :        :                   :         :           :                
+DNU                          : AL11      :        :                   :         :           :                
+DNU                          : AL12      :        :                   :         :           :                
+VREFB3BN0                    : AL13      : power  :                   :         : 3B        :                
+GND                          : AL14      : gnd    :                   :         :           :                
+DNU                          : AL15      :        :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AL16      :        :                   :         : 3A        :                
+nSTATUS                      : AL17      :        :                   :         : CSS       :                
+AS_DATA1                     : AL18      :        :                   :         : CSS       :                
+GND                          : AL19      : gnd    :                   :         :           :                
+TRST                         : AL20      : input  :                   :         : CSS       :                
+MSEL1                        : AL21      : input  :                   :         : CSS       :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AL22      :        :                   :         : 2A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AL23      :        :                   :         : 2A        :                
+VCCIO2AF                     : AL24      : power  :                   : 1.8V    : 2A, 2F    :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AL25      :        :                   :         : 2A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AL26      :        :                   :         : 2F        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AL27      :        :                   :         : 2F        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AL28      :        :                   :         : 2F        :                
+GND                          : AL29      : gnd    :                   :         :           :                
+NC                           : AL30      :        :                   :         :           :                
+GND                          : AL31      :        :                   :         :           :                
+GXB_GND*                     : AL32      :        :                   :         : 1C        :                
+GXB_GND*                     : AL33      :        :                   :         : 1C        :                
+GND                          : AL34      : gnd    :                   :         :           :                
+GND                          : AL35      : gnd    :                   :         :           :                
+GXB_NC                       : AL36      :        :                   :         : 1D        :                
+GXB_NC                       : AL37      :        :                   :         : 1D        :                
+GND                          : AL38      : gnd    :                   :         :           :                
+GND                          : AL39      : gnd    :                   :         :           :                
+GXB_NC                       : AM1       :        :                   :         : 4F        :                
+GXB_NC                       : AM2       :        :                   :         : 4F        :                
+GND                          : AM3       : gnd    :                   :         :           :                
+GND                          : AM4       : gnd    :                   :         :           :                
+GXB_GND*                     : AM5       :        :                   :         : 4E        :                
+GXB_GND*                     : AM6       :        :                   :         : 4E        :                
+GND                          : AM7       : gnd    :                   :         :           :                
+GND                          : AM8       : gnd    :                   :         :           :                
+NC                           : AM9       :        :                   :         :           :                
+NC                           : AM10      :        :                   :         :           :                
+stateVal[1]                  : AM11      : input  : 1.8 V             :         : 3B        : N              
+GND                          : AM12      : gnd    :                   :         :           :                
+varPos[1]                    : AM13      : input  : 1.8 V             :         : 3B        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AM14      :        :                   :         : 3B        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AM15      :        :                   :         : 3A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AM16      :        :                   :         : 3A        :                
+GND                          : AM17      : gnd    :                   :         :           :                
+nCSO2                        : AM18      :        :                   :         : CSS       :                
+DCLK                         : AM19      : bidir  :                   :         : CSS       :                
+AS_DATA3                     : AM20      :        :                   :         : CSS       :                
+TDO                          : AM21      : output :                   :         : CSS       :                
+VCCIO2AF                     : AM22      : power  :                   : 1.8V    : 2A, 2F    :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AM23      :        :                   :         : 2A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AM24      :        :                   :         : 2A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AM25      :        :                   :         : 2A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AM26      :        :                   :         : 2F        :                
+VCCIO2AF                     : AM27      : power  :                   : 1.8V    : 2A, 2F    :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AM28      :        :                   :         : 2F        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AM29      :        :                   :         : 2F        :                
+NC                           : AM30      :        :                   :         :           :                
+NC                           : AM31      :        :                   :         :           :                
+GND                          : AM32      : gnd    :                   :         :           :                
+GND                          : AM33      : gnd    :                   :         :           :                
+GXB_GND*                     : AM34      :        :                   :         : 1C        :                
+GXB_GND*                     : AM35      :        :                   :         : 1C        :                
+GND                          : AM36      : gnd    :                   :         :           :                
+GND                          : AM37      : gnd    :                   :         :           :                
+GXB_NC                       : AM38      :        :                   :         : 1D        :                
+GXB_NC                       : AM39      :        :                   :         : 1D        :                
+GND                          : AN1       : gnd    :                   :         :           :                
+GND                          : AN2       : gnd    :                   :         :           :                
+GXB_NC                       : AN3       :        :                   :         : 4F        :                
+GXB_NC                       : AN4       :        :                   :         : 4F        :                
+GND                          : AN5       : gnd    :                   :         :           :                
+GND                          : AN6       : gnd    :                   :         :           :                
+GND                          : AN7       : gnd    :                   :         :           :                
+GND                          : AN8       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AN9       :        :                   :         : 3B        :                
+GND                          : AN10      : gnd    :                   :         :           :                
+stateVal[0]                  : AN11      : input  : 1.8 V             :         : 3B        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AN12      :        :                   :         : 3B        :                
+varPos[2]                    : AN13      : input  : 1.8 V             :         : 3B        : N              
+varPos[4]                    : AN14      : input  : 1.8 V             :         : 3B        : N              
+GND                          : AN15      : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AN16      :        :                   :         : 3A        :                
+VREFB3AN0                    : AN17      : power  :                   :         : 3A        :                
+GND                          : AN18      :        :                   :         : CSS       :                
+nIO_PULLUP                   : AN19      : input  :                   :         : CSS       :                
+GND                          : AN20      : gnd    :                   :         :           :                
+AS_DATA2                     : AN21      :        :                   :         : CSS       :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AN22      :        :                   :         : 2A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AN23      :        :                   :         : 2A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AN24      :        :                   :         : 2A        :                
+GND                          : AN25      : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AN26      :        :                   :         : 2F        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AN27      :        :                   :         : 2F        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AN28      :        :                   :         : 2F        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AN29      :        :                   :         : 2F        :                
+GND                          : AN30      : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AN31      :        :                   :         : 2F        :                
+GND                          : AN32      : gnd    :                   :         :           :                
+GND                          : AN33      : gnd    :                   :         :           :                
+GND                          : AN34      : gnd    :                   :         :           :                
+GND                          : AN35      : gnd    :                   :         :           :                
+GXB_NC                       : AN36      :        :                   :         : 1D        :                
+GXB_NC                       : AN37      :        :                   :         : 1D        :                
+GND                          : AN38      : gnd    :                   :         :           :                
+GND                          : AN39      : gnd    :                   :         :           :                
+GXB_NC                       : AP1       :        :                   :         : 4F        :                
+GXB_NC                       : AP2       :        :                   :         : 4F        :                
+GND                          : AP3       : gnd    :                   :         :           :                
+GND                          : AP4       : gnd    :                   :         :           :                
+GXB_GND*                     : AP5       :        :                   :         : 4E        :                
+GXB_GND*                     : AP6       :        :                   :         : 4E        :                
+GND                          : AP7       : gnd    :                   :         :           :                
+GND                          : AP8       : gnd    :                   :         :           :                
+GND                          : AP9       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AP10      :        :                   :         : 3B        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AP11      :        :                   :         : 3B        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AP12      :        :                   :         : 3B        :                
+VCCIO3AB                     : AP13      : power  :                   : 1.8V    : 3A, 3B    :                
+varPos[0]                    : AP14      : input  : 1.8 V             :         : 3B        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AP15      :        :                   :         : 3A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AP16      :        :                   :         : 3A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AP17      :        :                   :         : 3A        :                
+VCCIO3AB                     : AP18      : power  :                   : 1.8V    : 3A, 3B    :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AP19      :        :                   :         : 3A        :                
+TCK                          : AP20      : input  :                   :         : CSS       :                
+AS_DATA0, ASDO               : AP21      :        :                   :         : CSS       :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AP22      :        :                   :         : 2A        :                
+VCCIO2AF                     : AP23      : power  :                   : 1.8V    : 2A, 2F    :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AP24      :        :                   :         : 2A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AP25      :        :                   :         : 2A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AP26      :        :                   :         : 2F        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AP27      :        :                   :         : 2F        :                
+VCCIO2AF                     : AP28      : power  :                   : 1.8V    : 2A, 2F    :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AP29      :        :                   :         : 2F        :                
+outSATRes                    : AP30      : output : 1.8 V             :         : 2F        : N              
+GND                          : AP31      : gnd    :                   :         :           :                
+GND                          : AP32      : gnd    :                   :         :           :                
+GND                          : AP33      : gnd    :                   :         :           :                
+GXB_GND*                     : AP34      :        :                   :         : 1C        :                
+GXB_GND*                     : AP35      :        :                   :         : 1C        :                
+GND                          : AP36      : gnd    :                   :         :           :                
+GND                          : AP37      : gnd    :                   :         :           :                
+GXB_NC                       : AP38      :        :                   :         : 1D        :                
+GXB_NC                       : AP39      :        :                   :         : 1D        :                
+GND                          : AR1       : gnd    :                   :         :           :                
+GND                          : AR2       : gnd    :                   :         :           :                
+GXB_NC                       : AR3       :        :                   :         : 4F        :                
+GXB_NC                       : AR4       :        :                   :         : 4F        :                
+GND                          : AR5       : gnd    :                   :         :           :                
+GND                          : AR6       : gnd    :                   :         :           :                
+GXB_GND*                     : AR7       :        :                   :         : 4E        :                
+GXB_GND*                     : AR8       :        :                   :         : 4E        :                
+GND                          : AR9       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AR10      :        :                   :         : 3B        :                
+GND                          : AR11      : gnd    :                   :         :           :                
+varPos[3]                    : AR12      : input  : 1.8 V             :         : 3B        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AR13      :        :                   :         : 3B        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AR14      :        :                   :         : 3B        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AR15      :        :                   :         : 3A        :                
+VCCIO3AB                     : AR16      : power  :                   : 1.8V    : 3A, 3B    :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AR17      :        :                   :         : 3A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AR18      :        :                   :         : 3A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AR19      :        :                   :         : 3A        :                
+nCSO0                        : AR20      :        :                   :         : CSS       :                
+GND                          : AR21      : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AR22      :        :                   :         : 2A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AR23      :        :                   :         : 2A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AR24      :        :                   :         : 2A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AR25      :        :                   :         : 2A        :                
+GND                          : AR26      : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AR27      :        :                   :         : 2F        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AR28      :        :                   :         : 2F        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AR29      :        :                   :         : 2F        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AR30      :        :                   :         : 2F        :                
+GND                          : AR31      : gnd    :                   :         :           :                
+GXB_GND*                     : AR32      :        :                   :         : 1C        :                
+GXB_GND*                     : AR33      :        :                   :         : 1C        :                
+GND                          : AR34      : gnd    :                   :         :           :                
+GND                          : AR35      : gnd    :                   :         :           :                
+GXB_NC                       : AR36      :        :                   :         : 1D        :                
+GXB_NC                       : AR37      :        :                   :         : 1D        :                
+GND                          : AR38      : gnd    :                   :         :           :                
+GND                          : AR39      : gnd    :                   :         :           :                
+GXB_NC                       : AT1       :        :                   :         : 4E        :                
+GXB_NC                       : AT2       :        :                   :         : 4E        :                
+GND                          : AT3       : gnd    :                   :         :           :                
+GND                          : AT4       : gnd    :                   :         :           :                
+GXB_GND*                     : AT5       :        :                   :         : 4E        :                
+GXB_GND*                     : AT6       :        :                   :         : 4E        :                
+GND                          : AT7       : gnd    :                   :         :           :                
+GND                          : AT8       : gnd    :                   :         :           :                
+GND                          : AT9       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AT10      :        :                   :         : 3B        :                
+resetN                       : AT11      : input  : 1.8 V             :         : 3B        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AT12      :        :                   :         : 3B        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AT13      :        :                   :         : 3B        :                
+VCCIO3AB                     : AT14      : power  :                   : 1.8V    : 3A, 3B    :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AT15      :        :                   :         : 3B        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AT16      :        :                   :         : 3A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AT17      :        :                   :         : 3A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AT18      :        :                   :         : 3A        :                
+GND                          : AT19      : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AT20      :        :                   :         : 3A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AT21      :        :                   :         : 2A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AT22      :        :                   :         : 2A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AT23      :        :                   :         : 2A        :                
+GND                          : AT24      : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AT25      :        :                   :         : 2A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AT26      :        :                   :         : 2A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AT27      :        :                   :         : 2A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AT28      :        :                   :         : 2F        :                
+GND                          : AT29      : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AT30      :        :                   :         : 2F        :                
+GND                          : AT31      : gnd    :                   :         :           :                
+GND                          : AT32      : gnd    :                   :         :           :                
+GND                          : AT33      : gnd    :                   :         :           :                
+GXB_GND*                     : AT34      :        :                   :         : 1C        :                
+GXB_GND*                     : AT35      :        :                   :         : 1C        :                
+GND                          : AT36      : gnd    :                   :         :           :                
+GND                          : AT37      : gnd    :                   :         :           :                
+GXB_NC                       : AT38      :        :                   :         : 1C        :                
+GXB_NC                       : AT39      :        :                   :         : 1C        :                
+GND                          : AU1       : gnd    :                   :         :           :                
+GND                          : AU2       : gnd    :                   :         :           :                
+GXB_NC                       : AU3       :        :                   :         : 4E        :                
+GXB_NC                       : AU4       :        :                   :         : 4E        :                
+GND                          : AU5       : gnd    :                   :         :           :                
+GND                          : AU6       : gnd    :                   :         :           :                
+GXB_GND*                     : AU7       :        :                   :         : 4E        :                
+GXB_GND*                     : AU8       :        :                   :         : 4E        :                
+GND                          : AU9       : gnd    :                   :         :           :                
+GND                          : AU10      : gnd    :                   :         :           :                
+GND                          : AU11      : gnd    :                   :         :           :                
+GND                          : AU12      : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AU13      :        :                   :         : 3B        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AU14      :        :                   :         : 3B        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AU15      :        :                   :         : 3B        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AU16      :        :                   :         : 3A        :                
+GND                          : AU17      : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AU18      :        :                   :         : 3A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AU19      :        :                   :         : 3A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AU20      :        :                   :         : 3A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AU21      :        :                   :         : 2A        :                
+GND                          : AU22      : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AU23      :        :                   :         : 2A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AU24      :        :                   :         : 2A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AU25      :        :                   :         : 2A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AU26      :        :                   :         : 2A        :                
+GND                          : AU27      : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AU28      :        :                   :         : 2F        :                
+GND                          : AU29      : gnd    :                   :         :           :                
+GND                          : AU30      : gnd    :                   :         :           :                
+GND                          : AU31      : gnd    :                   :         :           :                
+GXB_GND*                     : AU32      :        :                   :         : 1C        :                
+GXB_GND*                     : AU33      :        :                   :         : 1C        :                
+GND                          : AU34      : gnd    :                   :         :           :                
+GND                          : AU35      : gnd    :                   :         :           :                
+GXB_NC                       : AU36      :        :                   :         : 1C        :                
+GXB_NC                       : AU37      :        :                   :         : 1C        :                
+GND                          : AU38      : gnd    :                   :         :           :                
+GND                          : AU39      : gnd    :                   :         :           :                
+GXB_NC                       : AV1       :        :                   :         : 4E        :                
+GXB_NC                       : AV2       :        :                   :         : 4E        :                
+GND                          : AV3       : gnd    :                   :         :           :                
+GND                          : AV4       : gnd    :                   :         :           :                
+GXB_NC                       : AV5       :        :                   :         : 4E        :                
+GXB_NC                       : AV6       :        :                   :         : 4E        :                
+GND                          : AV7       : gnd    :                   :         :           :                
+GND                          : AV8       : gnd    :                   :         :           :                
+GXB_GND*                     : AV9       :        :                   :         : 4E        :                
+GXB_GND*                     : AV10      :        :                   :         : 4E        :                
+GND                          : AV11      : gnd    :                   :         :           :                
+DNU                          : AV12      :        :                   :         :           :                
+DNU                          : AV13      :        :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AV14      :        :                   :         : 3B        :                
+GND                          : AV15      : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AV16      :        :                   :         : 3A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AV17      :        :                   :         : 3A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AV18      :        :                   :         : 3A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AV19      :        :                   :         : 3A        :                
+GND                          : AV20      : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AV21      :        :                   :         : 2A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AV22      :        :                   :         : 2A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AV23      :        :                   :         : 2A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AV24      :        :                   :         : 2A        :                
+GND                          : AV25      : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AV26      :        :                   :         : 2A        :                
+DNU                          : AV27      :        :                   :         :           :                
+DNU                          : AV28      :        :                   :         :           :                
+GND                          : AV29      : gnd    :                   :         :           :                
+GXB_GND*                     : AV30      :        :                   :         : 1C        :                
+GXB_GND*                     : AV31      :        :                   :         : 1C        :                
+GND                          : AV32      : gnd    :                   :         :           :                
+GND                          : AV33      : gnd    :                   :         :           :                
+GXB_NC                       : AV34      :        :                   :         : 1C        :                
+GXB_NC                       : AV35      :        :                   :         : 1C        :                
+GND                          : AV36      : gnd    :                   :         :           :                
+GND                          : AV37      : gnd    :                   :         :           :                
+GXB_NC                       : AV38      :        :                   :         : 1C        :                
+GXB_NC                       : AV39      :        :                   :         : 1C        :                
+GND                          : AW2       : gnd    :                   :         :           :                
+GXB_NC                       : AW3       :        :                   :         : 4E        :                
+GXB_NC                       : AW4       :        :                   :         : 4E        :                
+GND                          : AW5       : gnd    :                   :         :           :                
+GND                          : AW6       : gnd    :                   :         :           :                
+GXB_NC                       : AW7       :        :                   :         : 4E        :                
+GXB_NC                       : AW8       :        :                   :         : 4E        :                
+GND                          : AW9       : gnd    :                   :         :           :                
+GND                          : AW10      : gnd    :                   :         :           :                
+GND                          : AW11      : gnd    :                   :         :           :                
+GND                          : AW12      :        :                   :         :           :                
+GND                          : AW13      : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AW14      :        :                   :         : 3B        :                
+negCtrl                      : AW15      : input  : 1.8 V             :         : 3B        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AW16      :        :                   :         : 3A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AW17      :        :                   :         : 3A        :                
+GND                          : AW18      : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AW19      :        :                   :         : 3A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AW20      :        :                   :         : 3A        :                
+~ALTERA_DATA0~ / RESERVED_INPUT : AW21      : input  : 1.8 V             :         : 2A        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AW22      :        :                   :         : 2A        :                
+GND                          : AW23      : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AW24      :        :                   :         : 2A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AW25      :        :                   :         : 2A        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AW26      :        :                   :         : 2A        :                
+GND                          : AW27      : gnd    :                   :         :           :                
+GND                          : AW28      :        :                   :         :           :                
+GND                          : AW29      : gnd    :                   :         :           :                
+GND                          : AW30      : gnd    :                   :         :           :                
+GND                          : AW31      : gnd    :                   :         :           :                
+GXB_NC                       : AW32      :        :                   :         : 1C        :                
+GXB_NC                       : AW33      :        :                   :         : 1C        :                
+GND                          : AW34      : gnd    :                   :         :           :                
+GND                          : AW35      : gnd    :                   :         :           :                
+GXB_NC                       : AW36      :        :                   :         : 1C        :                
+GXB_NC                       : AW37      :        :                   :         : 1C        :                
+GND                          : AW38      : gnd    :                   :         :           :                
+GXB_NC                       : B1        :        :                   :         : 4I        :                
+GXB_NC                       : B2        :        :                   :         : 4I        :                
+GND                          : B3        : gnd    :                   :         :           :                
+GND                          : B4        : gnd    :                   :         :           :                
+GXB_NC                       : B5        :        :                   :         : 4J        :                
+GXB_NC                       : B6        :        :                   :         : 4J        :                
+GND                          : B7        : gnd    :                   :         :           :                
+GND                          : B8        : gnd    :                   :         :           :                
+GXB_GND*                     : B9        :        :                   :         : 4J        :                
+GXB_GND*                     : B10       :        :                   :         : 4J        :                
+GND                          : B11       : gnd    :                   :         :           :                
+GND                          : B12       : gnd    :                   :         :           :                
+GND                          : B13       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : B14       :        :                   :         : 3G        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : B15       :        :                   :         : 3H        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : B16       :        :                   :         : 3H        :                
+GND                          : B17       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : B18       :        :                   :         : 3H        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : B19       :        :                   :         : 3H        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : B20       :        :                   :         : 2L        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : B21       :        :                   :         : 2L        :                
+GND                          : B22       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : B23       :        :                   :         : 2L        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : B24       :        :                   :         : 2L        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : B25       :        :                   :         : 2L        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : B26       :        :                   :         : 2L        :                
+GND                          : B27       : gnd    :                   :         :           :                
+GND                          : B28       : gnd    :                   :         :           :                
+GND                          : B29       : gnd    :                   :         :           :                
+GXB_GND*                     : B30       :        :                   :         : 1H        :                
+GXB_GND*                     : B31       :        :                   :         : 1H        :                
+GND                          : B32       : gnd    :                   :         :           :                
+GND                          : B33       : gnd    :                   :         :           :                
+GXB_NC                       : B34       :        :                   :         : 1H        :                
+GXB_NC                       : B35       :        :                   :         : 1H        :                
+GND                          : B36       : gnd    :                   :         :           :                
+GND                          : B37       : gnd    :                   :         :           :                
+GXB_NC                       : B38       :        :                   :         : 1G        :                
+GXB_NC                       : B39       :        :                   :         : 1G        :                
+GND                          : C1        : gnd    :                   :         :           :                
+GND                          : C2        : gnd    :                   :         :           :                
+GXB_NC                       : C3        :        :                   :         : 4I        :                
+GXB_NC                       : C4        :        :                   :         : 4I        :                
+GND                          : C5        : gnd    :                   :         :           :                
+GND                          : C6        : gnd    :                   :         :           :                
+GXB_GND*                     : C7        :        :                   :         : 4J        :                
+GXB_GND*                     : C8        :        :                   :         : 4J        :                
+GND                          : C9        : gnd    :                   :         :           :                
+GND                          : C10       : gnd    :                   :         :           :                
+GND                          : C11       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : C12       :        :                   :         : 3G        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : C13       :        :                   :         : 3G        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : C14       :        :                   :         : 3G        :                
+GND                          : C15       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : C16       :        :                   :         : 3H        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : C17       :        :                   :         : 3H        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : C18       :        :                   :         : 3H        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : C19       :        :                   :         : 3H        :                
+GND                          : C20       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : C21       :        :                   :         : 2L        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : C22       :        :                   :         : 2L        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : C23       :        :                   :         : 2L        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : C24       :        :                   :         : 2L        :                
+GND                          : C25       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : C26       :        :                   :         : 2K        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : C27       :        :                   :         : 2K        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : C28       :        :                   :         : 2K        :                
+GND                          : C29       : gnd    :                   :         :           :                
+GND                          : C30       : gnd    :                   :         :           :                
+GND                          : C31       : gnd    :                   :         :           :                
+GXB_GND*                     : C32       :        :                   :         : 1H        :                
+GXB_GND*                     : C33       :        :                   :         : 1H        :                
+GND                          : C34       : gnd    :                   :         :           :                
+GND                          : C35       : gnd    :                   :         :           :                
+GXB_NC                       : C36       :        :                   :         : 1G        :                
+GXB_NC                       : C37       :        :                   :         : 1G        :                
+GND                          : C38       : gnd    :                   :         :           :                
+GND                          : C39       : gnd    :                   :         :           :                
+GXB_NC                       : D1        :        :                   :         : 4I        :                
+GXB_NC                       : D2        :        :                   :         : 4I        :                
+GND                          : D3        : gnd    :                   :         :           :                
+GND                          : D4        : gnd    :                   :         :           :                
+GXB_GND*                     : D5        :        :                   :         : 4I        :                
+GXB_GND*                     : D6        :        :                   :         : 4I        :                
+GND                          : D7        : gnd    :                   :         :           :                
+GND                          : D8        : gnd    :                   :         :           :                
+GND                          : D9        : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D10       :        :                   :         : 3G        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D11       :        :                   :         : 3G        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D12       :        :                   :         : 3G        :                
+GND                          : D13       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D14       :        :                   :         : 3G        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D15       :        :                   :         : 3G        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D16       :        :                   :         : 3H        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D17       :        :                   :         : 3H        :                
+GND                          : D18       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D19       :        :                   :         : 3H        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D20       :        :                   :         : 2L        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D21       :        :                   :         : 2L        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D22       :        :                   :         : 2L        :                
+GND                          : D23       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D24       :        :                   :         : 2L        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D25       :        :                   :         : 2K        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D26       :        :                   :         : 2K        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D27       :        :                   :         : 2K        :                
+GND                          : D28       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D29       :        :                   :         : 2K        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D30       :        :                   :         : 2K        :                
+GND                          : D31       : gnd    :                   :         :           :                
+GND                          : D32       : gnd    :                   :         :           :                
+GND                          : D33       : gnd    :                   :         :           :                
+GXB_GND*                     : D34       :        :                   :         : 1G        :                
+GXB_GND*                     : D35       :        :                   :         : 1G        :                
+GND                          : D36       : gnd    :                   :         :           :                
+GND                          : D37       : gnd    :                   :         :           :                
+GXB_NC                       : D38       :        :                   :         : 1G        :                
+GXB_NC                       : D39       :        :                   :         : 1G        :                
+GND                          : E1        : gnd    :                   :         :           :                
+GND                          : E2        : gnd    :                   :         :           :                
+GXB_NC                       : E3        :        :                   :         : 4I        :                
+GXB_NC                       : E4        :        :                   :         : 4I        :                
+GND                          : E5        : gnd    :                   :         :           :                
+GND                          : E6        : gnd    :                   :         :           :                
+GXB_GND*                     : E7        :        :                   :         : 4J        :                
+GXB_GND*                     : E8        :        :                   :         : 4J        :                
+GND                          : E9        : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : E10       :        :                   :         : 3G        :                
+GND                          : E11       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : E12       :        :                   :         : 3G        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : E13       :        :                   :         : 3G        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : E14       :        :                   :         : 3G        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : E15       :        :                   :         : 3H        :                
+VCCIO3GH                     : E16       : power  :                   : 1.8V    : 3G, 3H    :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : E17       :        :                   :         : 3H        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : E18       :        :                   :         : 3H        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : E19       :        :                   :         : 3H        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : E20       :        :                   :         : 2L        :                
+GND                          : E21       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : E22       :        :                   :         : 2L        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : E23       :        :                   :         : 2L        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : E24       :        :                   :         : 2L        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : E25       :        :                   :         : 2L        :                
+GND                          : E26       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : E27       :        :                   :         : 2K        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : E28       :        :                   :         : 2K        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : E29       :        :                   :         : 2K        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : E30       :        :                   :         : 2K        :                
+GND                          : E31       : gnd    :                   :         :           :                
+GXB_GND*                     : E32       :        :                   :         : 1H        :                
+GXB_GND*                     : E33       :        :                   :         : 1H        :                
+GND                          : E34       : gnd    :                   :         :           :                
+GND                          : E35       : gnd    :                   :         :           :                
+GXB_NC                       : E36       :        :                   :         : 1G        :                
+GXB_NC                       : E37       :        :                   :         : 1G        :                
+GND                          : E38       : gnd    :                   :         :           :                
+GND                          : E39       : gnd    :                   :         :           :                
+GXB_NC                       : F1        :        :                   :         : 4I        :                
+GXB_NC                       : F2        :        :                   :         : 4I        :                
+GND                          : F3        : gnd    :                   :         :           :                
+GND                          : F4        : gnd    :                   :         :           :                
+GXB_GND*                     : F5        :        :                   :         : 4I        :                
+GXB_GND*                     : F6        :        :                   :         : 4I        :                
+GND                          : F7        : gnd    :                   :         :           :                
+GND                          : F8        : gnd    :                   :         :           :                
+GND                          : F9        : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F10       :        :                   :         : 3G        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F11       :        :                   :         : 3G        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F12       :        :                   :         : 3G        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F13       :        :                   :         : 3G        :                
+VCCIO3GH                     : F14       : power  :                   : 1.8V    : 3G, 3H    :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F15       :        :                   :         : 3H        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F16       :        :                   :         : 3H        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F17       :        :                   :         : 3H        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F18       :        :                   :         : 3H        :                
+VCCIO3GH                     : F19       : power  :                   : 1.8V    : 3G, 3H    :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F20       :        :                   :         : 3H        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F21       :        :                   :         : 2L        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F22       :        :                   :         : 2L        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F23       :        :                   :         : 2L        :                
+VCCIO2KL                     : F24       : power  :                   : 1.8V    : 2K, 2L    :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F25       :        :                   :         : 2L        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F26       :        :                   :         : 2K        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F27       :        :                   :         : 2K        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F28       :        :                   :         : 2K        :                
+VCCIO2KL                     : F29       : power  :                   : 1.8V    : 2K, 2L    :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F30       :        :                   :         : 2K        :                
+GND                          : F31       : gnd    :                   :         :           :                
+GND                          : F32       : gnd    :                   :         :           :                
+GND                          : F33       : gnd    :                   :         :           :                
+GXB_GND*                     : F34       :        :                   :         : 1G        :                
+GXB_GND*                     : F35       :        :                   :         : 1G        :                
+GND                          : F36       : gnd    :                   :         :           :                
+GND                          : F37       : gnd    :                   :         :           :                
+GXB_NC                       : F38       :        :                   :         : 1G        :                
+GXB_NC                       : F39       :        :                   :         : 1G        :                
+GND                          : G1        : gnd    :                   :         :           :                
+GND                          : G2        : gnd    :                   :         :           :                
+GXB_NC                       : G3        :        :                   :         : 4I        :                
+GXB_NC                       : G4        :        :                   :         : 4I        :                
+GND                          : G5        : gnd    :                   :         :           :                
+GND                          : G6        : gnd    :                   :         :           :                
+GND                          : G7        : gnd    :                   :         :           :                
+GND                          : G8        : gnd    :                   :         :           :                
+GND                          : G9        : gnd    :                   :         :           :                
+VREFN_ADC                    : G10       :        :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G11       :        :                   :         : 3G        :                
+VCCIO3GH                     : G12       : power  :                   : 1.8V    : 3G, 3H    :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G13       :        :                   :         : 3G        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G14       :        :                   :         : 3G        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G15       :        :                   :         : 3H        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G16       :        :                   :         : 3H        :                
+VCCIO3GH                     : G17       : power  :                   : 1.8V    : 3G, 3H    :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G18       :        :                   :         : 3H        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G19       :        :                   :         : 3H        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G20       :        :                   :         : 3H        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G21       :        :                   :         : 2L        :                
+VCCIO2KL                     : G22       : power  :                   : 1.8V    : 2K, 2L    :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G23       :        :                   :         : 2L        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G24       :        :                   :         : 2L        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G25       :        :                   :         : 2L        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G26       :        :                   :         : 2K        :                
+VCCIO2KL                     : G27       : power  :                   : 1.8V    : 2K, 2L    :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G28       :        :                   :         : 2K        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G29       :        :                   :         : 2K        :                
+NC                           : G30       :        :                   :         :           :                
+GND                          : G31       : gnd    :                   :         :           :                
+GND                          : G32       : gnd    :                   :         :           :                
+GND                          : G33       : gnd    :                   :         :           :                
+GND                          : G34       : gnd    :                   :         :           :                
+GND                          : G35       : gnd    :                   :         :           :                
+GXB_NC                       : G36       :        :                   :         : 1G        :                
+GXB_NC                       : G37       :        :                   :         : 1G        :                
+GND                          : G38       : gnd    :                   :         :           :                
+GND                          : G39       : gnd    :                   :         :           :                
+GXB_NC                       : H1        :        :                   :         : 4H        :                
+GXB_NC                       : H2        :        :                   :         : 4H        :                
+GND                          : H3        : gnd    :                   :         :           :                
+GND                          : H4        : gnd    :                   :         :           :                
+GXB_GND*                     : H5        :        :                   :         : 4I        :                
+GXB_GND*                     : H6        :        :                   :         : 4I        :                
+GND                          : H7        : gnd    :                   :         :           :                
+GND                          : H8        : gnd    :                   :         :           :                
+GND                          : H9        :        :                   :         :           :                
+GND                          : H10       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : H11       :        :                   :         : 3G        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : H12       :        :                   :         : 3G        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : H13       :        :                   :         : 3G        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : H14       :        :                   :         : 3G        :                
+GND                          : H15       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : H16       :        :                   :         : 3H        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : H17       :        :                   :         : 3H        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : H18       :        :                   :         : 3H        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : H19       :        :                   :         : 3H        :                
+GND                          : H20       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : H21       :        :                   :         : 2L        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : H22       :        :                   :         : 2L        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : H23       :        :                   :         : 2L        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : H24       :        :                   :         : 2L        :                
+GND                          : H25       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : H26       :        :                   :         : 2K        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : H27       :        :                   :         : 2K        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : H28       :        :                   :         : 2K        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : H29       :        :                   :         : 2K        :                
+GND                          : H30       : gnd    :                   :         :           :                
+GND                          : H31       :        :                   :         :           :                
+GND                          : H32       : gnd    :                   :         :           :                
+GND                          : H33       : gnd    :                   :         :           :                
+GXB_GND*                     : H34       :        :                   :         : 1G        :                
+GXB_GND*                     : H35       :        :                   :         : 1G        :                
+GND                          : H36       : gnd    :                   :         :           :                
+GND                          : H37       : gnd    :                   :         :           :                
+GXB_NC                       : H38       :        :                   :         : 1F        :                
+GXB_NC                       : H39       :        :                   :         : 1F        :                
+GND                          : J1        : gnd    :                   :         :           :                
+GND                          : J2        : gnd    :                   :         :           :                
+GXB_NC                       : J3        :        :                   :         : 4H        :                
+GXB_NC                       : J4        :        :                   :         : 4H        :                
+GND                          : J5        : gnd    :                   :         :           :                
+GND                          : J6        : gnd    :                   :         :           :                
+VSIGN_1                      : J7        :        :                   :         :           :                
+VSIGP_1                      : J8        :        :                   :         :           :                
+GND                          : J9        : gnd    :                   :         :           :                
+VREFP_ADC                    : J10       :        :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : J11       :        :                   :         : 3G        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : J12       :        :                   :         : 3G        :                
+VCCIO3GH                     : J13       : power  :                   : 1.8V    : 3G, 3H    :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : J14       :        :                   :         : 3G        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : J15       :        :                   :         : 3G        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : J16       :        :                   :         : 3H        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : J17       :        :                   :         : 3H        :                
+VCCIO3GH                     : J18       : power  :                   : 1.8V    : 3G, 3H    :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : J19       :        :                   :         : 3H        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : J20       :        :                   :         : 3H        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : J21       :        :                   :         : 2L        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : J22       :        :                   :         : 2L        :                
+VCCIO2KL                     : J23       : power  :                   : 1.8V    : 2K, 2L    :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : J24       :        :                   :         : 2L        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : J25       :        :                   :         : 2K        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : J26       :        :                   :         : 2K        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : J27       :        :                   :         : 2K        :                
+GND                          : J28       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : J29       :        :                   :         : 2K        :                
+NC                           : J30       :        :                   :         :           :                
+GND                          : J31       : gnd    :                   :         :           :                
+ADCGND                       : J32       : gnd    :                   :         :           :                
+NC                           : J33       :        :                   :         :           :                
+GND                          : J34       : gnd    :                   :         :           :                
+GND                          : J35       : gnd    :                   :         :           :                
+GXB_NC                       : J36       :        :                   :         : 1F        :                
+GXB_NC                       : J37       :        :                   :         : 1F        :                
+GND                          : J38       : gnd    :                   :         :           :                
+GND                          : J39       : gnd    :                   :         :           :                
+GXB_NC                       : K1        :        :                   :         : 4H        :                
+GXB_NC                       : K2        :        :                   :         : 4H        :                
+GND                          : K3        : gnd    :                   :         :           :                
+GND                          : K4        : gnd    :                   :         :           :                
+GXB_GND*                     : K5        :        :                   :         : 4I        :                
+GXB_GND*                     : K6        :        :                   :         : 4I        :                
+GND                          : K7        :        :                   :         :           :                
+GND                          : K8        :        :                   :         :           :                
+GND                          : K9        :        :                   :         :           :                
+VSIGN_0                      : K10       :        :                   :         :           :                
+GND                          : K11       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : K12       :        :                   :         : 3G        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : K13       :        :                   :         : 3G        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : K14       :        :                   :         : 3G        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : K15       :        :                   :         : 3G        :                
+GND                          : K16       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : K17       :        :                   :         : 3H        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : K18       :        :                   :         : 3H        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : K19       :        :                   :         : 3H        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : K20       :        :                   :         : 3H        :                
+VCCIO2KL                     : K21       : power  :                   : 1.8V    : 2K, 2L    :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : K22       :        :                   :         : 2L        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : K23       :        :                   :         : 2L        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : K24       :        :                   :         : 2L        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : K25       :        :                   :         : 2K        :                
+VCCIO2KL                     : K26       : power  :                   : 1.8V    : 2K, 2L    :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : K27       :        :                   :         : 2K        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : K28       :        :                   :         : 2K        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : K29       :        :                   :         : 2K        :                
+NC                           : K30       :        :                   :         :           :                
+GND                          : K31       :        :                   :         :           :                
+GND                          : K32       :        :                   :         :           :                
+GND                          : K33       :        :                   :         :           :                
+GXB_GND*                     : K34       :        :                   :         : 1G        :                
+GXB_GND*                     : K35       :        :                   :         : 1G        :                
+GND                          : K36       : gnd    :                   :         :           :                
+GND                          : K37       : gnd    :                   :         :           :                
+GXB_NC                       : K38       :        :                   :         : 1F        :                
+GXB_NC                       : K39       :        :                   :         : 1F        :                
+GND                          : L1        : gnd    :                   :         :           :                
+GND                          : L2        : gnd    :                   :         :           :                
+GXB_GND*                     : L3        :        :                   :         : 4I        :                
+GXB_GND*                     : L4        :        :                   :         : 4I        :                
+GND                          : L5        : gnd    :                   :         :           :                
+GND                          : L6        : gnd    :                   :         :           :                
+GXB_GND*                     : L7        :        :                   :         : 4J        :                
+GXB_GND*                     : L8        :        :                   :         : 4J        :                
+GND                          : L9        :        :                   :         :           :                
+VSIGP_0                      : L10       :        :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : L11       :        :                   :         : 3G        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : L12       :        :                   :         : 3G        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : L13       :        :                   :         : 3G        :                
+GND                          : L14       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : L15       :        :                   :         : 3G        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : L16       :        :                   :         : 3H        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : L17       :        :                   :         : 3H        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : L18       :        :                   :         : 3H        :                
+GND                          : L19       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : L20       :        :                   :         : 3H        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : L21       :        :                   :         : 2L        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : L22       :        :                   :         : 2L        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : L23       :        :                   :         : 2L        :                
+GND                          : L24       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : L25       :        :                   :         : 2K        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : L26       :        :                   :         : 2K        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : L27       :        :                   :         : 2K        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : L28       :        :                   :         : 2K        :                
+GND                          : L29       : gnd    :                   :         :           :                
+NC                           : L30       :        :                   :         :           :                
+GND                          : L31       :        :                   :         :           :                
+GXB_GND*                     : L32       :        :                   :         : 1H        :                
+GXB_GND*                     : L33       :        :                   :         : 1H        :                
+GND                          : L34       : gnd    :                   :         :           :                
+GND                          : L35       : gnd    :                   :         :           :                
+GXB_GND*                     : L36       :        :                   :         : 1G        :                
+GXB_GND*                     : L37       :        :                   :         : 1G        :                
+GND                          : L38       : gnd    :                   :         :           :                
+GND                          : L39       : gnd    :                   :         :           :                
+GXB_NC                       : M1        :        :                   :         : 4H        :                
+GXB_NC                       : M2        :        :                   :         : 4H        :                
+GND                          : M3        : gnd    :                   :         :           :                
+GND                          : M4        : gnd    :                   :         :           :                
+GXB_GND*                     : M5        :        :                   :         : 4I        :                
+GXB_GND*                     : M6        :        :                   :         : 4I        :                
+GND                          : M7        : gnd    :                   :         :           :                
+GND                          : M8        : gnd    :                   :         :           :                
+GND                          : M9        :        :                   :         :           :                
+GND                          : M10       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : M11       :        :                   :         : 3G        :                
+GND                          : M12       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : M13       :        :                   :         : 3G        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : M14       :        :                   :         : 3G        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : M15       :        :                   :         : 3G        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : M16       :        :                   :         : 3H        :                
+GND                          : M17       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : M18       :        :                   :         : 3H        :                
+VREFB3HN0                    : M19       : power  :                   :         : 3H        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : M20       :        :                   :         : 3H        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : M21       :        :                   :         : 2L        :                
+GND                          : M22       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : M23       :        :                   :         : 2L        :                
+VREFB2LN0                    : M24       : power  :                   :         : 2L        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : M25       :        :                   :         : 2K        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : M26       :        :                   :         : 2K        :                
+VCCIO2KL                     : M27       : power  :                   : 1.8V    : 2K, 2L    :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : M28       :        :                   :         : 2K        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : M29       :        :                   :         : 2K        :                
+NC                           : M30       :        :                   :         :           :                
+GND                          : M31       :        :                   :         :           :                
+GND                          : M32       : gnd    :                   :         :           :                
+GND                          : M33       : gnd    :                   :         :           :                
+GXB_GND*                     : M34       :        :                   :         : 1G        :                
+GXB_GND*                     : M35       :        :                   :         : 1G        :                
+GND                          : M36       : gnd    :                   :         :           :                
+GND                          : M37       : gnd    :                   :         :           :                
+GXB_NC                       : M38       :        :                   :         : 1F        :                
+GXB_NC                       : M39       :        :                   :         : 1F        :                
+GND                          : N1        : gnd    :                   :         :           :                
+GND                          : N2        : gnd    :                   :         :           :                
+GXB_GND*                     : N3        :        :                   :         : 4H        :                
+GXB_GND*                     : N4        :        :                   :         : 4H        :                
+GND                          : N5        : gnd    :                   :         :           :                
+GND                          : N6        : gnd    :                   :         :           :                
+GXB_GND*                     : N7        :        :                   :         : 4I        :                
+GXB_GND*                     : N8        :        :                   :         : 4I        :                
+GND                          : N9        : gnd    :                   :         :           :                
+GND                          : N10       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : N11       :        :                   :         : 3G        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : N12       :        :                   :         : 3G        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : N13       :        :                   :         : 3G        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : N14       :        :                   :         : 3G        :                
+GND                          : N15       : gnd    :                   :         :           :                
+VCCPT_2                      : N16       : power  :                   : 1.8V    :           :                
+TEMPDIODEp                   : N17       :        :                   :         :           :                
+VCC                          : N18       : power  :                   : 0.9V    :           :                
+VCC                          : N19       : power  :                   : 0.9V    :           :                
+GND                          : N20       : gnd    :                   :         :           :                
+VCC                          : N21       : power  :                   : 0.9V    :           :                
+VCC                          : N22       : power  :                   : 0.9V    :           :                
+VCC                          : N23       : power  :                   : 0.9V    :           :                
+VCCPT_2                      : N24       : power  :                   : 1.8V    :           :                
+GND                          : N25       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : N26       :        :                   :         : 2K        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : N27       :        :                   :         : 2K        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : N28       :        :                   :         : 2K        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : N29       :        :                   :         : 2K        :                
+GND                          : N30       : gnd    :                   :         :           :                
+GND                          : N31       : gnd    :                   :         :           :                
+GXB_GND*                     : N32       :        :                   :         : 1G        :                
+GXB_GND*                     : N33       :        :                   :         : 1G        :                
+GND                          : N34       : gnd    :                   :         :           :                
+GND                          : N35       : gnd    :                   :         :           :                
+GXB_GND*                     : N36       :        :                   :         : 1F        :                
+GXB_GND*                     : N37       :        :                   :         : 1F        :                
+GND                          : N38       : gnd    :                   :         :           :                
+GND                          : N39       : gnd    :                   :         :           :                
+GXB_NC                       : P1        :        :                   :         : 4H        :                
+GXB_NC                       : P2        :        :                   :         : 4H        :                
+GND                          : P3        : gnd    :                   :         :           :                
+GND                          : P4        : gnd    :                   :         :           :                
+GXB_GND*                     : P5        :        :                   :         : 4H        :                
+GXB_GND*                     : P6        :        :                   :         : 4H        :                
+GND                          : P7        :        :                   :         :           :                
+GND                          : P8        :        :                   :         :           :                
+GND                          : P9        :        :                   :         :           :                
+DNU                          : P10       :        :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : P11       :        :                   :         : 3G        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : P12       :        :                   :         : 3G        :                
+GND                          : P13       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : P14       :        :                   :         : 3G        :                
+NC                           : P15       :        :                   :         :           :                
+VCCPT_2                      : P16       : power  :                   : 1.8V    :           :                
+TEMPDIODEn                   : P17       :        :                   :         :           :                
+GND                          : P18       : gnd    :                   :         :           :                
+VCCPT_2                      : P19       : power  :                   : 1.8V    :           :                
+NC                           : P20       :        :                   :         :           :                
+VCCA_FPLL                    : P21       : power  :                   : 1.8V    :           :                
+VCCPT_2                      : P22       : power  :                   : 1.8V    :           :                
+GND                          : P23       : gnd    :                   :         :           :                
+VCCPT_2                      : P24       : power  :                   : 1.8V    :           :                
+NC                           : P25       :        :                   :         :           :                
+VREFB2KN0                    : P26       : power  :                   :         : 2K        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : P27       :        :                   :         : 2K        :                
+GND                          : P28       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : P29       :        :                   :         : 2K        :                
+NC                           : P30       :        :                   :         :           :                
+GND                          : P31       :        :                   :         :           :                
+GND                          : P32       :        :                   :         :           :                
+GND                          : P33       :        :                   :         :           :                
+GXB_GND*                     : P34       :        :                   :         : 1F        :                
+GXB_GND*                     : P35       :        :                   :         : 1F        :                
+GND                          : P36       : gnd    :                   :         :           :                
+GND                          : P37       : gnd    :                   :         :           :                
+GXB_NC                       : P38       :        :                   :         : 1F        :                
+GXB_NC                       : P39       :        :                   :         : 1F        :                
+GND                          : R1        : gnd    :                   :         :           :                
+GND                          : R2        : gnd    :                   :         :           :                
+GXB_GND*                     : R3        :        :                   :         : 4H        :                
+GXB_GND*                     : R4        :        :                   :         : 4H        :                
+GND                          : R5        : gnd    :                   :         :           :                
+GND                          : R6        : gnd    :                   :         :           :                
+GXB_GND*                     : R7        :        :                   :         : 4I        :                
+GXB_GND*                     : R8        :        :                   :         : 4I        :                
+GND                          : R9        :        :                   :         :           :                
+NC                           : R10       :        :                   :         :           :                
+GND                          : R11       : gnd    :                   :         :           :                
+NC                           : R12       :        :                   :         :           :                
+VREFB3GN0                    : R13       : power  :                   :         : 3G        :                
+VCCA_FPLL                    : R14       : power  :                   : 1.8V    :           :                
+VCC                          : R15       : power  :                   : 0.9V    :           :                
+GND                          : R16       : gnd    :                   :         :           :                
+VCC                          : R17       : power  :                   : 0.9V    :           :                
+VCC                          : R18       : power  :                   : 0.9V    :           :                
+VCC                          : R19       : power  :                   : 0.9V    :           :                
+VCC                          : R20       : power  :                   : 0.9V    :           :                
+GND                          : R21       : gnd    :                   :         :           :                
+VCC                          : R22       : power  :                   : 0.9V    :           :                
+VCC                          : R23       : power  :                   : 0.9V    :           :                
+VCC                          : R24       : power  :                   : 0.9V    :           :                
+VCCA_FPLL                    : R25       : power  :                   : 1.8V    :           :                
+GND                          : R26       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : R27       :        :                   :         : 2K        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : R28       :        :                   :         : 2K        :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : R29       :        :                   :         : 2K        :                
+NC                           : R30       :        :                   :         :           :                
+GND                          : R31       :        :                   :         :           :                
+GXB_GND*                     : R32       :        :                   :         : 1G        :                
+GXB_GND*                     : R33       :        :                   :         : 1G        :                
+GND                          : R34       : gnd    :                   :         :           :                
+GND                          : R35       : gnd    :                   :         :           :                
+GXB_GND*                     : R36       :        :                   :         : 1F        :                
+GXB_GND*                     : R37       :        :                   :         : 1F        :                
+GND                          : R38       : gnd    :                   :         :           :                
+GND                          : R39       : gnd    :                   :         :           :                
+GXB_NC                       : T1        :        :                   :         : 4H        :                
+GXB_NC                       : T2        :        :                   :         : 4H        :                
+GND                          : T3        : gnd    :                   :         :           :                
+GND                          : T4        : gnd    :                   :         :           :                
+GXB_GND*                     : T5        :        :                   :         : 4H        :                
+GXB_GND*                     : T6        :        :                   :         : 4H        :                
+GND                          : T7        : gnd    :                   :         :           :                
+GND                          : T8        : gnd    :                   :         :           :                
+GND                          : T9        :        :                   :         :           :                
+GND                          : T10       : gnd    :                   :         :           :                
+NC                           : T11       :        :                   :         :           :                
+NC                           : T12       :        :                   :         :           :                
+VCC                          : T13       : power  :                   : 0.9V    :           :                
+GND                          : T14       : gnd    :                   :         :           :                
+VCC                          : T15       : power  :                   : 0.9V    :           :                
+VCC                          : T16       : power  :                   : 0.9V    :           :                
+VCC                          : T17       : power  :                   : 0.9V    :           :                
+VCC                          : T18       : power  :                   : 0.9V    :           :                
+GND                          : T19       : gnd    :                   :         :           :                
+VCC                          : T20       : power  :                   : 0.9V    :           :                
+VCC                          : T21       : power  :                   : 0.9V    :           :                
+VCC                          : T22       : power  :                   : 0.9V    :           :                
+VCC                          : T23       : power  :                   : 0.9V    :           :                
+GND                          : T24       : gnd    :                   :         :           :                
+VCC                          : T25       : power  :                   : 0.9V    :           :                
+NC                           : T26       :        :                   :         :           :                
+NC                           : T27       :        :                   :         :           :                
+NC                           : T28       :        :                   :         :           :                
+GND                          : T29       : gnd    :                   :         :           :                
+GND                          : T30       : gnd    :                   :         :           :                
+GND                          : T31       :        :                   :         :           :                
+GND                          : T32       : gnd    :                   :         :           :                
+GND                          : T33       : gnd    :                   :         :           :                
+GXB_GND*                     : T34       :        :                   :         : 1F        :                
+GXB_GND*                     : T35       :        :                   :         : 1F        :                
+GND                          : T36       : gnd    :                   :         :           :                
+GND                          : T37       : gnd    :                   :         :           :                
+GXB_NC                       : T38       :        :                   :         : 1F        :                
+GXB_NC                       : T39       :        :                   :         : 1F        :                
+GND                          : U1        : gnd    :                   :         :           :                
+GND                          : U2        : gnd    :                   :         :           :                
+GXB_GND*                     : U3        :        :                   :         : 4H        :                
+GXB_GND*                     : U4        :        :                   :         : 4H        :                
+GND                          : U5        : gnd    :                   :         :           :                
+GND                          : U6        : gnd    :                   :         :           :                
+GXB_GND*                     : U7        :        :                   :         : 4H        :                
+GXB_GND*                     : U8        :        :                   :         : 4H        :                
+GND                          : U9        : gnd    :                   :         :           :                
+GND                          : U10       : gnd    :                   :         :           :                
+NC                           : U11       :        :                   :         :           :                
+GND                          : U12       : gnd    :                   :         :           :                
+VCC                          : U13       : power  :                   : 0.9V    :           :                
+VCC                          : U14       : power  :                   : 0.9V    :           :                
+VCC                          : U15       : power  :                   : 0.9V    :           :                
+VCC                          : U16       : power  :                   : 0.9V    :           :                
+GND                          : U17       : gnd    :                   :         :           :                
+VCC                          : U18       : power  :                   : 0.9V    :           :                
+VCC                          : U19       : power  :                   : 0.9V    :           :                
+VCC                          : U20       : power  :                   : 0.9V    :           :                
+VCC                          : U21       : power  :                   : 0.9V    :           :                
+GND                          : U22       : gnd    :                   :         :           :                
+VCC                          : U23       : power  :                   : 0.9V    :           :                
+VCC                          : U24       : power  :                   : 0.9V    :           :                
+VCC                          : U25       : power  :                   : 0.9V    :           :                
+NC                           : U26       :        :                   :         :           :                
+GND                          : U27       : gnd    :                   :         :           :                
+NC                           : U28       :        :                   :         :           :                
+NC                           : U29       :        :                   :         :           :                
+GND                          : U30       : gnd    :                   :         :           :                
+GND                          : U31       : gnd    :                   :         :           :                
+GXB_GND*                     : U32       :        :                   :         : 1F        :                
+GXB_GND*                     : U33       :        :                   :         : 1F        :                
+GND                          : U34       : gnd    :                   :         :           :                
+GND                          : U35       : gnd    :                   :         :           :                
+GXB_GND*                     : U36       :        :                   :         : 1F        :                
+GXB_GND*                     : U37       :        :                   :         : 1F        :                
+GND                          : U38       : gnd    :                   :         :           :                
+GND                          : U39       : gnd    :                   :         :           :                
+GXB_NC                       : V1        :        :                   :         : 4G        :                
+GXB_NC                       : V2        :        :                   :         : 4G        :                
+GND                          : V3        : gnd    :                   :         :           :                
+GND                          : V4        : gnd    :                   :         :           :                
+GXB_GND*                     : V5        :        :                   :         : 4H        :                
+GXB_GND*                     : V6        :        :                   :         : 4H        :                
+GND                          : V7        :        :                   :         :           :                
+GND                          : V8        :        :                   :         :           :                
+GND                          : V9        :        :                   :         :           :                
+GND                          : V10       : gnd    :                   :         :           :                
+NC                           : V11       :        :                   :         :           :                
+NC                           : V12       :        :                   :         :           :                
+VCC                          : V13       : power  :                   : 0.9V    :           :                
+VCC                          : V14       : power  :                   : 0.9V    :           :                
+GND                          : V15       : gnd    :                   :         :           :                
+VCC                          : V16       : power  :                   : 0.9V    :           :                
+VCC                          : V17       : power  :                   : 0.9V    :           :                
+VCC                          : V18       : power  :                   : 0.9V    :           :                
+VCC                          : V19       : power  :                   : 0.9V    :           :                
+GND                          : V20       : gnd    :                   :         :           :                
+VCC                          : V21       : power  :                   : 0.9V    :           :                
+VCC                          : V22       : power  :                   : 0.9V    :           :                
+VCC                          : V23       : power  :                   : 0.9V    :           :                
+VCC                          : V24       : power  :                   : 0.9V    :           :                
+GND                          : V25       : gnd    :                   :         :           :                
+NC                           : V26       :        :                   :         :           :                
+NC                           : V27       :        :                   :         :           :                
+NC                           : V28       :        :                   :         :           :                
+NC                           : V29       :        :                   :         :           :                
+GND                          : V30       : gnd    :                   :         :           :                
+GND                          : V31       :        :                   :         :           :                
+GND                          : V32       :        :                   :         :           :                
+GND                          : V33       :        :                   :         :           :                
+GXB_GND*                     : V34       :        :                   :         : 1F        :                
+GXB_GND*                     : V35       :        :                   :         : 1F        :                
+GND                          : V36       : gnd    :                   :         :           :                
+GND                          : V37       : gnd    :                   :         :           :                
+GXB_NC                       : V38       :        :                   :         : 1E        :                
+GXB_NC                       : V39       :        :                   :         : 1E        :                
+GND                          : W1        : gnd    :                   :         :           :                
+GND                          : W2        : gnd    :                   :         :           :                
+GXB_GND*                     : W3        :        :                   :         : 4G        :                
+GXB_GND*                     : W4        :        :                   :         : 4G        :                
+GND                          : W5        : gnd    :                   :         :           :                
+GND                          : W6        : gnd    :                   :         :           :                
+GXB_GND*                     : W7        :        :                   :         : 4H        :                
+GXB_GND*                     : W8        :        :                   :         : 4H        :                
+GND                          : W9        :        :                   :         :           :                
+NC                           : W10       :        :                   :         :           :                
+NC                           : W11       :        :                   :         :           :                
+DNU                          : W12       :        :                   :         :           :                
+GND                          : W13       : gnd    :                   :         :           :                
+VCC                          : W14       : power  :                   : 0.9V    :           :                
+VCC                          : W15       : power  :                   : 0.9V    :           :                
+VCC                          : W16       : power  :                   : 0.9V    :           :                
+VCC                          : W17       : power  :                   : 0.9V    :           :                
+GND                          : W18       : gnd    :                   :         :           :                
+VCC                          : W19       : power  :                   : 0.9V    :           :                
+VCC                          : W20       : power  :                   : 0.9V    :           :                
+VCCLSENSE                    : W21       :        :                   :         :           :                
+VCC                          : W22       : power  :                   : 0.9V    :           :                
+GND                          : W23       : gnd    :                   :         :           :                
+VCC                          : W24       : power  :                   : 0.9V    :           :                
+VCC                          : W25       : power  :                   : 0.9V    :           :                
+NC                           : W26       :        :                   :         :           :                
+NC                           : W27       :        :                   :         :           :                
+GND                          : W28       : gnd    :                   :         :           :                
+NC                           : W29       :        :                   :         :           :                
+NC                           : W30       :        :                   :         :           :                
+GND                          : W31       :        :                   :         :           :                
+GXB_GND*                     : W32       :        :                   :         : 1F        :                
+GXB_GND*                     : W33       :        :                   :         : 1F        :                
+GND                          : W34       : gnd    :                   :         :           :                
+GND                          : W35       : gnd    :                   :         :           :                
+GXB_GND*                     : W36       :        :                   :         : 1E        :                
+GXB_GND*                     : W37       :        :                   :         : 1E        :                
+GND                          : W38       : gnd    :                   :         :           :                
+GND                          : W39       : gnd    :                   :         :           :                
+GXB_NC                       : Y1        :        :                   :         : 4G        :                
+GXB_NC                       : Y2        :        :                   :         : 4G        :                
+GND                          : Y3        : gnd    :                   :         :           :                
+GND                          : Y4        : gnd    :                   :         :           :                
+GXB_GND*                     : Y5        :        :                   :         : 4G        :                
+GXB_GND*                     : Y6        :        :                   :         : 4G        :                
+GND                          : Y7        : gnd    :                   :         :           :                
+GND                          : Y8        : gnd    :                   :         :           :                
+GND                          : Y9        :        :                   :         :           :                
+GND                          : Y10       : gnd    :                   :         :           :                
+GND                          : Y11       : gnd    :                   :         :           :                
+DNU                          : Y12       :        :                   :         :           :                
+VCC                          : Y13       : power  :                   : 0.9V    :           :                
+VCC                          : Y14       : power  :                   : 0.9V    :           :                
+VCC                          : Y15       : power  :                   : 0.9V    :           :                
+GND                          : Y16       : gnd    :                   :         :           :                
+VCC                          : Y17       : power  :                   : 0.9V    :           :                
+VCC                          : Y18       : power  :                   : 0.9V    :           :                
+VCC                          : Y19       : power  :                   : 0.9V    :           :                
+DNU                          : Y20       :        :                   :         :           :                
+GNDSENSE                     : Y21       :        :                   :         :           :                
+DNU                          : Y22       :        :                   :         :           :                
+VCC                          : Y23       : power  :                   : 0.9V    :           :                
+VCC                          : Y24       : power  :                   : 0.9V    :           :                
+VCC                          : Y25       : power  :                   : 0.9V    :           :                
+GND                          : Y26       : gnd    :                   :         :           :                
+NC                           : Y27       :        :                   :         :           :                
+NC                           : Y28       :        :                   :         :           :                
+NC                           : Y29       :        :                   :         :           :                
+GND                          : Y30       : gnd    :                   :         :           :                
+GND                          : Y31       :        :                   :         :           :                
+GND                          : Y32       : gnd    :                   :         :           :                
+GND                          : Y33       : gnd    :                   :         :           :                
+GXB_GND*                     : Y34       :        :                   :         : 1E        :                
+GXB_GND*                     : Y35       :        :                   :         : 1E        :                
+GND                          : Y36       : gnd    :                   :         :           :                
+GND                          : Y37       : gnd    :                   :         :           :                
+GXB_NC                       : Y38       :        :                   :         : 1E        :                
+GXB_NC                       : Y39       :        :                   :         : 1E        :                

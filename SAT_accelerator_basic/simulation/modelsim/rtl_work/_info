@@ -1,0 +1,123 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Mahesh/University_of_Utah/Spring_2017/RA_Work/Arria_10/SAT_accelerator_basic/simulation/modelsim
+vbufferReg
+Z1 !s110 1491281628
+!i10b 1
+!s100 @HEXg;kES:`NQBnOD;Gn:1
+ImKO7DMUbMcOhnloWV[cU_3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1491281523
+Z4 8C:/Mahesh/University_of_Utah/Spring_2017/RA_Work/Arria_10/SAT_accelerator_basic/SAT_accelerator_tb.v
+Z5 FC:/Mahesh/University_of_Utah/Spring_2017/RA_Work/Arria_10/SAT_accelerator_basic/SAT_accelerator_tb.v
+L0 50
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1491281627.000000
+Z8 !s107 C:/Mahesh/University_of_Utah/Spring_2017/RA_Work/Arria_10/SAT_accelerator_basic/SAT_accelerator_tb.v|
+Z9 !s90 -reportprogress|300|-work|work|C:/Mahesh/University_of_Utah/Spring_2017/RA_Work/Arria_10/SAT_accelerator_basic/SAT_accelerator_tb.v|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+nbuffer@reg
+vSAT_accelerator
+Z12 !s110 1491281617
+!i10b 1
+!s100 6]?YXjaJ9BLik36H5aJga3
+IfgNW75odMBI=FMoP2c1bl3
+R2
+R0
+w1491790096
+8C:/Mahesh/University_of_Utah/Spring_2017/RA_Work/Arria_10/SAT_accelerator_basic/SAT_accelerator.v
+FC:/Mahesh/University_of_Utah/Spring_2017/RA_Work/Arria_10/SAT_accelerator_basic/SAT_accelerator.v
+L0 1
+R6
+r1
+!s85 0
+31
+Z13 !s108 1491281617.000000
+!s107 C:/Mahesh/University_of_Utah/Spring_2017/RA_Work/Arria_10/SAT_accelerator_basic/SAT_accelerator.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Mahesh/University_of_Utah/Spring_2017/RA_Work/Arria_10/SAT_accelerator_basic|C:/Mahesh/University_of_Utah/Spring_2017/RA_Work/Arria_10/SAT_accelerator_basic/SAT_accelerator.v|
+!i113 1
+Z14 o-vlog01compat -work work
+Z15 !s92 -vlog01compat -work work +incdir+C:/Mahesh/University_of_Utah/Spring_2017/RA_Work/Arria_10/SAT_accelerator_basic
+R11
+n@s@a@t_accelerator
+vSAT_accelerator_tb
+R1
+!i10b 1
+!s100 gQC7`X>`[Y6Wa:Ud>CLm20
+I;A=1oBQV:T>^i4O4T<bCm3
+R2
+R0
+R3
+R4
+R5
+L0 5
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@s@a@t_accelerator_tb
+vSAT_accelerator_top
+R12
+!i10b 1
+!s100 hY_9[aL^^Qj2ZdheldP=A0
+I<h_]eL5k;mca9DDOOOR_X2
+R2
+R0
+w1491281370
+8C:/Mahesh/University_of_Utah/Spring_2017/RA_Work/Arria_10/SAT_accelerator_basic/SAT_accelerator_top.v
+FC:/Mahesh/University_of_Utah/Spring_2017/RA_Work/Arria_10/SAT_accelerator_basic/SAT_accelerator_top.v
+L0 3
+R6
+r1
+!s85 0
+31
+R13
+!s107 C:/Mahesh/University_of_Utah/Spring_2017/RA_Work/Arria_10/SAT_accelerator_basic/SAT_accelerator_top.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Mahesh/University_of_Utah/Spring_2017/RA_Work/Arria_10/SAT_accelerator_basic|C:/Mahesh/University_of_Utah/Spring_2017/RA_Work/Arria_10/SAT_accelerator_basic/SAT_accelerator_top.v|
+!i113 1
+R14
+R15
+R11
+n@s@a@t_accelerator_top
+vSAT_synchronizer
+R12
+!i10b 1
+!s100 >ZgE14aI<fJ6l?>L:5;]01
+Id2TMoTEgV<]eggkSSCzhU0
+R2
+R0
+w1491280914
+8C:/Mahesh/University_of_Utah/Spring_2017/RA_Work/Arria_10/SAT_accelerator_basic/SAT_synchronizer.v
+FC:/Mahesh/University_of_Utah/Spring_2017/RA_Work/Arria_10/SAT_accelerator_basic/SAT_synchronizer.v
+L0 1
+R6
+r1
+!s85 0
+31
+R13
+!s107 C:/Mahesh/University_of_Utah/Spring_2017/RA_Work/Arria_10/SAT_accelerator_basic/SAT_synchronizer.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Mahesh/University_of_Utah/Spring_2017/RA_Work/Arria_10/SAT_accelerator_basic|C:/Mahesh/University_of_Utah/Spring_2017/RA_Work/Arria_10/SAT_accelerator_basic/SAT_synchronizer.v|
+!i113 1
+R14
+R15
+R11
+n@s@a@t_synchronizer

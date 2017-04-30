@@ -1,0 +1,48 @@
+module SAT_accelerator(outCNF,clk,resetClause,negCtrl,bitPos,resetCNF,enableCNF);
+
+output reg outCNF;  
+input clk,resetClause,negCtrl;
+input[4:0] bitPos;
+input resetCNF,enableCNF;
+
+
+reg[31:0] accTruthVal = 32'd0;
+reg clauseOut;
+wire[1:0] inORgate;
+wire[1:0] inANDgate;
+
+assign inORgate[0] = negCtrl?(~accTruthVal[bitPos]):(accTruthVal[bitPos]);
+assign inORgate[1] = clauseOut;
+assign inANDgate[0] = clauseOut;
+assign inANDgate[1] = outCNF;
+
+always@(posedge clk or negedge resetClause)
+begin
+
+if(~resetClause) begin
+clauseOut <= 1'b0;
+end
+
+else begin
+clauseOut <= |inORgate;
+end
+
+end
+
+always@(negedge clk or negedge resetCNF)
+begin
+
+if(~resetCNF) begin
+outCNF <= 1'b0;
+end
+
+else begin
+if(enableCNF) begin
+outCNF <= &inANDgate;
+end
+end
+
+end
+
+
+endmodule

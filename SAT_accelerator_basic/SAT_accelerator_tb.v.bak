@@ -1,0 +1,101 @@
+ //----------------------------------------------------------
+
+`timescale 1 ns / 100 ps
+
+module SAT_accelerator_tb ();
+
+reg clk,resetN,negCtrl;
+reg [1:0] stateVal;
+reg [4:0] varPos;
+
+wire outSATRes;
+
+parameter N=20;
+
+SAT_accelerator_top #(.N(N)) SAT_acc_test (
+.outSATRes(outSATRes),
+.clk(clk),
+.resetN(resetN),
+.stateVal(stateVal),
+.varPos(varPos),
+.negCtrl(negCtrl));
+
+ //----------------------------------------------------------
+
+  parameter 
+  RESET          = 2'b00,  // Reset State
+  COMPUTE_CLAUSE = 2'b01,  // Compute Clause (OR operations)
+  COMPUTE_CNF    = 2'b10,  // Compute CNF (AND operation) and reset clause for next op.
+  END_COMPUTE     = 2'b11;    // End of Computation
+ 
+ initial
+ begin
+ 
+ stateVal = 2'd0;
+ clk = 1'b0;
+ resetN = 1'b0; 
+ varPos = 5'd0;
+ negCtrl = 1'b0;
+ 
+ #20 resetN = 1'b1;
+ 
+ end
+
+ 
+ always #2 clk = ~clk;
+ 
+ begin
+
+// CNF : (x1+x2)*(~x1+x2) == SAT 
+
+//Command 1: Reset
+    stateVal = RESET;
+    varPos = 5'd0;
+    negCtrl = 1'b0;
+	#3
+
+//Command 2: Compute Clause x1
+    stateVal <= COMPUTE_CLAUSE;
+    varPos <= 5'd0;
+    negCtrl <= 1'b0;
+	#3
+	
+//Command 3: Compute Clause x2
+    stateVal <= COMPUTE_CLAUSE;
+    varPos <= 5'd1;
+    negCtrl <= 1'b0;
+	#3
+
+//Command 4: Compute CNF (x1+x2)
+    stateVal <= COMPUTE_CNF;
+    varPos <= 5'd0;
+    negCtrl <= 1'b0;
+	#4
+
+//Command 5: Compute Clause ~x1
+    stateVal <= COMPUTE_CLAUSE;
+    varPos <= 5'd0;
+    negCtrl <= 1'b1;
+	#3
+
+//Command 6: Compute Clause x2
+    stateVal <= COMPUTE_CLAUSE;
+    varPos <= 5'd1;
+    negCtrl <= 1'b0;
+	#3
+
+//Command 7: Compute CNF (~x1+x2)
+    stateVal <= COMPUTE_CNF;
+    varPos <= 5'd0;
+    negCtrl <= 1'b0;
+	#4
+
+//Command 8: End Compute
+    stateVal <= END_COMPUTE;
+    varPos <= 5'd0;
+    negCtrl <= 1'b0;
+	#10
+
+end 
+ 
+ endmodule
