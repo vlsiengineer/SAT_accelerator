@@ -1,5 +1,5 @@
 Flow report for SAT_accelerator
-Mon Apr 03 22:52:43 2017
+Sun Apr 02 14:27:26 2017
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Standard Edition
 
 
@@ -41,22 +41,22 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +-----------------------------+-------------------------------------------------+
-; Flow Status                 ; Successful - Mon Apr 03 22:52:43 2017           ;
+; Flow Status                 ; Successful - Sun Apr 02 14:27:26 2017           ;
 ; Quartus Prime Version       ; 16.1.0 Build 196 10/24/2016 SJ Standard Edition ;
 ; Revision Name               ; SAT_accelerator                                 ;
 ; Top-level Entity Name       ; SAT_accelerator_top                             ;
 ; Family                      ; Arria 10                                        ;
 ; Device                      ; 10AX115R4F40I3SG                                ;
 ; Timing Models               ; Final                                           ;
-; Logic utilization (in ALMs) ; N/A                                             ;
+; Logic utilization (in ALMs) ; 7 / 427,200 ( < 1 % )                           ;
 ; Total registers             ; 11                                              ;
-; Total pins                  ; 11                                              ;
+; Total pins                  ; 11 / 650 ( 2 % )                                ;
 ; Total virtual pins          ; 0                                               ;
-; Total block memory bits     ; 0                                               ;
-; Total DSP Blocks            ; 0                                               ;
-; Total HSSI RX channels      ; 0                                               ;
-; Total HSSI TX channels      ; 0                                               ;
-; Total PLLs                  ; 0                                               ;
+; Total block memory bits     ; 0 / 55,562,240 ( 0 % )                          ;
+; Total DSP Blocks            ; 0 / 1,518 ( 0 % )                               ;
+; Total HSSI RX channels      ; 0 / 66 ( 0 % )                                  ;
+; Total HSSI TX channels      ; 0 / 66 ( 0 % )                                  ;
+; Total PLLs                  ; 0 / 138 ( 0 % )                                 ;
 +-----------------------------+-------------------------------------------------+
 
 
@@ -65,7 +65,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/03/2017 22:52:22 ;
+; Start date & time ; 04/02/2017 14:19:46 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; SAT_accelerator     ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ agreement for further details.
 +-------------------------------------+----------------------------------------+-----------------+---------------------+----------------------+
 ; Assignment Name                     ; Value                                  ; Default Value   ; Entity Name         ; Section Id           ;
 +-------------------------------------+----------------------------------------+-----------------+---------------------+----------------------+
-; COMPILER_SIGNATURE_ID               ; 48791040935383.149128154230800         ; --              ; --                  ; --                   ;
+; COMPILER_SIGNATURE_ID               ; 48791040935383.149116438631184         ; --              ; --                  ; --                   ;
 ; EDA_DESIGN_ENTRY_SYNTHESIS_TOOL     ; Synplify Pro                           ; <None>          ; --                  ; --                   ;
 ; EDA_INPUT_DATA_FORMAT               ; Vqm                                    ; --              ; --                  ; eda_design_synthesis ;
 ; EDA_LMF_FILE                        ; synplcty.lmf                           ; --              ; --                  ; eda_design_synthesis ;
@@ -98,29 +98,41 @@ agreement for further details.
 +-------------------------------------+----------------------------------------+-----------------+---------------------+----------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------+
-; Flow Elapsed Time                                                                                                        ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:22     ; 1.0                     ; 658 MB              ; 00:00:42                           ;
-; Total                ; 00:00:22     ; --                      ; --                  ; 00:00:42                           ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:00:20     ; 1.0                     ; 666 MB              ; 00:00:43                           ;
+; Fitter                    ; 00:06:11     ; 1.1                     ; 6798 MB             ; 00:07:05                           ;
+; Assembler                 ; 00:00:12     ; 1.0                     ; 933 MB              ; 00:00:10                           ;
+; TimeQuest Timing Analyzer ; 00:00:24     ; 1.0                     ; 2992 MB             ; 00:00:24                           ;
+; EDA Netlist Writer        ; 00:00:03     ; 1.0                     ; 623 MB              ; 00:00:02                           ;
+; Total                     ; 00:07:10     ; --                      ; --                  ; 00:08:24                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                         ;
-+----------------------+-----------------------+------------+------------+----------------+
-; Module Name          ; Machine Hostname      ; OS Name    ; OS Version ; Processor type ;
-+----------------------+-----------------------+------------+------------+----------------+
-; Analysis & Synthesis ; LAPTOP-Mahesh-Nataraj ; Windows 10 ; 10.0       ; x86_64         ;
-+----------------------+-----------------------+------------+------------+----------------+
++----------------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                              ;
++---------------------------+-----------------------+------------+------------+----------------+
+; Module Name               ; Machine Hostname      ; OS Name    ; OS Version ; Processor type ;
++---------------------------+-----------------------+------------+------------+----------------+
+; Analysis & Synthesis      ; LAPTOP-Mahesh-Nataraj ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter                    ; LAPTOP-Mahesh-Nataraj ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler                 ; LAPTOP-Mahesh-Nataraj ; Windows 10 ; 10.0       ; x86_64         ;
+; TimeQuest Timing Analyzer ; LAPTOP-Mahesh-Nataraj ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer        ; LAPTOP-Mahesh-Nataraj ; Windows 10 ; 10.0       ; x86_64         ;
++---------------------------+-----------------------+------------+------------+----------------+
 
 
 ------------
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off SAT_accelerator -c SAT_accelerator
+quartus_fit --read_settings_files=off --write_settings_files=off SAT_accelerator -c SAT_accelerator
+quartus_asm --read_settings_files=off --write_settings_files=off SAT_accelerator -c SAT_accelerator
+quartus_sta SAT_accelerator -c SAT_accelerator
+quartus_eda --read_settings_files=off --write_settings_files=off SAT_accelerator -c SAT_accelerator
 
 
 

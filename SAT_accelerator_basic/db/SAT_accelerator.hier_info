@@ -1,5 +1,5 @@
 |SAT_accelerator_top
-outSATRes << outSATRes~reg0.DB_MAX_OUTPUT_PORT_TYPE
+outSATRes <= outSATRes~reg0.DB_MAX_OUTPUT_PORT_TYPE
 clk => clk.IN5
 resetN => resetN.IN1
 stateVal[0] => stateVal[0].IN1

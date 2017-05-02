@@ -1,5 +1,5 @@
 Analysis & Synthesis report for SAT_accelerator
-Mon Apr 03 22:52:43 2017
+Sun Apr 02 14:20:05 2017
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Standard Edition
 
 
@@ -50,7 +50,7 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +-----------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Mon Apr 03 22:52:43 2017           ;
+; Analysis & Synthesis Status ; Successful - Sun Apr 02 14:20:05 2017           ;
 ; Quartus Prime Version       ; 16.1.0 Build 196 10/24/2016 SJ Standard Edition ;
 ; Revision Name               ; SAT_accelerator                                 ;
 ; Top-level Entity Name       ; SAT_accelerator_top                             ;
@@ -359,14 +359,11 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.1.0 Build 196 10/24/2016 SJ Standard Edition
-    Info: Processing started: Mon Apr 03 22:52:21 2017
+    Info: Processing started: Sun Apr 02 14:19:45 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off SAT_accelerator -c SAT_accelerator
 Info (20032): Parallel compilation is enabled and will use up to 2 processors
 Info (12021): Found 1 design units, including 1 entities, in source file sat_accelerator.v
     Info (12023): Found entity 1: SAT_accelerator File: C:/Mahesh/University_of_Utah/Spring_2017/RA_Work/Arria_10/SAT_accelerator_basic/SAT_accelerator.v Line: 1
-Info (12021): Found 2 design units, including 2 entities, in source file sat_accelerator_tb.v
-    Info (12023): Found entity 1: SAT_accelerator_tb File: C:/Mahesh/University_of_Utah/Spring_2017/RA_Work/Arria_10/SAT_accelerator_basic/SAT_accelerator_tb.v Line: 5
-    Info (12023): Found entity 2: bufferReg File: C:/Mahesh/University_of_Utah/Spring_2017/RA_Work/Arria_10/SAT_accelerator_basic/SAT_accelerator_tb.v Line: 50
 Info (12021): Found 1 design units, including 1 entities, in source file sat_synchronizer.v
     Info (12023): Found entity 1: SAT_synchronizer File: C:/Mahesh/University_of_Utah/Spring_2017/RA_Work/Arria_10/SAT_accelerator_basic/SAT_synchronizer.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file sat_accelerator_top.v
@@ -383,9 +380,9 @@ Info (21057): Implemented 25 device resources after synthesis - the final resour
     Info (21059): Implemented 1 output pins
     Info (21061): Implemented 14 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 672 megabytes
-    Info: Processing ended: Mon Apr 03 22:52:43 2017
-    Info: Elapsed time: 00:00:22
+    Info: Peak virtual memory: 680 megabytes
+    Info: Processing ended: Sun Apr 02 14:20:05 2017
+    Info: Elapsed time: 00:00:20
     Info: Total CPU time (on all processors): 00:00:43
 
 

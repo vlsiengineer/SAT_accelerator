@@ -591,10 +591,10 @@ GND                          : AN7       : gnd    :                   :         
 GND                          : AN8       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AN9       :        :                   :         : 3B        :                
 GND                          : AN10      : gnd    :                   :         :           :                
-stateVal[0]                  : AN11      : input  : 1.8 V             :         : 3B        : N              
+varPos[4]                    : AN11      : input  : 1.8 V             :         : 3B        : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AN12      :        :                   :         : 3B        :                
 varPos[2]                    : AN13      : input  : 1.8 V             :         : 3B        : N              
-varPos[4]                    : AN14      : input  : 1.8 V             :         : 3B        : N              
+stateVal[0]                  : AN14      : input  : 1.8 V             :         : 3B        : N              
 GND                          : AN15      : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AN16      :        :                   :         : 3A        :                
 VREFB3AN0                    : AN17      : power  :                   :         : 3A        :                

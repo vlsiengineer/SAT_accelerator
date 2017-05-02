@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for SAT_accelerator
-Sun Apr 09 20:38:41 2017
+Sun Apr 02 14:27:21 2017
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Standard Edition
 
 
@@ -104,7 +104,7 @@ agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   1.1%      ;
+;     Processor 2            ;   0.5%      ;
 +----------------------------+-------------+
 
 
@@ -113,7 +113,7 @@ agreement for further details.
 +-------------------------+--------+--------------------------+
 ; SDC File Path           ; Status ; Read at                  ;
 +-------------------------+--------+--------------------------+
-; SAT_accelerator.out.sdc ; OK     ; Sun Apr 09 20:38:39 2017 ;
+; SAT_accelerator.out.sdc ; OK     ; Sun Apr 02 14:27:19 2017 ;
 +-------------------------+--------+--------------------------+
 
 
@@ -131,7 +131,7 @@ agreement for further details.
 +------------+-----------------+------------+------------------------------------------------+
 ; Fmax       ; Restricted Fmax ; Clock Name ; Note                                           ;
 +------------+-----------------+------------+------------------------------------------------+
-; 656.17 MHz ; 645.16 MHz      ; clk        ; limit due to minimum period restriction (tmin) ;
+; 1098.9 MHz ; 645.16 MHz      ; clk        ; limit due to minimum period restriction (tmin) ;
 +------------+-----------------+------------+------------------------------------------------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -147,7 +147,7 @@ HTML report is unavailable in plain text report export.
 +-------+-------+---------------------+
 ; Clock ; Slack ; End Point TNS       ;
 +-------+-------+---------------------+
-; clk   ; 0.476 ; 0.000               ;
+; clk   ; 1.090 ; 0.000               ;
 +-------+-------+---------------------+
 
 
@@ -156,7 +156,7 @@ HTML report is unavailable in plain text report export.
 +-------+-------+--------------------+
 ; Clock ; Slack ; End Point TNS      ;
 +-------+-------+--------------------+
-; clk   ; 0.121 ; 0.000              ;
+; clk   ; 0.089 ; 0.000              ;
 +-------+-------+--------------------+
 
 
@@ -165,7 +165,7 @@ HTML report is unavailable in plain text report export.
 +-------+-------+------------------------+
 ; Clock ; Slack ; End Point TNS          ;
 +-------+-------+------------------------+
-; clk   ; 0.376 ; 0.000                  ;
+; clk   ; 0.711 ; 0.000                  ;
 +-------+-------+------------------------+
 
 
@@ -174,7 +174,7 @@ HTML report is unavailable in plain text report export.
 +-------+-------+-----------------------+
 ; Clock ; Slack ; End Point TNS         ;
 +-------+-------+-----------------------+
-; clk   ; 0.598 ; 0.000                 ;
+; clk   ; 0.690 ; 0.000                 ;
 +-------+-------+-----------------------+
 
 
@@ -198,7 +198,7 @@ No synchronizer chains to report.
 +------------+-----------------+------------+------------------------------------------------+
 ; Fmax       ; Restricted Fmax ; Clock Name ; Note                                           ;
 +------------+-----------------+------------+------------------------------------------------+
-; 708.22 MHz ; 645.16 MHz      ; clk        ; limit due to minimum period restriction (tmin) ;
+; 1191.9 MHz ; 645.16 MHz      ; clk        ; limit due to minimum period restriction (tmin) ;
 +------------+-----------------+------------+------------------------------------------------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -208,7 +208,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------+-------+---------------------+
 ; Clock ; Slack ; End Point TNS       ;
 +-------+-------+---------------------+
-; clk   ; 0.588 ; 0.000               ;
+; clk   ; 1.161 ; 0.000               ;
 +-------+-------+---------------------+
 
 
@@ -217,7 +217,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------+-------+--------------------+
 ; Clock ; Slack ; End Point TNS      ;
 +-------+-------+--------------------+
-; clk   ; 0.107 ; 0.000              ;
+; clk   ; 0.064 ; 0.000              ;
 +-------+-------+--------------------+
 
 
@@ -226,7 +226,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------+-------+------------------------+
 ; Clock ; Slack ; End Point TNS          ;
 +-------+-------+------------------------+
-; clk   ; 0.317 ; 0.000                  ;
+; clk   ; 0.652 ; 0.000                  ;
 +-------+-------+------------------------+
 
 
@@ -235,7 +235,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------+-------+-----------------------+
 ; Clock ; Slack ; End Point TNS         ;
 +-------+-------+-----------------------+
-; clk   ; 0.606 ; 0.000                 ;
+; clk   ; 0.692 ; 0.000                 ;
 +-------+-------+-----------------------+
 
 
@@ -259,7 +259,7 @@ No synchronizer chains to report.
 +-------+-------+---------------------+
 ; Clock ; Slack ; End Point TNS       ;
 +-------+-------+---------------------+
-; clk   ; 1.213 ; 0.000               ;
+; clk   ; 1.459 ; 0.000               ;
 +-------+-------+---------------------+
 
 
@@ -268,7 +268,7 @@ No synchronizer chains to report.
 +-------+-------+--------------------+
 ; Clock ; Slack ; End Point TNS      ;
 +-------+-------+--------------------+
-; clk   ; 0.022 ; 0.000              ;
+; clk   ; 0.020 ; 0.000              ;
 +-------+-------+--------------------+
 
 
@@ -277,7 +277,7 @@ No synchronizer chains to report.
 +-------+-------+------------------------+
 ; Clock ; Slack ; End Point TNS          ;
 +-------+-------+------------------------+
-; clk   ; 1.095 ; 0.000                  ;
+; clk   ; 1.280 ; 0.000                  ;
 +-------+-------+------------------------+
 
 
@@ -286,7 +286,7 @@ No synchronizer chains to report.
 +-------+-------+-----------------------+
 ; Clock ; Slack ; End Point TNS         ;
 +-------+-------+-----------------------+
-; clk   ; 0.318 ; 0.000                 ;
+; clk   ; 0.391 ; 0.000                 ;
 +-------+-------+-----------------------+
 
 
@@ -310,7 +310,7 @@ No synchronizer chains to report.
 +-------+-------+---------------------+
 ; Clock ; Slack ; End Point TNS       ;
 +-------+-------+---------------------+
-; clk   ; 1.355 ; 0.000               ;
+; clk   ; 1.587 ; 0.000               ;
 +-------+-------+---------------------+
 
 
@@ -319,7 +319,7 @@ No synchronizer chains to report.
 +-------+-------+--------------------+
 ; Clock ; Slack ; End Point TNS      ;
 +-------+-------+--------------------+
-; clk   ; 0.020 ; 0.000              ;
+; clk   ; 0.019 ; 0.000              ;
 +-------+-------+--------------------+
 
 
@@ -328,7 +328,7 @@ No synchronizer chains to report.
 +-------+-------+------------------------+
 ; Clock ; Slack ; End Point TNS          ;
 +-------+-------+------------------------+
-; clk   ; 1.246 ; 0.000                  ;
+; clk   ; 1.386 ; 0.000                  ;
 +-------+-------+------------------------+
 
 
@@ -337,7 +337,7 @@ No synchronizer chains to report.
 +-------+-------+-----------------------+
 ; Clock ; Slack ; End Point TNS         ;
 +-------+-------+-----------------------+
-; clk   ; 0.263 ; 0.000                 ;
+; clk   ; 0.304 ; 0.000                 ;
 +-------+-------+-----------------------+
 
 
@@ -361,8 +361,8 @@ No synchronizer chains to report.
 +------------------+-------+-------+----------+---------+---------------------+
 ; Clock            ; Setup ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
 +------------------+-------+-------+----------+---------+---------------------+
-; Worst-case Slack ; 0.476 ; 0.020 ; 0.317    ; 0.263   ; 0.450               ;
-;  clk             ; 0.476 ; 0.020 ; 0.317    ; 0.263   ; 0.450               ;
+; Worst-case Slack ; 1.090 ; 0.019 ; 0.652    ; 0.304   ; 0.450               ;
+;  clk             ; 1.090 ; 0.019 ; 0.652    ; 0.304   ; 0.450               ;
 ; Design-wide TNS  ; 0.0   ; 0.0   ; 0.0      ; 0.0     ; 0.0                 ;
 ;  clk             ; 0.000 ; 0.000 ; 0.000    ; 0.000   ; 0.000               ;
 +------------------+-------+-------+----------+---------+---------------------+
@@ -386,12 +386,12 @@ No synchronizer chains to report.
 ; resetN         ; 1.8 V        ; 1440 ps         ; 1440 ps         ;
 ; stateVal[1]    ; 1.8 V        ; 1440 ps         ; 1440 ps         ;
 ; negCtrl        ; 1.8 V        ; 1440 ps         ; 1440 ps         ;
-; varPos[4]      ; 1.8 V        ; 1440 ps         ; 1440 ps         ;
+; stateVal[0]    ; 1.8 V        ; 1440 ps         ; 1440 ps         ;
 ; varPos[0]      ; 1.8 V        ; 1440 ps         ; 1440 ps         ;
 ; varPos[1]      ; 1.8 V        ; 1440 ps         ; 1440 ps         ;
 ; varPos[2]      ; 1.8 V        ; 1440 ps         ; 1440 ps         ;
 ; varPos[3]      ; 1.8 V        ; 1440 ps         ; 1440 ps         ;
-; stateVal[0]    ; 1.8 V        ; 1440 ps         ; 1440 ps         ;
+; varPos[4]      ; 1.8 V        ; 1440 ps         ; 1440 ps         ;
 ; ~ALTERA_DATA0~ ; 1.8 V        ; 1440 ps         ; 1440 ps         ;
 +----------------+--------------+-----------------+-----------------+
 
@@ -419,7 +419,7 @@ No synchronizer chains to report.
 +------------+----------+----------+----------+----------+----------+
 ; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +------------+----------+----------+----------+----------+----------+
-; clk        ; clk      ; 143      ; 0        ; 0        ; 0        ;
+; clk        ; clk      ; 28       ; 0        ; 0        ; 0        ;
 +------------+----------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -429,7 +429,7 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +------------+----------+----------+----------+----------+----------+
 ; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +------------+----------+----------+----------+----------+----------+
-; clk        ; clk      ; 143      ; 0        ; 0        ; 0        ;
+; clk        ; clk      ; 28       ; 0        ; 0        ; 0        ;
 +------------+----------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -439,7 +439,7 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +------------+----------+----------+----------+----------+----------+
 ; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +------------+----------+----------+----------+----------+----------+
-; clk        ; clk      ; 80       ; 0        ; 0        ; 0        ;
+; clk        ; clk      ; 16       ; 0        ; 0        ; 0        ;
 +------------+----------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -449,7 +449,7 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +------------+----------+----------+----------+----------+----------+
 ; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +------------+----------+----------+----------+----------+----------+
-; clk        ; clk      ; 80       ; 0        ; 0        ; 0        ;
+; clk        ; clk      ; 16       ; 0        ; 0        ; 0        ;
 +------------+----------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -462,7 +462,7 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
 ; Unconstrained Input Ports       ; 9     ; 9    ;
-; Unconstrained Input Port Paths  ; 116   ; 116  ;
+; Unconstrained Input Port Paths  ; 23    ; 23   ;
 ; Unconstrained Output Ports      ; 1     ; 1    ;
 ; Unconstrained Output Port Paths ; 1     ; 1    ;
 +---------------------------------+-------+------+
@@ -535,7 +535,7 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 Info: *******************************************************************
 Info: Running Quartus Prime TimeQuest Timing Analyzer
     Info: Version 16.1.0 Build 196 10/24/2016 SJ Standard Edition
-    Info: Processing started: Sun Apr 09 20:38:20 2017
+    Info: Processing started: Sun Apr 02 14:26:57 2017
 Info: Command: quartus_sta SAT_accelerator -c SAT_accelerator
 Info: qsta_default_script.tcl version: #1
 Info (20032): Parallel compilation is enabled and will use up to 2 processors
@@ -545,34 +545,34 @@ Info (332104): Reading SDC File: 'SAT_accelerator.out.sdc'
 Info (332152): The following assignments are ignored by the derive_clock_uncertainty command
 Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 900mV 100C Model
-Info (332146): Worst-case setup slack is 0.476
+Info (332146): Worst-case setup slack is 1.090
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.476               0.000 clk 
-Info (332146): Worst-case hold slack is 0.121
+    Info (332119):     1.090               0.000 clk 
+Info (332146): Worst-case hold slack is 0.089
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.121               0.000 clk 
-Info (332146): Worst-case recovery slack is 0.376
+    Info (332119):     0.089               0.000 clk 
+Info (332146): Worst-case recovery slack is 0.711
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.376               0.000 clk 
-Info (332146): Worst-case removal slack is 0.598
+    Info (332119):     0.711               0.000 clk 
+Info (332146): Worst-case removal slack is 0.690
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.598               0.000 clk 
+    Info (332119):     0.690               0.000 clk 
 Info (332146): Worst-case minimum pulse width slack is 0.450
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
     Info (332119):     0.450               0.000 clk 
-Info (332115): Report Timing: Found 1 setup paths (0 violated).  Worst case slack is 0.476
+Info (332115): Report Timing: Found 1 setup paths (0 violated).  Worst case slack is 1.090
     Info (332115): -to_clock [get_clocks {clk}]
     Info (332115): -setup
     Info (332115): -stdout
-Info (332115): Path #1: Setup slack is 0.476 
+Info (332115): Path #1: Setup slack is 1.090 
     Info (332115): ===================================================================
-    Info (332115): From Node    : SAT_accelerator:generate_blocks[19].SAT_acc|outCNF
-    Info (332115): To Node      : SAT_accelerator:generate_blocks[19].SAT_acc|outCNF
+    Info (332115): From Node    : SAT_accelerator:generate_blocks[1].SAT_acc|clauseOut
+    Info (332115): To Node      : SAT_accelerator:generate_blocks[1].SAT_acc|outCNF
     Info (332115): Launch Clock : clk
     Info (332115): Latch Clock  : clk
     Info (332115): 
@@ -581,39 +581,38 @@ Info (332115): Path #1: Setup slack is 0.476
     Info (332115): Total (ns)  Incr (ns)     Type    HS/LP     Element
     Info (332115): ==========  ========= ==  ====  ==========  ===================================
     Info (332115):      0.000      0.000                       launch edge time
-    Info (332115):      4.970      4.970  R                    clock network delay
-    Info (332115):      4.970      0.000                       SAT_accelerator:generate_blocks[19].SAT_acc|outCNF
-    Info (332115):      5.244      0.274 RR  uTco              generate_blocks[19].SAT_acc|outCNF|q
-    Info (332115):      5.415      0.171 RR  CELL   Low Power  SAT_accelerator:generate_blocks[19].SAT_acc|outCNF~la_mlab/laboutt[10]
-    Info (332115):      6.132      0.717 RR    IC   Low Power  generate_blocks[19].SAT_acc|outCNF~0|datad
-    Info (332115):      6.308      0.176 RR  CELL   Low Power  generate_blocks[19].SAT_acc|outCNF~0|combout
-    Info (332115):      6.312      0.004 RR  CELL   Low Power  SAT_accelerator:generate_blocks[19].SAT_acc|outCNF~0~la_lab/laboutb[16]
-    Info (332115):      6.578      0.266 RR    IC   Low Power  generate_blocks[19].SAT_acc|outCNF|asdata
-    Info (332115):      6.578      0.000 RR  CELL   Low Power  SAT_accelerator:generate_blocks[19].SAT_acc|outCNF
+    Info (332115):      5.018      5.018  R                    clock network delay
+    Info (332115):      5.018      0.000                       SAT_accelerator:generate_blocks[1].SAT_acc|clauseOut
+    Info (332115):      5.332      0.314 RR  uTco              generate_blocks[1].SAT_acc|clauseOut|q
+    Info (332115):      5.508      0.176 RR  CELL  High Speed  SAT_accelerator:generate_blocks[1].SAT_acc|clauseOut~la_lab/laboutb[12]
+    Info (332115):      6.120      0.612 RR    IC       Mixed  generate_blocks[1].SAT_acc|outCNF~0|dataf
+    Info (332115):      6.173      0.053 RF  CELL  High Speed  generate_blocks[1].SAT_acc|outCNF~0|combout
+    Info (332115):      6.173      0.000 FF  CELL  High Speed  generate_blocks[1].SAT_acc|outCNF|d
+    Info (332115):      6.173      0.000 FF  CELL  High Speed  SAT_accelerator:generate_blocks[1].SAT_acc|outCNF
     Info (332115): 
     Info (332115): Data Required Path:
     Info (332115): 
     Info (332115): Total (ns)  Incr (ns)     Type    HS/LP     Element
     Info (332115): ==========  ========= ==  ====  ==========  ===================================
     Info (332115):      2.000      2.000                       latch edge time
-    Info (332115):      6.637      4.637  R                    clock network delay
-    Info (332115):      6.969      0.332                       clock pessimism removed
-    Info (332115):      6.939     -0.030                       clock uncertainty
-    Info (332115):      7.054      0.115     uTsu              SAT_accelerator:generate_blocks[19].SAT_acc|outCNF
+    Info (332115):      6.685      4.685  R                    clock network delay
+    Info (332115):      6.995      0.310                       clock pessimism removed
+    Info (332115):      6.965     -0.030                       clock uncertainty
+    Info (332115):      7.263      0.298     uTsu              SAT_accelerator:generate_blocks[1].SAT_acc|outCNF
     Info (332115): 
-    Info (332115): Data Arrival Time  :     6.578
-    Info (332115): Data Required Time :     7.054
-    Info (332115): Slack              :     0.476 
+    Info (332115): Data Arrival Time  :     6.173
+    Info (332115): Data Required Time :     7.263
+    Info (332115): Slack              :     1.090 
     Info (332115): ===================================================================
     Info (332115): 
-Info (332115): Report Timing: Found 1 hold paths (0 violated).  Worst case slack is 0.121
+Info (332115): Report Timing: Found 1 hold paths (0 violated).  Worst case slack is 0.089
     Info (332115): -to_clock [get_clocks {clk}]
     Info (332115): -hold
     Info (332115): -stdout
-Info (332115): Path #1: Hold slack is 0.121 
+Info (332115): Path #1: Hold slack is 0.089 
     Info (332115): ===================================================================
-    Info (332115): From Node    : SAT_accelerator:generate_blocks[15].SAT_acc|clauseOut
-    Info (332115): To Node      : SAT_accelerator:generate_blocks[15].SAT_acc|clauseOut
+    Info (332115): From Node    : SAT_accelerator:generate_blocks[2].SAT_acc|outCNF
+    Info (332115): To Node      : SAT_accelerator:generate_blocks[2].SAT_acc|outCNF
     Info (332115): Launch Clock : clk
     Info (332115): Latch Clock  : clk
     Info (332115): 
@@ -622,37 +621,37 @@ Info (332115): Path #1: Hold slack is 0.121
     Info (332115): Total (ns)  Incr (ns)     Type    HS/LP     Element
     Info (332115): ==========  ========= ==  ====  ==========  ===================================
     Info (332115):      0.000      0.000                       launch edge time
-    Info (332115):      4.630      4.630  R                    clock network delay
-    Info (332115):      4.630      0.000                       SAT_accelerator:generate_blocks[15].SAT_acc|clauseOut
-    Info (332115):      4.858      0.228 FF  uTco              generate_blocks[15].SAT_acc|clauseOut|q
-    Info (332115):      4.858      0.000 FF  CELL   Low Power  generate_blocks[15].SAT_acc|clauseOut~0|datad
-    Info (332115):      5.258      0.400 FF  CELL   Low Power  generate_blocks[15].SAT_acc|clauseOut~0|combout
-    Info (332115):      5.258      0.000 FF  CELL   Low Power  generate_blocks[15].SAT_acc|clauseOut|d
-    Info (332115):      5.258      0.000 FF  CELL   Low Power  SAT_accelerator:generate_blocks[15].SAT_acc|clauseOut
+    Info (332115):      4.685      4.685  R                    clock network delay
+    Info (332115):      4.685      0.000                       SAT_accelerator:generate_blocks[2].SAT_acc|outCNF
+    Info (332115):      4.893      0.208 FF  uTco              generate_blocks[2].SAT_acc|outCNF|q
+    Info (332115):      4.893      0.000 FF  CELL  High Speed  generate_blocks[2].SAT_acc|outCNF~0|datad
+    Info (332115):      5.245      0.352 FF  CELL  High Speed  generate_blocks[2].SAT_acc|outCNF~0|combout
+    Info (332115):      5.245      0.000 FF  CELL  High Speed  generate_blocks[2].SAT_acc|outCNF|d
+    Info (332115):      5.245      0.000 FF  CELL  High Speed  SAT_accelerator:generate_blocks[2].SAT_acc|outCNF
     Info (332115): 
     Info (332115): Data Required Path:
     Info (332115): 
     Info (332115): Total (ns)  Incr (ns)     Type    HS/LP     Element
     Info (332115): ==========  ========= ==  ====  ==========  ===================================
     Info (332115):      0.000      0.000                       latch edge time
-    Info (332115):      4.962      4.962  R                    clock network delay
-    Info (332115):      4.628     -0.334                       clock pessimism removed
-    Info (332115):      4.628      0.000                       clock uncertainty
-    Info (332115):      5.137      0.509      uTh              SAT_accelerator:generate_blocks[15].SAT_acc|clauseOut
+    Info (332115):      5.021      5.021  R                    clock network delay
+    Info (332115):      4.688     -0.333                       clock pessimism removed
+    Info (332115):      4.688      0.000                       clock uncertainty
+    Info (332115):      5.156      0.468      uTh              SAT_accelerator:generate_blocks[2].SAT_acc|outCNF
     Info (332115): 
-    Info (332115): Data Arrival Time  :     5.258
-    Info (332115): Data Required Time :     5.137
-    Info (332115): Slack              :     0.121 
+    Info (332115): Data Arrival Time  :     5.245
+    Info (332115): Data Required Time :     5.156
+    Info (332115): Slack              :     0.089 
     Info (332115): ===================================================================
     Info (332115): 
-Info (332115): Report Timing: Found 1 recovery paths (0 violated).  Worst case slack is 0.376
+Info (332115): Report Timing: Found 1 recovery paths (0 violated).  Worst case slack is 0.711
     Info (332115): -to_clock [get_clocks {clk}]
     Info (332115): -recovery
     Info (332115): -stdout
-Info (332115): Path #1: Recovery slack is 0.376 
+Info (332115): Path #1: Recovery slack is 0.711 
     Info (332115): ===================================================================
-    Info (332115): From Node    : SAT_synchronizer:SAT_sync|state[1]
-    Info (332115): To Node      : SAT_accelerator:generate_blocks[19].SAT_acc|clauseOut
+    Info (332115): From Node    : SAT_synchronizer:SAT_sync|state[0]
+    Info (332115): To Node      : SAT_accelerator:generate_blocks[1].SAT_acc|outCNF
     Info (332115): Launch Clock : clk
     Info (332115): Latch Clock  : clk
     Info (332115): 
@@ -661,39 +660,39 @@ Info (332115): Path #1: Recovery slack is 0.376
     Info (332115): Total (ns)  Incr (ns)     Type    HS/LP     Element
     Info (332115): ==========  ========= ==  ====  ==========  ===================================
     Info (332115):      0.000      0.000                       launch edge time
-    Info (332115):      4.964      4.964  R                    clock network delay
-    Info (332115):      4.964      0.000                       SAT_synchronizer:SAT_sync|state[1]
-    Info (332115):      5.236      0.272 RR  uTco              SAT_sync|state[1]|q
-    Info (332115):      5.449      0.213 RR  CELL   Low Power  SAT_synchronizer:SAT_sync|state[1]~la_lab/laboutb[19]
-    Info (332115):      5.783      0.334 RR    IC   Low Power  SAT_sync|Decoder0~0|datac
-    Info (332115):      5.989      0.206 RF  CELL   Low Power  SAT_sync|Decoder0~0|combout
-    Info (332115):      5.995      0.006 FF  CELL   Low Power  SAT_synchronizer:SAT_sync|Decoder0~0~la_mlab/laboutt[4]
-    Info (332115):      6.353      0.358 FF    IC   Low Power  generate_blocks[19].SAT_acc|clauseOut|clrn
-    Info (332115):      6.353      0.000 FF  CELL   Low Power  SAT_accelerator:generate_blocks[19].SAT_acc|clauseOut
+    Info (332115):      5.018      5.018  R                    clock network delay
+    Info (332115):      5.018      0.000                       SAT_synchronizer:SAT_sync|state[0]
+    Info (332115):      5.253      0.235 RR  uTco              SAT_sync|state[0]|q
+    Info (332115):      5.450      0.197 RR  CELL  High Speed  SAT_synchronizer:SAT_sync|state[0]~la_lab/laboutt[4]
+    Info (332115):      5.764      0.314 RR    IC  High Speed  SAT_sync|Decoder0~0|datac
+    Info (332115):      5.938      0.174 RF  CELL  High Speed  SAT_sync|Decoder0~0|combout
+    Info (332115):      5.942      0.004 FF  CELL  High Speed  SAT_synchronizer:SAT_sync|Decoder0~0~la_lab/laboutb[8]
+    Info (332115):      6.111      0.169 FF    IC  High Speed  generate_blocks[1].SAT_acc|outCNF|clrn
+    Info (332115):      6.111      0.000 FF  CELL  High Speed  SAT_accelerator:generate_blocks[1].SAT_acc|outCNF
     Info (332115): 
     Info (332115): Data Required Path:
     Info (332115): 
     Info (332115): Total (ns)  Incr (ns)     Type    HS/LP     Element
     Info (332115): ==========  ========= ==  ====  ==========  ===================================
     Info (332115):      2.000      2.000                       latch edge time
-    Info (332115):      6.621      4.621  R                    clock network delay
-    Info (332115):      6.923      0.302                       clock pessimism removed
-    Info (332115):      6.893     -0.030                       clock uncertainty
-    Info (332115):      6.729     -0.164     uTsu              SAT_accelerator:generate_blocks[19].SAT_acc|clauseOut
+    Info (332115):      6.685      4.685  R                    clock network delay
+    Info (332115):      6.995      0.310                       clock pessimism removed
+    Info (332115):      6.965     -0.030                       clock uncertainty
+    Info (332115):      6.822     -0.143     uTsu              SAT_accelerator:generate_blocks[1].SAT_acc|outCNF
     Info (332115): 
-    Info (332115): Data Arrival Time  :     6.353
-    Info (332115): Data Required Time :     6.729
-    Info (332115): Slack              :     0.376 
+    Info (332115): Data Arrival Time  :     6.111
+    Info (332115): Data Required Time :     6.822
+    Info (332115): Slack              :     0.711 
     Info (332115): ===================================================================
     Info (332115): 
-Info (332115): Report Timing: Found 1 removal paths (0 violated).  Worst case slack is 0.598
+Info (332115): Report Timing: Found 1 removal paths (0 violated).  Worst case slack is 0.690
     Info (332115): -to_clock [get_clocks {clk}]
     Info (332115): -removal
     Info (332115): -stdout
-Info (332115): Path #1: Removal slack is 0.598 
+Info (332115): Path #1: Removal slack is 0.690 
     Info (332115): ===================================================================
-    Info (332115): From Node    : SAT_synchronizer:SAT_sync|state[0]
-    Info (332115): To Node      : SAT_accelerator:generate_blocks[9].SAT_acc|outCNF
+    Info (332115): From Node    : SAT_synchronizer:SAT_sync|state[1]
+    Info (332115): To Node      : SAT_accelerator:generate_blocks[1].SAT_acc|clauseOut
     Info (332115): Launch Clock : clk
     Info (332115): Latch Clock  : clk
     Info (332115): 
@@ -702,423 +701,57 @@ Info (332115): Path #1: Removal slack is 0.598
     Info (332115): Total (ns)  Incr (ns)     Type    HS/LP     Element
     Info (332115): ==========  ========= ==  ====  ==========  ===================================
     Info (332115):      0.000      0.000                       launch edge time
-    Info (332115):      4.632      4.632  R                    clock network delay
-    Info (332115):      4.632      0.000                       SAT_synchronizer:SAT_sync|state[0]
-    Info (332115):      4.861      0.229 FF  uTco              SAT_sync|state[0]|q
-    Info (332115):      4.979      0.118 FF  CELL   Low Power  SAT_synchronizer:SAT_sync|state[0]~la_lab/laboutb[4]
-    Info (332115):      5.156      0.177 FF    IC   Low Power  SAT_sync|ResetN_CNF~0|dataf
-    Info (332115):      5.196      0.040 FF  CELL   Low Power  SAT_sync|ResetN_CNF~0|combout
-    Info (332115):      5.198      0.002 FF  CELL   Low Power  SAT_synchronizer:SAT_sync|ResetN_CNF~0~la_lab/laboutt[2]
-    Info (332115):      5.359      0.161 FF    IC   Low Power  generate_blocks[9].SAT_acc|outCNF|clrn
-    Info (332115):      5.359      0.000 FF  CELL   Low Power  SAT_accelerator:generate_blocks[9].SAT_acc|outCNF
+    Info (332115):      4.683      4.683  R                    clock network delay
+    Info (332115):      4.683      0.000                       SAT_synchronizer:SAT_sync|state[1]
+    Info (332115):      4.878      0.195 FF  uTco              SAT_sync|state[1]|q
+    Info (332115):      4.981      0.103 FF  CELL  High Speed  SAT_synchronizer:SAT_sync|state[1]~la_lab/laboutt[19]
+    Info (332115):      5.239      0.258 FF    IC  High Speed  SAT_sync|ResetN_Clause~0|dataf
+    Info (332115):      5.274      0.035 FF  CELL  High Speed  SAT_sync|ResetN_Clause~0|combout
+    Info (332115):      5.275      0.001 FF  CELL  High Speed  SAT_synchronizer:SAT_sync|ResetN_Clause~0~la_lab/laboutt[2]
+    Info (332115):      5.447      0.172 FF    IC  High Speed  generate_blocks[1].SAT_acc|clauseOut|clrn
+    Info (332115):      5.447      0.000 FF  CELL  High Speed  SAT_accelerator:generate_blocks[1].SAT_acc|clauseOut
     Info (332115): 
     Info (332115): Data Required Path:
     Info (332115): 
     Info (332115): Total (ns)  Incr (ns)     Type    HS/LP     Element
     Info (332115): ==========  ========= ==  ====  ==========  ===================================
     Info (332115):      0.000      0.000                       latch edge time
-    Info (332115):      4.970      4.970  R                    clock network delay
-    Info (332115):      4.659     -0.311                       clock pessimism removed
-    Info (332115):      4.659      0.000                       clock uncertainty
-    Info (332115):      4.761      0.102      uTh              SAT_accelerator:generate_blocks[9].SAT_acc|outCNF
+    Info (332115):      5.018      5.018  R                    clock network delay
+    Info (332115):      4.684     -0.334                       clock pessimism removed
+    Info (332115):      4.684      0.000                       clock uncertainty
+    Info (332115):      4.757      0.073      uTh              SAT_accelerator:generate_blocks[1].SAT_acc|clauseOut
     Info (332115): 
-    Info (332115): Data Arrival Time  :     5.359
-    Info (332115): Data Required Time :     4.761
-    Info (332115): Slack              :     0.598 
+    Info (332115): Data Arrival Time  :     5.447
+    Info (332115): Data Required Time :     4.757
+    Info (332115): Slack              :     0.690 
     Info (332115): ===================================================================
     Info (332115): 
 Info: Analyzing Slow 900mV -40C Model
-Info (332146): Worst-case setup slack is 0.588
+Info (332146): Worst-case setup slack is 1.161
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.588               0.000 clk 
-Info (332146): Worst-case hold slack is 0.107
+    Info (332119):     1.161               0.000 clk 
+Info (332146): Worst-case hold slack is 0.064
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.107               0.000 clk 
-Info (332146): Worst-case recovery slack is 0.317
+    Info (332119):     0.064               0.000 clk 
+Info (332146): Worst-case recovery slack is 0.652
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.317               0.000 clk 
-Info (332146): Worst-case removal slack is 0.606
+    Info (332119):     0.652               0.000 clk 
+Info (332146): Worst-case removal slack is 0.692
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.606               0.000 clk 
+    Info (332119):     0.692               0.000 clk 
 Info (332146): Worst-case minimum pulse width slack is 0.450
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
     Info (332119):     0.450               0.000 clk 
-Info (332115): Report Timing: Found 1 setup paths (0 violated).  Worst case slack is 0.588
+Info (332115): Report Timing: Found 1 setup paths (0 violated).  Worst case slack is 1.161
     Info (332115): -to_clock [get_clocks {clk}]
     Info (332115): -setup
     Info (332115): -stdout
-Info (332115): Path #1: Setup slack is 0.588 
-    Info (332115): ===================================================================
-    Info (332115): From Node    : SAT_accelerator:generate_blocks[19].SAT_acc|outCNF
-    Info (332115): To Node      : SAT_accelerator:generate_blocks[19].SAT_acc|outCNF
-    Info (332115): Launch Clock : clk
-    Info (332115): Latch Clock  : clk
-    Info (332115): 
-    Info (332115): Data Arrival Path:
-    Info (332115): 
-    Info (332115): Total (ns)  Incr (ns)     Type    HS/LP     Element
-    Info (332115): ==========  ========= ==  ====  ==========  ===================================
-    Info (332115):      0.000      0.000                       launch edge time
-    Info (332115):      5.503      5.503  R                    clock network delay
-    Info (332115):      5.503      0.000                       SAT_accelerator:generate_blocks[19].SAT_acc|outCNF
-    Info (332115):      5.811      0.308 RR  uTco              generate_blocks[19].SAT_acc|outCNF|q
-    Info (332115):      6.006      0.195 RR  CELL   Low Power  SAT_accelerator:generate_blocks[19].SAT_acc|outCNF~la_mlab/laboutt[10]
-    Info (332115):      6.625      0.619 RR    IC   Low Power  generate_blocks[19].SAT_acc|outCNF~0|datad
-    Info (332115):      6.820      0.195 RR  CELL   Low Power  generate_blocks[19].SAT_acc|outCNF~0|combout
-    Info (332115):      6.824      0.004 RR  CELL   Low Power  SAT_accelerator:generate_blocks[19].SAT_acc|outCNF~0~la_lab/laboutb[16]
-    Info (332115):      7.041      0.217 RR    IC   Low Power  generate_blocks[19].SAT_acc|outCNF|asdata
-    Info (332115):      7.041      0.000 RR  CELL   Low Power  SAT_accelerator:generate_blocks[19].SAT_acc|outCNF
-    Info (332115): 
-    Info (332115): Data Required Path:
-    Info (332115): 
-    Info (332115): Total (ns)  Incr (ns)     Type    HS/LP     Element
-    Info (332115): ==========  ========= ==  ====  ==========  ===================================
-    Info (332115):      2.000      2.000                       latch edge time
-    Info (332115):      7.118      5.118  R                    clock network delay
-    Info (332115):      7.503      0.385                       clock pessimism removed
-    Info (332115):      7.473     -0.030                       clock uncertainty
-    Info (332115):      7.629      0.156     uTsu              SAT_accelerator:generate_blocks[19].SAT_acc|outCNF
-    Info (332115): 
-    Info (332115): Data Arrival Time  :     7.041
-    Info (332115): Data Required Time :     7.629
-    Info (332115): Slack              :     0.588 
-    Info (332115): ===================================================================
-    Info (332115): 
-Info (332115): Report Timing: Found 1 hold paths (0 violated).  Worst case slack is 0.107
-    Info (332115): -to_clock [get_clocks {clk}]
-    Info (332115): -hold
-    Info (332115): -stdout
-Info (332115): Path #1: Hold slack is 0.107 
-    Info (332115): ===================================================================
-    Info (332115): From Node    : SAT_accelerator:generate_blocks[15].SAT_acc|clauseOut
-    Info (332115): To Node      : SAT_accelerator:generate_blocks[15].SAT_acc|clauseOut
-    Info (332115): Launch Clock : clk
-    Info (332115): Latch Clock  : clk
-    Info (332115): 
-    Info (332115): Data Arrival Path:
-    Info (332115): 
-    Info (332115): Total (ns)  Incr (ns)     Type    HS/LP     Element
-    Info (332115): ==========  ========= ==  ====  ==========  ===================================
-    Info (332115):      0.000      0.000                       launch edge time
-    Info (332115):      5.116      5.116  R                    clock network delay
-    Info (332115):      5.116      0.000                       SAT_accelerator:generate_blocks[15].SAT_acc|clauseOut
-    Info (332115):      5.373      0.257 FF  uTco              generate_blocks[15].SAT_acc|clauseOut|q
-    Info (332115):      5.373      0.000 FF  CELL   Low Power  generate_blocks[15].SAT_acc|clauseOut~0|datad
-    Info (332115):      5.831      0.458 FF  CELL   Low Power  generate_blocks[15].SAT_acc|clauseOut~0|combout
-    Info (332115):      5.831      0.000 FF  CELL   Low Power  generate_blocks[15].SAT_acc|clauseOut|d
-    Info (332115):      5.831      0.000 FF  CELL   Low Power  SAT_accelerator:generate_blocks[15].SAT_acc|clauseOut
-    Info (332115): 
-    Info (332115): Data Required Path:
-    Info (332115): 
-    Info (332115): Total (ns)  Incr (ns)     Type    HS/LP     Element
-    Info (332115): ==========  ========= ==  ====  ==========  ===================================
-    Info (332115):      0.000      0.000                       latch edge time
-    Info (332115):      5.501      5.501  R                    clock network delay
-    Info (332115):      5.118     -0.383                       clock pessimism removed
-    Info (332115):      5.118      0.000                       clock uncertainty
-    Info (332115):      5.724      0.606      uTh              SAT_accelerator:generate_blocks[15].SAT_acc|clauseOut
-    Info (332115): 
-    Info (332115): Data Arrival Time  :     5.831
-    Info (332115): Data Required Time :     5.724
-    Info (332115): Slack              :     0.107 
-    Info (332115): ===================================================================
-    Info (332115): 
-Info (332115): Report Timing: Found 1 recovery paths (0 violated).  Worst case slack is 0.317
-    Info (332115): -to_clock [get_clocks {clk}]
-    Info (332115): -recovery
-    Info (332115): -stdout
-Info (332115): Path #1: Recovery slack is 0.317 
-    Info (332115): ===================================================================
-    Info (332115): From Node    : SAT_synchronizer:SAT_sync|state[1]
-    Info (332115): To Node      : SAT_accelerator:generate_blocks[19].SAT_acc|clauseOut
-    Info (332115): Launch Clock : clk
-    Info (332115): Latch Clock  : clk
-    Info (332115): 
-    Info (332115): Data Arrival Path:
-    Info (332115): 
-    Info (332115): Total (ns)  Incr (ns)     Type    HS/LP     Element
-    Info (332115): ==========  ========= ==  ====  ==========  ===================================
-    Info (332115):      0.000      0.000                       launch edge time
-    Info (332115):      5.504      5.504  R                    clock network delay
-    Info (332115):      5.504      0.000                       SAT_synchronizer:SAT_sync|state[1]
-    Info (332115):      5.811      0.307 RR  uTco              SAT_sync|state[1]|q
-    Info (332115):      6.057      0.246 RR  CELL   Low Power  SAT_synchronizer:SAT_sync|state[1]~la_lab/laboutb[19]
-    Info (332115):      6.348      0.291 RR    IC   Low Power  SAT_sync|Decoder0~0|datac
-    Info (332115):      6.577      0.229 RF  CELL   Low Power  SAT_sync|Decoder0~0|combout
-    Info (332115):      6.582      0.005 FF  CELL   Low Power  SAT_synchronizer:SAT_sync|Decoder0~0~la_mlab/laboutt[4]
-    Info (332115):      6.916      0.334 FF    IC   Low Power  generate_blocks[19].SAT_acc|clauseOut|clrn
-    Info (332115):      6.916      0.000 FF  CELL   Low Power  SAT_accelerator:generate_blocks[19].SAT_acc|clauseOut
-    Info (332115): 
-    Info (332115): Data Required Path:
-    Info (332115): 
-    Info (332115): Total (ns)  Incr (ns)     Type    HS/LP     Element
-    Info (332115): ==========  ========= ==  ====  ==========  ===================================
-    Info (332115):      2.000      2.000                       latch edge time
-    Info (332115):      7.110      5.110  R                    clock network delay
-    Info (332115):      7.459      0.349                       clock pessimism removed
-    Info (332115):      7.429     -0.030                       clock uncertainty
-    Info (332115):      7.233     -0.196     uTsu              SAT_accelerator:generate_blocks[19].SAT_acc|clauseOut
-    Info (332115): 
-    Info (332115): Data Arrival Time  :     6.916
-    Info (332115): Data Required Time :     7.233
-    Info (332115): Slack              :     0.317 
-    Info (332115): ===================================================================
-    Info (332115): 
-Info (332115): Report Timing: Found 1 removal paths (0 violated).  Worst case slack is 0.606
-    Info (332115): -to_clock [get_clocks {clk}]
-    Info (332115): -removal
-    Info (332115): -stdout
-Info (332115): Path #1: Removal slack is 0.606 
-    Info (332115): ===================================================================
-    Info (332115): From Node    : SAT_synchronizer:SAT_sync|state[0]
-    Info (332115): To Node      : SAT_accelerator:generate_blocks[9].SAT_acc|outCNF
-    Info (332115): Launch Clock : clk
-    Info (332115): Latch Clock  : clk
-    Info (332115): 
-    Info (332115): Data Arrival Path:
-    Info (332115): 
-    Info (332115): Total (ns)  Incr (ns)     Type    HS/LP     Element
-    Info (332115): ==========  ========= ==  ====  ==========  ===================================
-    Info (332115):      0.000      0.000                       launch edge time
-    Info (332115):      5.118      5.118  R                    clock network delay
-    Info (332115):      5.118      0.000                       SAT_synchronizer:SAT_sync|state[0]
-    Info (332115):      5.377      0.259 FF  uTco              SAT_sync|state[0]|q
-    Info (332115):      5.506      0.129 FF  CELL   Low Power  SAT_synchronizer:SAT_sync|state[0]~la_lab/laboutb[4]
-    Info (332115):      5.667      0.161 FF    IC   Low Power  SAT_sync|ResetN_CNF~0|dataf
-    Info (332115):      5.711      0.044 FF  CELL   Low Power  SAT_sync|ResetN_CNF~0|combout
-    Info (332115):      5.712      0.001 FF  CELL   Low Power  SAT_synchronizer:SAT_sync|ResetN_CNF~0~la_lab/laboutt[2]
-    Info (332115):      5.857      0.145 FF    IC   Low Power  generate_blocks[9].SAT_acc|outCNF|clrn
-    Info (332115):      5.857      0.000 FF  CELL   Low Power  SAT_accelerator:generate_blocks[9].SAT_acc|outCNF
-    Info (332115): 
-    Info (332115): Data Required Path:
-    Info (332115): 
-    Info (332115): Total (ns)  Incr (ns)     Type    HS/LP     Element
-    Info (332115): ==========  ========= ==  ====  ==========  ===================================
-    Info (332115):      0.000      0.000                       latch edge time
-    Info (332115):      5.503      5.503  R                    clock network delay
-    Info (332115):      5.141     -0.362                       clock pessimism removed
-    Info (332115):      5.141      0.000                       clock uncertainty
-    Info (332115):      5.251      0.110      uTh              SAT_accelerator:generate_blocks[9].SAT_acc|outCNF
-    Info (332115): 
-    Info (332115): Data Arrival Time  :     5.857
-    Info (332115): Data Required Time :     5.251
-    Info (332115): Slack              :     0.606 
-    Info (332115): ===================================================================
-    Info (332115): 
-Info: Analyzing Fast 900mV 100C Model
-Info (332146): Worst-case setup slack is 1.213
-    Info (332119):     Slack       End Point TNS Clock 
-    Info (332119): ========= =================== =====================
-    Info (332119):     1.213               0.000 clk 
-Info (332146): Worst-case hold slack is 0.022
-    Info (332119):     Slack       End Point TNS Clock 
-    Info (332119): ========= =================== =====================
-    Info (332119):     0.022               0.000 clk 
-Info (332146): Worst-case recovery slack is 1.095
-    Info (332119):     Slack       End Point TNS Clock 
-    Info (332119): ========= =================== =====================
-    Info (332119):     1.095               0.000 clk 
-Info (332146): Worst-case removal slack is 0.318
-    Info (332119):     Slack       End Point TNS Clock 
-    Info (332119): ========= =================== =====================
-    Info (332119):     0.318               0.000 clk 
-Info (332146): Worst-case minimum pulse width slack is 0.450
-    Info (332119):     Slack       End Point TNS Clock 
-    Info (332119): ========= =================== =====================
-    Info (332119):     0.450               0.000 clk 
-Info (332115): Report Timing: Found 1 setup paths (0 violated).  Worst case slack is 1.213
-    Info (332115): -to_clock [get_clocks {clk}]
-    Info (332115): -setup
-    Info (332115): -stdout
-Info (332115): Path #1: Setup slack is 1.213 
-    Info (332115): ===================================================================
-    Info (332115): From Node    : SAT_accelerator:generate_blocks[19].SAT_acc|outCNF
-    Info (332115): To Node      : SAT_accelerator:generate_blocks[19].SAT_acc|outCNF
-    Info (332115): Launch Clock : clk
-    Info (332115): Latch Clock  : clk
-    Info (332115): 
-    Info (332115): Data Arrival Path:
-    Info (332115): 
-    Info (332115): Total (ns)  Incr (ns)     Type    HS/LP     Element
-    Info (332115): ==========  ========= ==  ====  ==========  ===================================
-    Info (332115):      0.000      0.000                       launch edge time
-    Info (332115):      2.884      2.884  R                    clock network delay
-    Info (332115):      2.884      0.000                       SAT_accelerator:generate_blocks[19].SAT_acc|outCNF
-    Info (332115):      3.013      0.129 RR  uTco              generate_blocks[19].SAT_acc|outCNF|q
-    Info (332115):      3.083      0.070 RR  CELL   Low Power  SAT_accelerator:generate_blocks[19].SAT_acc|outCNF~la_mlab/laboutt[10]
-    Info (332115):      3.482      0.399 RR    IC   Low Power  generate_blocks[19].SAT_acc|outCNF~0|datad
-    Info (332115):      3.558      0.076 RR  CELL   Low Power  generate_blocks[19].SAT_acc|outCNF~0|combout
-    Info (332115):      3.562      0.004 RR  CELL   Low Power  SAT_accelerator:generate_blocks[19].SAT_acc|outCNF~0~la_lab/laboutb[16]
-    Info (332115):      3.701      0.139 RR    IC   Low Power  generate_blocks[19].SAT_acc|outCNF|asdata
-    Info (332115):      3.701      0.000 RR  CELL   Low Power  SAT_accelerator:generate_blocks[19].SAT_acc|outCNF
-    Info (332115): 
-    Info (332115): Data Required Path:
-    Info (332115): 
-    Info (332115): Total (ns)  Incr (ns)     Type    HS/LP     Element
-    Info (332115): ==========  ========= ==  ====  ==========  ===================================
-    Info (332115):      2.000      2.000                       latch edge time
-    Info (332115):      4.651      2.651  R                    clock network delay
-    Info (332115):      4.883      0.232                       clock pessimism removed
-    Info (332115):      4.853     -0.030                       clock uncertainty
-    Info (332115):      4.914      0.061     uTsu              SAT_accelerator:generate_blocks[19].SAT_acc|outCNF
-    Info (332115): 
-    Info (332115): Data Arrival Time  :     3.701
-    Info (332115): Data Required Time :     4.914
-    Info (332115): Slack              :     1.213 
-    Info (332115): ===================================================================
-    Info (332115): 
-Info (332115): Report Timing: Found 1 hold paths (0 violated).  Worst case slack is 0.022
-    Info (332115): -to_clock [get_clocks {clk}]
-    Info (332115): -hold
-    Info (332115): -stdout
-Info (332115): Path #1: Hold slack is 0.022 
-    Info (332115): ===================================================================
-    Info (332115): From Node    : SAT_accelerator:generate_blocks[19].SAT_acc|clauseOut
-    Info (332115): To Node      : SAT_accelerator:generate_blocks[19].SAT_acc|clauseOut
-    Info (332115): Launch Clock : clk
-    Info (332115): Latch Clock  : clk
-    Info (332115): 
-    Info (332115): Data Arrival Path:
-    Info (332115): 
-    Info (332115): Total (ns)  Incr (ns)     Type    HS/LP     Element
-    Info (332115): ==========  ========= ==  ====  ==========  ===================================
-    Info (332115):      0.000      0.000                       launch edge time
-    Info (332115):      2.640      2.640  R                    clock network delay
-    Info (332115):      2.640      0.000                       SAT_accelerator:generate_blocks[19].SAT_acc|clauseOut
-    Info (332115):      2.751      0.111 FF  uTco              generate_blocks[19].SAT_acc|clauseOut|q
-    Info (332115):      2.751      0.000 FF  CELL   Low Power  generate_blocks[19].SAT_acc|clauseOut~0|datae
-    Info (332115):      2.917      0.166 FF  CELL   Low Power  generate_blocks[19].SAT_acc|clauseOut~0|combout
-    Info (332115):      2.917      0.000 FF  CELL   Low Power  generate_blocks[19].SAT_acc|clauseOut|d
-    Info (332115):      2.917      0.000 FF  CELL   Low Power  SAT_accelerator:generate_blocks[19].SAT_acc|clauseOut
-    Info (332115): 
-    Info (332115): Data Required Path:
-    Info (332115): 
-    Info (332115): Total (ns)  Incr (ns)     Type    HS/LP     Element
-    Info (332115): ==========  ========= ==  ====  ==========  ===================================
-    Info (332115):      0.000      0.000                       latch edge time
-    Info (332115):      2.873      2.873  R                    clock network delay
-    Info (332115):      2.643     -0.230                       clock pessimism removed
-    Info (332115):      2.643      0.000                       clock uncertainty
-    Info (332115):      2.895      0.252      uTh              SAT_accelerator:generate_blocks[19].SAT_acc|clauseOut
-    Info (332115): 
-    Info (332115): Data Arrival Time  :     2.917
-    Info (332115): Data Required Time :     2.895
-    Info (332115): Slack              :     0.022 
-    Info (332115): ===================================================================
-    Info (332115): 
-Info (332115): Report Timing: Found 1 recovery paths (0 violated).  Worst case slack is 1.095
-    Info (332115): -to_clock [get_clocks {clk}]
-    Info (332115): -recovery
-    Info (332115): -stdout
-Info (332115): Path #1: Recovery slack is 1.095 
-    Info (332115): ===================================================================
-    Info (332115): From Node    : SAT_synchronizer:SAT_sync|state[0]
-    Info (332115): To Node      : SAT_accelerator:generate_blocks[3].SAT_acc|clauseOut
-    Info (332115): Launch Clock : clk
-    Info (332115): Latch Clock  : clk
-    Info (332115): 
-    Info (332115): Data Arrival Path:
-    Info (332115): 
-    Info (332115): Total (ns)  Incr (ns)     Type    HS/LP     Element
-    Info (332115): ==========  ========= ==  ====  ==========  ===================================
-    Info (332115):      0.000      0.000                       launch edge time
-    Info (332115):      2.882      2.882  R                    clock network delay
-    Info (332115):      2.882      0.000                       SAT_synchronizer:SAT_sync|state[0]
-    Info (332115):      3.012      0.130 RR  uTco              SAT_sync|state[0]|q
-    Info (332115):      3.102      0.090 RR  CELL   Low Power  SAT_synchronizer:SAT_sync|state[0]~la_lab/laboutb[4]
-    Info (332115):      3.363      0.261 RR    IC   Low Power  SAT_sync|Decoder0~0|dataf
-    Info (332115):      3.392      0.029 RF  CELL   Low Power  SAT_sync|Decoder0~0|combout
-    Info (332115):      3.398      0.006 FF  CELL   Low Power  SAT_synchronizer:SAT_sync|Decoder0~0~la_mlab/laboutt[4]
-    Info (332115):      3.649      0.251 FF    IC   Low Power  generate_blocks[3].SAT_acc|clauseOut|clrn
-    Info (332115):      3.649      0.000 FF  CELL   Low Power  SAT_accelerator:generate_blocks[3].SAT_acc|clauseOut
-    Info (332115): 
-    Info (332115): Data Required Path:
-    Info (332115): 
-    Info (332115): Total (ns)  Incr (ns)     Type    HS/LP     Element
-    Info (332115): ==========  ========= ==  ====  ==========  ===================================
-    Info (332115):      2.000      2.000                       latch edge time
-    Info (332115):      4.640      2.640  R                    clock network delay
-    Info (332115):      4.856      0.216                       clock pessimism removed
-    Info (332115):      4.826     -0.030                       clock uncertainty
-    Info (332115):      4.744     -0.082     uTsu              SAT_accelerator:generate_blocks[3].SAT_acc|clauseOut
-    Info (332115): 
-    Info (332115): Data Arrival Time  :     3.649
-    Info (332115): Data Required Time :     4.744
-    Info (332115): Slack              :     1.095 
-    Info (332115): ===================================================================
-    Info (332115): 
-Info (332115): Report Timing: Found 1 removal paths (0 violated).  Worst case slack is 0.318
-    Info (332115): -to_clock [get_clocks {clk}]
-    Info (332115): -removal
-    Info (332115): -stdout
-Info (332115): Path #1: Removal slack is 0.318 
-    Info (332115): ===================================================================
-    Info (332115): From Node    : SAT_synchronizer:SAT_sync|state[0]
-    Info (332115): To Node      : SAT_accelerator:generate_blocks[9].SAT_acc|outCNF
-    Info (332115): Launch Clock : clk
-    Info (332115): Latch Clock  : clk
-    Info (332115): 
-    Info (332115): Data Arrival Path:
-    Info (332115): 
-    Info (332115): Total (ns)  Incr (ns)     Type    HS/LP     Element
-    Info (332115): ==========  ========= ==  ====  ==========  ===================================
-    Info (332115):      0.000      0.000                       launch edge time
-    Info (332115):      2.649      2.649  R                    clock network delay
-    Info (332115):      2.649      0.000                       SAT_synchronizer:SAT_sync|state[0]
-    Info (332115):      2.756      0.107 FF  uTco              SAT_sync|state[0]|q
-    Info (332115):      2.811      0.055 FF  CELL   Low Power  SAT_synchronizer:SAT_sync|state[0]~la_lab/laboutb[4]
-    Info (332115):      2.927      0.116 FF    IC   Low Power  SAT_sync|ResetN_CNF~0|dataf
-    Info (332115):      2.949      0.022 FF  CELL   Low Power  SAT_sync|ResetN_CNF~0|combout
-    Info (332115):      2.951      0.002 FF  CELL   Low Power  SAT_synchronizer:SAT_sync|ResetN_CNF~0~la_lab/laboutt[2]
-    Info (332115):      3.050      0.099 FF    IC   Low Power  generate_blocks[9].SAT_acc|outCNF|clrn
-    Info (332115):      3.050      0.000 FF  CELL   Low Power  SAT_accelerator:generate_blocks[9].SAT_acc|outCNF
-    Info (332115): 
-    Info (332115): Data Required Path:
-    Info (332115): 
-    Info (332115): Total (ns)  Incr (ns)     Type    HS/LP     Element
-    Info (332115): ==========  ========= ==  ====  ==========  ===================================
-    Info (332115):      0.000      0.000                       latch edge time
-    Info (332115):      2.884      2.884  R                    clock network delay
-    Info (332115):      2.663     -0.221                       clock pessimism removed
-    Info (332115):      2.663      0.000                       clock uncertainty
-    Info (332115):      2.732      0.069      uTh              SAT_accelerator:generate_blocks[9].SAT_acc|outCNF
-    Info (332115): 
-    Info (332115): Data Arrival Time  :     3.050
-    Info (332115): Data Required Time :     2.732
-    Info (332115): Slack              :     0.318 
-    Info (332115): ===================================================================
-    Info (332115): 
-Info: Analyzing Fast 900mV -40C Model
-Info (332146): Worst-case setup slack is 1.355
-    Info (332119):     Slack       End Point TNS Clock 
-    Info (332119): ========= =================== =====================
-    Info (332119):     1.355               0.000 clk 
-Info (332146): Worst-case hold slack is 0.020
-    Info (332119):     Slack       End Point TNS Clock 
-    Info (332119): ========= =================== =====================
-    Info (332119):     0.020               0.000 clk 
-Info (332146): Worst-case recovery slack is 1.246
-    Info (332119):     Slack       End Point TNS Clock 
-    Info (332119): ========= =================== =====================
-    Info (332119):     1.246               0.000 clk 
-Info (332146): Worst-case removal slack is 0.263
-    Info (332119):     Slack       End Point TNS Clock 
-    Info (332119): ========= =================== =====================
-    Info (332119):     0.263               0.000 clk 
-Info (332146): Worst-case minimum pulse width slack is 0.450
-    Info (332119):     Slack       End Point TNS Clock 
-    Info (332119): ========= =================== =====================
-    Info (332119):     0.450               0.000 clk 
-Info (332115): Report Timing: Found 1 setup paths (0 violated).  Worst case slack is 1.355
-    Info (332115): -to_clock [get_clocks {clk}]
-    Info (332115): -setup
-    Info (332115): -stdout
-Info (332115): Path #1: Setup slack is 1.355 
+Info (332115): Path #1: Setup slack is 1.161 
     Info (332115): ===================================================================
     Info (332115): From Node    : SAT_accelerator:generate_blocks[2].SAT_acc|clauseOut
     Info (332115): To Node      : SAT_accelerator:generate_blocks[2].SAT_acc|outCNF
@@ -1130,74 +763,35 @@ Info (332115): Path #1: Setup slack is 1.355
     Info (332115): Total (ns)  Incr (ns)     Type    HS/LP     Element
     Info (332115): ==========  ========= ==  ====  ==========  ===================================
     Info (332115):      0.000      0.000                       launch edge time
-    Info (332115):      2.557      2.557  R                    clock network delay
-    Info (332115):      2.557      0.000                       SAT_accelerator:generate_blocks[2].SAT_acc|clauseOut
-    Info (332115):      2.752      0.195 FF  uTco              generate_blocks[2].SAT_acc|clauseOut|q
-    Info (332115):      2.820      0.068 FF  CELL   Low Power  SAT_accelerator:generate_blocks[2].SAT_acc|clauseOut~la_mlab/laboutb[4]
-    Info (332115):      3.216      0.396 FF    IC   Low Power  generate_blocks[2].SAT_acc|outCNF~0|dataa
-    Info (332115):      3.339      0.123 FR  CELL   Low Power  generate_blocks[2].SAT_acc|outCNF~0|combout
-    Info (332115):      3.339      0.000 RR  CELL   Low Power  generate_blocks[2].SAT_acc|outCNF|d
-    Info (332115):      3.339      0.000 RR  CELL   Low Power  SAT_accelerator:generate_blocks[2].SAT_acc|outCNF
+    Info (332115):      5.518      5.518  R                    clock network delay
+    Info (332115):      5.518      0.000                       SAT_accelerator:generate_blocks[2].SAT_acc|clauseOut
+    Info (332115):      5.860      0.342 RR  uTco              generate_blocks[2].SAT_acc|clauseOut|q
+    Info (332115):      6.060      0.200 RR  CELL  High Speed  SAT_accelerator:generate_blocks[2].SAT_acc|clauseOut~la_lab/laboutb[16]
+    Info (332115):      6.343      0.283 RR    IC  High Speed  generate_blocks[2].SAT_acc|outCNF~0|datab
+    Info (332115):      6.636      0.293 RF  CELL  High Speed  generate_blocks[2].SAT_acc|outCNF~0|combout
+    Info (332115):      6.636      0.000 FF  CELL  High Speed  generate_blocks[2].SAT_acc|outCNF|d
+    Info (332115):      6.636      0.000 FF  CELL  High Speed  SAT_accelerator:generate_blocks[2].SAT_acc|outCNF
     Info (332115): 
     Info (332115): Data Required Path:
     Info (332115): 
     Info (332115): Total (ns)  Incr (ns)     Type    HS/LP     Element
     Info (332115): ==========  ========= ==  ====  ==========  ===================================
     Info (332115):      2.000      2.000                       latch edge time
-    Info (332115):      4.350      2.350  R                    clock network delay
-    Info (332115):      4.557      0.207                       clock pessimism removed
-    Info (332115):      4.527     -0.030                       clock uncertainty
-    Info (332115):      4.694      0.167     uTsu              SAT_accelerator:generate_blocks[2].SAT_acc|outCNF
+    Info (332115):      7.132      5.132  R                    clock network delay
+    Info (332115):      7.494      0.362                       clock pessimism removed
+    Info (332115):      7.464     -0.030                       clock uncertainty
+    Info (332115):      7.797      0.333     uTsu              SAT_accelerator:generate_blocks[2].SAT_acc|outCNF
     Info (332115): 
-    Info (332115): Data Arrival Time  :     3.339
-    Info (332115): Data Required Time :     4.694
-    Info (332115): Slack              :     1.355 
+    Info (332115): Data Arrival Time  :     6.636
+    Info (332115): Data Required Time :     7.797
+    Info (332115): Slack              :     1.161 
     Info (332115): ===================================================================
     Info (332115): 
-Info (332115): Report Timing: Found 1 hold paths (0 violated).  Worst case slack is 0.020
+Info (332115): Report Timing: Found 1 hold paths (0 violated).  Worst case slack is 0.064
     Info (332115): -to_clock [get_clocks {clk}]
     Info (332115): -hold
     Info (332115): -stdout
-Info (332115): Path #1: Hold slack is 0.020 
-    Info (332115): ===================================================================
-    Info (332115): From Node    : SAT_accelerator:generate_blocks[2].SAT_acc|clauseOut
-    Info (332115): To Node      : SAT_accelerator:generate_blocks[2].SAT_acc|clauseOut
-    Info (332115): Launch Clock : clk
-    Info (332115): Latch Clock  : clk
-    Info (332115): 
-    Info (332115): Data Arrival Path:
-    Info (332115): 
-    Info (332115): Total (ns)  Incr (ns)     Type    HS/LP     Element
-    Info (332115): ==========  ========= ==  ====  ==========  ===================================
-    Info (332115):      0.000      0.000                       launch edge time
-    Info (332115):      2.350      2.350  R                    clock network delay
-    Info (332115):      2.350      0.000                       SAT_accelerator:generate_blocks[2].SAT_acc|clauseOut
-    Info (332115):      2.457      0.107 FF  uTco              generate_blocks[2].SAT_acc|clauseOut|q
-    Info (332115):      2.457      0.000 FF  CELL   Low Power  generate_blocks[2].SAT_acc|clauseOut~0|datae
-    Info (332115):      2.618      0.161 FF  CELL   Low Power  generate_blocks[2].SAT_acc|clauseOut~0|combout
-    Info (332115):      2.618      0.000 FF  CELL   Low Power  generate_blocks[2].SAT_acc|clauseOut|d
-    Info (332115):      2.618      0.000 FF  CELL   Low Power  SAT_accelerator:generate_blocks[2].SAT_acc|clauseOut
-    Info (332115): 
-    Info (332115): Data Required Path:
-    Info (332115): 
-    Info (332115): Total (ns)  Incr (ns)     Type    HS/LP     Element
-    Info (332115): ==========  ========= ==  ====  ==========  ===================================
-    Info (332115):      0.000      0.000                       latch edge time
-    Info (332115):      2.557      2.557  R                    clock network delay
-    Info (332115):      2.350     -0.207                       clock pessimism removed
-    Info (332115):      2.350      0.000                       clock uncertainty
-    Info (332115):      2.598      0.248      uTh              SAT_accelerator:generate_blocks[2].SAT_acc|clauseOut
-    Info (332115): 
-    Info (332115): Data Arrival Time  :     2.618
-    Info (332115): Data Required Time :     2.598
-    Info (332115): Slack              :     0.020 
-    Info (332115): ===================================================================
-    Info (332115): 
-Info (332115): Report Timing: Found 1 recovery paths (0 violated).  Worst case slack is 1.246
-    Info (332115): -to_clock [get_clocks {clk}]
-    Info (332115): -recovery
-    Info (332115): -stdout
-Info (332115): Path #1: Recovery slack is 1.246 
+Info (332115): Path #1: Hold slack is 0.064 
     Info (332115): ===================================================================
     Info (332115): From Node    : SAT_synchronizer:SAT_sync|state[1]
     Info (332115): To Node      : SAT_accelerator:generate_blocks[3].SAT_acc|clauseOut
@@ -1209,39 +803,38 @@ Info (332115): Path #1: Recovery slack is 1.246
     Info (332115): Total (ns)  Incr (ns)     Type    HS/LP     Element
     Info (332115): ==========  ========= ==  ====  ==========  ===================================
     Info (332115):      0.000      0.000                       launch edge time
-    Info (332115):      2.556      2.556  R                    clock network delay
-    Info (332115):      2.556      0.000                       SAT_synchronizer:SAT_sync|state[1]
-    Info (332115):      2.678      0.122 RR  uTco              SAT_sync|state[1]|q
-    Info (332115):      2.767      0.089 RR  CELL   Low Power  SAT_synchronizer:SAT_sync|state[1]~la_lab/laboutb[19]
-    Info (332115):      2.907      0.140 RR    IC   Low Power  SAT_sync|Decoder0~0|datac
-    Info (332115):      2.993      0.086 RF  CELL   Low Power  SAT_sync|Decoder0~0|combout
-    Info (332115):      2.998      0.005 FF  CELL   Low Power  SAT_synchronizer:SAT_sync|Decoder0~0~la_mlab/laboutt[4]
-    Info (332115):      3.189      0.191 FF    IC   Low Power  generate_blocks[3].SAT_acc|clauseOut|clrn
-    Info (332115):      3.189      0.000 FF  CELL   Low Power  SAT_accelerator:generate_blocks[3].SAT_acc|clauseOut
+    Info (332115):      5.132      5.132  R                    clock network delay
+    Info (332115):      5.132      0.000                       SAT_synchronizer:SAT_sync|state[1]
+    Info (332115):      5.353      0.221 FF  uTco              SAT_sync|state[1]|q
+    Info (332115):      5.465      0.112 FF  CELL  High Speed  SAT_synchronizer:SAT_sync|state[1]~la_lab/laboutt[19]
+    Info (332115):      5.696      0.231 FF    IC  High Speed  generate_blocks[3].SAT_acc|clauseOut~0|dataf
+    Info (332115):      5.738      0.042 FR  CELL  High Speed  generate_blocks[3].SAT_acc|clauseOut~0|combout
+    Info (332115):      5.738      0.000 RR  CELL  High Speed  generate_blocks[3].SAT_acc|clauseOut|d
+    Info (332115):      5.738      0.000 RR  CELL  High Speed  SAT_accelerator:generate_blocks[3].SAT_acc|clauseOut
     Info (332115): 
     Info (332115): Data Required Path:
     Info (332115): 
     Info (332115): Total (ns)  Incr (ns)     Type    HS/LP     Element
     Info (332115): ==========  ========= ==  ====  ==========  ===================================
-    Info (332115):      2.000      2.000                       latch edge time
-    Info (332115):      4.347      2.347  R                    clock network delay
-    Info (332115):      4.539      0.192                       clock pessimism removed
-    Info (332115):      4.509     -0.030                       clock uncertainty
-    Info (332115):      4.435     -0.074     uTsu              SAT_accelerator:generate_blocks[3].SAT_acc|clauseOut
+    Info (332115):      0.000      0.000                       latch edge time
+    Info (332115):      5.518      5.518  R                    clock network delay
+    Info (332115):      5.132     -0.386                       clock pessimism removed
+    Info (332115):      5.132      0.000                       clock uncertainty
+    Info (332115):      5.674      0.542      uTh              SAT_accelerator:generate_blocks[3].SAT_acc|clauseOut
     Info (332115): 
-    Info (332115): Data Arrival Time  :     3.189
-    Info (332115): Data Required Time :     4.435
-    Info (332115): Slack              :     1.246 
+    Info (332115): Data Arrival Time  :     5.738
+    Info (332115): Data Required Time :     5.674
+    Info (332115): Slack              :     0.064 
     Info (332115): ===================================================================
     Info (332115): 
-Info (332115): Report Timing: Found 1 removal paths (0 violated).  Worst case slack is 0.263
+Info (332115): Report Timing: Found 1 recovery paths (0 violated).  Worst case slack is 0.652
     Info (332115): -to_clock [get_clocks {clk}]
-    Info (332115): -removal
+    Info (332115): -recovery
     Info (332115): -stdout
-Info (332115): Path #1: Removal slack is 0.263 
+Info (332115): Path #1: Recovery slack is 0.652 
     Info (332115): ===================================================================
     Info (332115): From Node    : SAT_synchronizer:SAT_sync|state[0]
-    Info (332115): To Node      : SAT_accelerator:generate_blocks[9].SAT_acc|outCNF
+    Info (332115): To Node      : SAT_accelerator:generate_blocks[1].SAT_acc|outCNF
     Info (332115): Launch Clock : clk
     Info (332115): Latch Clock  : clk
     Info (332115): 
@@ -1250,37 +843,442 @@ Info (332115): Path #1: Removal slack is 0.263
     Info (332115): Total (ns)  Incr (ns)     Type    HS/LP     Element
     Info (332115): ==========  ========= ==  ====  ==========  ===================================
     Info (332115):      0.000      0.000                       launch edge time
-    Info (332115):      2.350      2.350  R                    clock network delay
-    Info (332115):      2.350      0.000                       SAT_synchronizer:SAT_sync|state[0]
-    Info (332115):      2.452      0.102 FF  uTco              SAT_sync|state[0]|q
-    Info (332115):      2.504      0.052 FF  CELL   Low Power  SAT_synchronizer:SAT_sync|state[0]~la_lab/laboutb[4]
-    Info (332115):      2.594      0.090 FF    IC   Low Power  SAT_sync|ResetN_CNF~0|dataf
-    Info (332115):      2.615      0.021 FF  CELL   Low Power  SAT_sync|ResetN_CNF~0|combout
-    Info (332115):      2.616      0.001 FF  CELL   Low Power  SAT_synchronizer:SAT_sync|ResetN_CNF~0~la_lab/laboutt[2]
-    Info (332115):      2.693      0.077 FF    IC   Low Power  generate_blocks[9].SAT_acc|outCNF|clrn
-    Info (332115):      2.693      0.000 FF  CELL   Low Power  SAT_accelerator:generate_blocks[9].SAT_acc|outCNF
+    Info (332115):      5.518      5.518  R                    clock network delay
+    Info (332115):      5.518      0.000                       SAT_synchronizer:SAT_sync|state[0]
+    Info (332115):      5.781      0.263 RR  uTco              SAT_sync|state[0]|q
+    Info (332115):      6.008      0.227 RR  CELL  High Speed  SAT_synchronizer:SAT_sync|state[0]~la_lab/laboutt[4]
+    Info (332115):      6.288      0.280 RR    IC  High Speed  SAT_sync|Decoder0~0|datac
+    Info (332115):      6.486      0.198 RF  CELL  High Speed  SAT_sync|Decoder0~0|combout
+    Info (332115):      6.489      0.003 FF  CELL  High Speed  SAT_synchronizer:SAT_sync|Decoder0~0~la_lab/laboutb[8]
+    Info (332115):      6.644      0.155 FF    IC  High Speed  generate_blocks[1].SAT_acc|outCNF|clrn
+    Info (332115):      6.644      0.000 FF  CELL  High Speed  SAT_accelerator:generate_blocks[1].SAT_acc|outCNF
+    Info (332115): 
+    Info (332115): Data Required Path:
+    Info (332115): 
+    Info (332115): Total (ns)  Incr (ns)     Type    HS/LP     Element
+    Info (332115): ==========  ========= ==  ====  ==========  ===================================
+    Info (332115):      2.000      2.000                       latch edge time
+    Info (332115):      7.132      5.132  R                    clock network delay
+    Info (332115):      7.494      0.362                       clock pessimism removed
+    Info (332115):      7.464     -0.030                       clock uncertainty
+    Info (332115):      7.296     -0.168     uTsu              SAT_accelerator:generate_blocks[1].SAT_acc|outCNF
+    Info (332115): 
+    Info (332115): Data Arrival Time  :     6.644
+    Info (332115): Data Required Time :     7.296
+    Info (332115): Slack              :     0.652 
+    Info (332115): ===================================================================
+    Info (332115): 
+Info (332115): Report Timing: Found 1 removal paths (0 violated).  Worst case slack is 0.692
+    Info (332115): -to_clock [get_clocks {clk}]
+    Info (332115): -removal
+    Info (332115): -stdout
+Info (332115): Path #1: Removal slack is 0.692 
+    Info (332115): ===================================================================
+    Info (332115): From Node    : SAT_synchronizer:SAT_sync|state[1]
+    Info (332115): To Node      : SAT_accelerator:generate_blocks[1].SAT_acc|clauseOut
+    Info (332115): Launch Clock : clk
+    Info (332115): Latch Clock  : clk
+    Info (332115): 
+    Info (332115): Data Arrival Path:
+    Info (332115): 
+    Info (332115): Total (ns)  Incr (ns)     Type    HS/LP     Element
+    Info (332115): ==========  ========= ==  ====  ==========  ===================================
+    Info (332115):      0.000      0.000                       launch edge time
+    Info (332115):      5.132      5.132  R                    clock network delay
+    Info (332115):      5.132      0.000                       SAT_synchronizer:SAT_sync|state[1]
+    Info (332115):      5.353      0.221 FF  uTco              SAT_sync|state[1]|q
+    Info (332115):      5.465      0.112 FF  CELL  High Speed  SAT_synchronizer:SAT_sync|state[1]~la_lab/laboutt[19]
+    Info (332115):      5.703      0.238 FF    IC  High Speed  SAT_sync|ResetN_Clause~0|dataf
+    Info (332115):      5.743      0.040 FF  CELL  High Speed  SAT_sync|ResetN_Clause~0|combout
+    Info (332115):      5.744      0.001 FF  CELL  High Speed  SAT_synchronizer:SAT_sync|ResetN_Clause~0~la_lab/laboutt[2]
+    Info (332115):      5.900      0.156 FF    IC  High Speed  generate_blocks[1].SAT_acc|clauseOut|clrn
+    Info (332115):      5.900      0.000 FF  CELL  High Speed  SAT_accelerator:generate_blocks[1].SAT_acc|clauseOut
     Info (332115): 
     Info (332115): Data Required Path:
     Info (332115): 
     Info (332115): Total (ns)  Incr (ns)     Type    HS/LP     Element
     Info (332115): ==========  ========= ==  ====  ==========  ===================================
     Info (332115):      0.000      0.000                       latch edge time
-    Info (332115):      2.555      2.555  R                    clock network delay
-    Info (332115):      2.359     -0.196                       clock pessimism removed
-    Info (332115):      2.359      0.000                       clock uncertainty
-    Info (332115):      2.430      0.071      uTh              SAT_accelerator:generate_blocks[9].SAT_acc|outCNF
+    Info (332115):      5.518      5.518  R                    clock network delay
+    Info (332115):      5.132     -0.386                       clock pessimism removed
+    Info (332115):      5.132      0.000                       clock uncertainty
+    Info (332115):      5.208      0.076      uTh              SAT_accelerator:generate_blocks[1].SAT_acc|clauseOut
     Info (332115): 
-    Info (332115): Data Arrival Time  :     2.693
-    Info (332115): Data Required Time :     2.430
-    Info (332115): Slack              :     0.263 
+    Info (332115): Data Arrival Time  :     5.900
+    Info (332115): Data Required Time :     5.208
+    Info (332115): Slack              :     0.692 
+    Info (332115): ===================================================================
+    Info (332115): 
+Info: Analyzing Fast 900mV 100C Model
+Info (332146): Worst-case setup slack is 1.459
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     1.459               0.000 clk 
+Info (332146): Worst-case hold slack is 0.020
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.020               0.000 clk 
+Info (332146): Worst-case recovery slack is 1.280
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     1.280               0.000 clk 
+Info (332146): Worst-case removal slack is 0.391
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.391               0.000 clk 
+Info (332146): Worst-case minimum pulse width slack is 0.450
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.450               0.000 clk 
+Info (332115): Report Timing: Found 1 setup paths (0 violated).  Worst case slack is 1.459
+    Info (332115): -to_clock [get_clocks {clk}]
+    Info (332115): -setup
+    Info (332115): -stdout
+Info (332115): Path #1: Setup slack is 1.459 
+    Info (332115): ===================================================================
+    Info (332115): From Node    : SAT_accelerator:generate_blocks[1].SAT_acc|clauseOut
+    Info (332115): To Node      : SAT_accelerator:generate_blocks[1].SAT_acc|outCNF
+    Info (332115): Launch Clock : clk
+    Info (332115): Latch Clock  : clk
+    Info (332115): 
+    Info (332115): Data Arrival Path:
+    Info (332115): 
+    Info (332115): Total (ns)  Incr (ns)     Type    HS/LP     Element
+    Info (332115): ==========  ========= ==  ====  ==========  ===================================
+    Info (332115):      0.000      0.000                       launch edge time
+    Info (332115):      2.912      2.912  R                    clock network delay
+    Info (332115):      2.912      0.000                       SAT_accelerator:generate_blocks[1].SAT_acc|clauseOut
+    Info (332115):      3.089      0.177 RR  uTco              generate_blocks[1].SAT_acc|clauseOut|q
+    Info (332115):      3.174      0.085 RR  CELL  High Speed  SAT_accelerator:generate_blocks[1].SAT_acc|clauseOut~la_lab/laboutb[12]
+    Info (332115):      3.545      0.371 RR    IC       Mixed  generate_blocks[1].SAT_acc|outCNF~0|dataf
+    Info (332115):      3.571      0.026 RF  CELL  High Speed  generate_blocks[1].SAT_acc|outCNF~0|combout
+    Info (332115):      3.571      0.000 FF  CELL  High Speed  generate_blocks[1].SAT_acc|outCNF|d
+    Info (332115):      3.571      0.000 FF  CELL  High Speed  SAT_accelerator:generate_blocks[1].SAT_acc|outCNF
+    Info (332115): 
+    Info (332115): Data Required Path:
+    Info (332115): 
+    Info (332115): Total (ns)  Incr (ns)     Type    HS/LP     Element
+    Info (332115): ==========  ========= ==  ====  ==========  ===================================
+    Info (332115):      2.000      2.000                       latch edge time
+    Info (332115):      4.677      2.677  R                    clock network delay
+    Info (332115):      4.897      0.220                       clock pessimism removed
+    Info (332115):      4.867     -0.030                       clock uncertainty
+    Info (332115):      5.030      0.163     uTsu              SAT_accelerator:generate_blocks[1].SAT_acc|outCNF
+    Info (332115): 
+    Info (332115): Data Arrival Time  :     3.571
+    Info (332115): Data Required Time :     5.030
+    Info (332115): Slack              :     1.459 
+    Info (332115): ===================================================================
+    Info (332115): 
+Info (332115): Report Timing: Found 1 hold paths (0 violated).  Worst case slack is 0.020
+    Info (332115): -to_clock [get_clocks {clk}]
+    Info (332115): -hold
+    Info (332115): -stdout
+Info (332115): Path #1: Hold slack is 0.020 
+    Info (332115): ===================================================================
+    Info (332115): From Node    : SAT_accelerator:generate_blocks[2].SAT_acc|outCNF
+    Info (332115): To Node      : SAT_accelerator:generate_blocks[2].SAT_acc|outCNF
+    Info (332115): Launch Clock : clk
+    Info (332115): Latch Clock  : clk
+    Info (332115): 
+    Info (332115): Data Arrival Path:
+    Info (332115): 
+    Info (332115): Total (ns)  Incr (ns)     Type    HS/LP     Element
+    Info (332115): ==========  ========= ==  ====  ==========  ===================================
+    Info (332115):      0.000      0.000                       launch edge time
+    Info (332115):      2.677      2.677  R                    clock network delay
+    Info (332115):      2.677      0.000                       SAT_accelerator:generate_blocks[2].SAT_acc|outCNF
+    Info (332115):      2.783      0.106 FF  uTco              generate_blocks[2].SAT_acc|outCNF|q
+    Info (332115):      2.783      0.000 FF  CELL  High Speed  generate_blocks[2].SAT_acc|outCNF~0|datad
+    Info (332115):      2.941      0.158 FF  CELL  High Speed  generate_blocks[2].SAT_acc|outCNF~0|combout
+    Info (332115):      2.941      0.000 FF  CELL  High Speed  generate_blocks[2].SAT_acc|outCNF|d
+    Info (332115):      2.941      0.000 FF  CELL  High Speed  SAT_accelerator:generate_blocks[2].SAT_acc|outCNF
+    Info (332115): 
+    Info (332115): Data Required Path:
+    Info (332115): 
+    Info (332115): Total (ns)  Incr (ns)     Type    HS/LP     Element
+    Info (332115): ==========  ========= ==  ====  ==========  ===================================
+    Info (332115):      0.000      0.000                       latch edge time
+    Info (332115):      2.912      2.912  R                    clock network delay
+    Info (332115):      2.679     -0.233                       clock pessimism removed
+    Info (332115):      2.679      0.000                       clock uncertainty
+    Info (332115):      2.921      0.242      uTh              SAT_accelerator:generate_blocks[2].SAT_acc|outCNF
+    Info (332115): 
+    Info (332115): Data Arrival Time  :     2.941
+    Info (332115): Data Required Time :     2.921
+    Info (332115): Slack              :     0.020 
+    Info (332115): ===================================================================
+    Info (332115): 
+Info (332115): Report Timing: Found 1 recovery paths (0 violated).  Worst case slack is 1.280
+    Info (332115): -to_clock [get_clocks {clk}]
+    Info (332115): -recovery
+    Info (332115): -stdout
+Info (332115): Path #1: Recovery slack is 1.280 
+    Info (332115): ===================================================================
+    Info (332115): From Node    : SAT_synchronizer:SAT_sync|state[0]
+    Info (332115): To Node      : SAT_accelerator:generate_blocks[1].SAT_acc|outCNF
+    Info (332115): Launch Clock : clk
+    Info (332115): Latch Clock  : clk
+    Info (332115): 
+    Info (332115): Data Arrival Path:
+    Info (332115): 
+    Info (332115): Total (ns)  Incr (ns)     Type    HS/LP     Element
+    Info (332115): ==========  ========= ==  ====  ==========  ===================================
+    Info (332115):      0.000      0.000                       launch edge time
+    Info (332115):      2.912      2.912  R                    clock network delay
+    Info (332115):      2.912      0.000                       SAT_synchronizer:SAT_sync|state[0]
+    Info (332115):      3.034      0.122 RR  uTco              SAT_sync|state[0]|q
+    Info (332115):      3.125      0.091 RR  CELL  High Speed  SAT_synchronizer:SAT_sync|state[0]~la_lab/laboutt[4]
+    Info (332115):      3.320      0.195 RR    IC  High Speed  SAT_sync|Decoder0~0|datac
+    Info (332115):      3.399      0.079 RF  CELL  High Speed  SAT_sync|Decoder0~0|combout
+    Info (332115):      3.403      0.004 FF  CELL  High Speed  SAT_synchronizer:SAT_sync|Decoder0~0~la_lab/laboutb[8]
+    Info (332115):      3.511      0.108 FF    IC  High Speed  generate_blocks[1].SAT_acc|outCNF|clrn
+    Info (332115):      3.511      0.000 FF  CELL  High Speed  SAT_accelerator:generate_blocks[1].SAT_acc|outCNF
+    Info (332115): 
+    Info (332115): Data Required Path:
+    Info (332115): 
+    Info (332115): Total (ns)  Incr (ns)     Type    HS/LP     Element
+    Info (332115): ==========  ========= ==  ====  ==========  ===================================
+    Info (332115):      2.000      2.000                       latch edge time
+    Info (332115):      4.677      2.677  R                    clock network delay
+    Info (332115):      4.897      0.220                       clock pessimism removed
+    Info (332115):      4.867     -0.030                       clock uncertainty
+    Info (332115):      4.791     -0.076     uTsu              SAT_accelerator:generate_blocks[1].SAT_acc|outCNF
+    Info (332115): 
+    Info (332115): Data Arrival Time  :     3.511
+    Info (332115): Data Required Time :     4.791
+    Info (332115): Slack              :     1.280 
+    Info (332115): ===================================================================
+    Info (332115): 
+Info (332115): Report Timing: Found 1 removal paths (0 violated).  Worst case slack is 0.391
+    Info (332115): -to_clock [get_clocks {clk}]
+    Info (332115): -removal
+    Info (332115): -stdout
+Info (332115): Path #1: Removal slack is 0.391 
+    Info (332115): ===================================================================
+    Info (332115): From Node    : SAT_synchronizer:SAT_sync|state[1]
+    Info (332115): To Node      : SAT_accelerator:generate_blocks[3].SAT_acc|outCNF
+    Info (332115): Launch Clock : clk
+    Info (332115): Latch Clock  : clk
+    Info (332115): 
+    Info (332115): Data Arrival Path:
+    Info (332115): 
+    Info (332115): Total (ns)  Incr (ns)     Type    HS/LP     Element
+    Info (332115): ==========  ========= ==  ====  ==========  ===================================
+    Info (332115):      0.000      0.000                       launch edge time
+    Info (332115):      2.677      2.677  R                    clock network delay
+    Info (332115):      2.677      0.000                       SAT_synchronizer:SAT_sync|state[1]
+    Info (332115):      2.776      0.099 RR  uTco              SAT_sync|state[1]|q
+    Info (332115):      2.844      0.068 RR  CELL  High Speed  SAT_synchronizer:SAT_sync|state[1]~la_lab/laboutt[19]
+    Info (332115):      3.021      0.177 RR    IC  High Speed  SAT_sync|Decoder0~0|dataf
+    Info (332115):      3.043      0.022 RF  CELL  High Speed  SAT_sync|Decoder0~0|combout
+    Info (332115):      3.045      0.002 FF  CELL  High Speed  SAT_synchronizer:SAT_sync|Decoder0~0~la_lab/laboutb[8]
+    Info (332115):      3.141      0.096 FF    IC  High Speed  generate_blocks[3].SAT_acc|outCNF|clrn
+    Info (332115):      3.141      0.000 FF  CELL  High Speed  SAT_accelerator:generate_blocks[3].SAT_acc|outCNF
+    Info (332115): 
+    Info (332115): Data Required Path:
+    Info (332115): 
+    Info (332115): Total (ns)  Incr (ns)     Type    HS/LP     Element
+    Info (332115): ==========  ========= ==  ====  ==========  ===================================
+    Info (332115):      0.000      0.000                       latch edge time
+    Info (332115):      2.912      2.912  R                    clock network delay
+    Info (332115):      2.692     -0.220                       clock pessimism removed
+    Info (332115):      2.692      0.000                       clock uncertainty
+    Info (332115):      2.750      0.058      uTh              SAT_accelerator:generate_blocks[3].SAT_acc|outCNF
+    Info (332115): 
+    Info (332115): Data Arrival Time  :     3.141
+    Info (332115): Data Required Time :     2.750
+    Info (332115): Slack              :     0.391 
+    Info (332115): ===================================================================
+    Info (332115): 
+Info: Analyzing Fast 900mV -40C Model
+Info (332146): Worst-case setup slack is 1.587
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     1.587               0.000 clk 
+Info (332146): Worst-case hold slack is 0.019
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.019               0.000 clk 
+Info (332146): Worst-case recovery slack is 1.386
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     1.386               0.000 clk 
+Info (332146): Worst-case removal slack is 0.304
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.304               0.000 clk 
+Info (332146): Worst-case minimum pulse width slack is 0.450
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.450               0.000 clk 
+Info (332115): Report Timing: Found 1 setup paths (0 violated).  Worst case slack is 1.587
+    Info (332115): -to_clock [get_clocks {clk}]
+    Info (332115): -setup
+    Info (332115): -stdout
+Info (332115): Path #1: Setup slack is 1.587 
+    Info (332115): ===================================================================
+    Info (332115): From Node    : SAT_accelerator:generate_blocks[1].SAT_acc|clauseOut
+    Info (332115): To Node      : SAT_accelerator:generate_blocks[1].SAT_acc|outCNF
+    Info (332115): Launch Clock : clk
+    Info (332115): Latch Clock  : clk
+    Info (332115): 
+    Info (332115): Data Arrival Path:
+    Info (332115): 
+    Info (332115): Total (ns)  Incr (ns)     Type    HS/LP     Element
+    Info (332115): ==========  ========= ==  ====  ==========  ===================================
+    Info (332115):      0.000      0.000                       launch edge time
+    Info (332115):      2.569      2.569  R                    clock network delay
+    Info (332115):      2.569      0.000                       SAT_accelerator:generate_blocks[1].SAT_acc|clauseOut
+    Info (332115):      2.741      0.172 RR  uTco              generate_blocks[1].SAT_acc|clauseOut|q
+    Info (332115):      2.821      0.080 RR  CELL  High Speed  SAT_accelerator:generate_blocks[1].SAT_acc|clauseOut~la_lab/laboutb[12]
+    Info (332115):      3.080      0.259 RR    IC       Mixed  generate_blocks[1].SAT_acc|outCNF~0|dataf
+    Info (332115):      3.104      0.024 RF  CELL  High Speed  generate_blocks[1].SAT_acc|outCNF~0|combout
+    Info (332115):      3.104      0.000 FF  CELL  High Speed  generate_blocks[1].SAT_acc|outCNF|d
+    Info (332115):      3.104      0.000 FF  CELL  High Speed  SAT_accelerator:generate_blocks[1].SAT_acc|outCNF
+    Info (332115): 
+    Info (332115): Data Required Path:
+    Info (332115): 
+    Info (332115): Total (ns)  Incr (ns)     Type    HS/LP     Element
+    Info (332115): ==========  ========= ==  ====  ==========  ===================================
+    Info (332115):      2.000      2.000                       latch edge time
+    Info (332115):      4.366      2.366  R                    clock network delay
+    Info (332115):      4.562      0.196                       clock pessimism removed
+    Info (332115):      4.532     -0.030                       clock uncertainty
+    Info (332115):      4.691      0.159     uTsu              SAT_accelerator:generate_blocks[1].SAT_acc|outCNF
+    Info (332115): 
+    Info (332115): Data Arrival Time  :     3.104
+    Info (332115): Data Required Time :     4.691
+    Info (332115): Slack              :     1.587 
+    Info (332115): ===================================================================
+    Info (332115): 
+Info (332115): Report Timing: Found 1 hold paths (0 violated).  Worst case slack is 0.019
+    Info (332115): -to_clock [get_clocks {clk}]
+    Info (332115): -hold
+    Info (332115): -stdout
+Info (332115): Path #1: Hold slack is 0.019 
+    Info (332115): ===================================================================
+    Info (332115): From Node    : SAT_accelerator:generate_blocks[2].SAT_acc|outCNF
+    Info (332115): To Node      : SAT_accelerator:generate_blocks[2].SAT_acc|outCNF
+    Info (332115): Launch Clock : clk
+    Info (332115): Latch Clock  : clk
+    Info (332115): 
+    Info (332115): Data Arrival Path:
+    Info (332115): 
+    Info (332115): Total (ns)  Incr (ns)     Type    HS/LP     Element
+    Info (332115): ==========  ========= ==  ====  ==========  ===================================
+    Info (332115):      0.000      0.000                       launch edge time
+    Info (332115):      2.366      2.366  R                    clock network delay
+    Info (332115):      2.366      0.000                       SAT_accelerator:generate_blocks[2].SAT_acc|outCNF
+    Info (332115):      2.468      0.102 FF  uTco              generate_blocks[2].SAT_acc|outCNF|q
+    Info (332115):      2.468      0.000 FF  CELL  High Speed  generate_blocks[2].SAT_acc|outCNF~0|datad
+    Info (332115):      2.622      0.154 FF  CELL  High Speed  generate_blocks[2].SAT_acc|outCNF~0|combout
+    Info (332115):      2.622      0.000 FF  CELL  High Speed  generate_blocks[2].SAT_acc|outCNF|d
+    Info (332115):      2.622      0.000 FF  CELL  High Speed  SAT_accelerator:generate_blocks[2].SAT_acc|outCNF
+    Info (332115): 
+    Info (332115): Data Required Path:
+    Info (332115): 
+    Info (332115): Total (ns)  Incr (ns)     Type    HS/LP     Element
+    Info (332115): ==========  ========= ==  ====  ==========  ===================================
+    Info (332115):      0.000      0.000                       latch edge time
+    Info (332115):      2.573      2.573  R                    clock network delay
+    Info (332115):      2.366     -0.207                       clock pessimism removed
+    Info (332115):      2.366      0.000                       clock uncertainty
+    Info (332115):      2.603      0.237      uTh              SAT_accelerator:generate_blocks[2].SAT_acc|outCNF
+    Info (332115): 
+    Info (332115): Data Arrival Time  :     2.622
+    Info (332115): Data Required Time :     2.603
+    Info (332115): Slack              :     0.019 
+    Info (332115): ===================================================================
+    Info (332115): 
+Info (332115): Report Timing: Found 1 recovery paths (0 violated).  Worst case slack is 1.386
+    Info (332115): -to_clock [get_clocks {clk}]
+    Info (332115): -recovery
+    Info (332115): -stdout
+Info (332115): Path #1: Recovery slack is 1.386 
+    Info (332115): ===================================================================
+    Info (332115): From Node    : SAT_synchronizer:SAT_sync|state[0]
+    Info (332115): To Node      : SAT_accelerator:generate_blocks[1].SAT_acc|outCNF
+    Info (332115): Launch Clock : clk
+    Info (332115): Latch Clock  : clk
+    Info (332115): 
+    Info (332115): Data Arrival Path:
+    Info (332115): 
+    Info (332115): Total (ns)  Incr (ns)     Type    HS/LP     Element
+    Info (332115): ==========  ========= ==  ====  ==========  ===================================
+    Info (332115):      0.000      0.000                       launch edge time
+    Info (332115):      2.569      2.569  R                    clock network delay
+    Info (332115):      2.569      0.000                       SAT_synchronizer:SAT_sync|state[0]
+    Info (332115):      2.686      0.117 RR  uTco              SAT_sync|state[0]|q
+    Info (332115):      2.773      0.087 RR  CELL  High Speed  SAT_synchronizer:SAT_sync|state[0]~la_lab/laboutt[4]
+    Info (332115):      2.910      0.137 RR    IC  High Speed  SAT_sync|Decoder0~0|datac
+    Info (332115):      2.987      0.077 RF  CELL  High Speed  SAT_sync|Decoder0~0|combout
+    Info (332115):      2.990      0.003 FF  CELL  High Speed  SAT_synchronizer:SAT_sync|Decoder0~0~la_lab/laboutb[8]
+    Info (332115):      3.076      0.086 FF    IC  High Speed  generate_blocks[1].SAT_acc|outCNF|clrn
+    Info (332115):      3.076      0.000 FF  CELL  High Speed  SAT_accelerator:generate_blocks[1].SAT_acc|outCNF
+    Info (332115): 
+    Info (332115): Data Required Path:
+    Info (332115): 
+    Info (332115): Total (ns)  Incr (ns)     Type    HS/LP     Element
+    Info (332115): ==========  ========= ==  ====  ==========  ===================================
+    Info (332115):      2.000      2.000                       latch edge time
+    Info (332115):      4.366      2.366  R                    clock network delay
+    Info (332115):      4.562      0.196                       clock pessimism removed
+    Info (332115):      4.532     -0.030                       clock uncertainty
+    Info (332115):      4.462     -0.070     uTsu              SAT_accelerator:generate_blocks[1].SAT_acc|outCNF
+    Info (332115): 
+    Info (332115): Data Arrival Time  :     3.076
+    Info (332115): Data Required Time :     4.462
+    Info (332115): Slack              :     1.386 
+    Info (332115): ===================================================================
+    Info (332115): 
+Info (332115): Report Timing: Found 1 removal paths (0 violated).  Worst case slack is 0.304
+    Info (332115): -to_clock [get_clocks {clk}]
+    Info (332115): -removal
+    Info (332115): -stdout
+Info (332115): Path #1: Removal slack is 0.304 
+    Info (332115): ===================================================================
+    Info (332115): From Node    : SAT_synchronizer:SAT_sync|state[1]
+    Info (332115): To Node      : SAT_accelerator:generate_blocks[3].SAT_acc|outCNF
+    Info (332115): Launch Clock : clk
+    Info (332115): Latch Clock  : clk
+    Info (332115): 
+    Info (332115): Data Arrival Path:
+    Info (332115): 
+    Info (332115): Total (ns)  Incr (ns)     Type    HS/LP     Element
+    Info (332115): ==========  ========= ==  ====  ==========  ===================================
+    Info (332115):      0.000      0.000                       launch edge time
+    Info (332115):      2.362      2.362  R                    clock network delay
+    Info (332115):      2.362      0.000                       SAT_synchronizer:SAT_sync|state[1]
+    Info (332115):      2.457      0.095 RR  uTco              SAT_sync|state[1]|q
+    Info (332115):      2.521      0.064 RR  CELL  High Speed  SAT_synchronizer:SAT_sync|state[1]~la_lab/laboutt[19]
+    Info (332115):      2.643      0.122 RR    IC  High Speed  SAT_sync|Decoder0~0|dataf
+    Info (332115):      2.664      0.021 RF  CELL  High Speed  SAT_sync|Decoder0~0|combout
+    Info (332115):      2.665      0.001 FF  CELL  High Speed  SAT_synchronizer:SAT_sync|Decoder0~0~la_lab/laboutb[8]
+    Info (332115):      2.741      0.076 FF    IC  High Speed  generate_blocks[3].SAT_acc|outCNF|clrn
+    Info (332115):      2.741      0.000 FF  CELL  High Speed  SAT_accelerator:generate_blocks[3].SAT_acc|outCNF
+    Info (332115): 
+    Info (332115): Data Required Path:
+    Info (332115): 
+    Info (332115): Total (ns)  Incr (ns)     Type    HS/LP     Element
+    Info (332115): ==========  ========= ==  ====  ==========  ===================================
+    Info (332115):      0.000      0.000                       latch edge time
+    Info (332115):      2.573      2.573  R                    clock network delay
+    Info (332115):      2.377     -0.196                       clock pessimism removed
+    Info (332115):      2.377      0.000                       clock uncertainty
+    Info (332115):      2.437      0.060      uTh              SAT_accelerator:generate_blocks[3].SAT_acc|outCNF
+    Info (332115): 
+    Info (332115): Data Arrival Time  :     2.741
+    Info (332115): Data Required Time :     2.437
+    Info (332115): Slack              :     0.304 
     Info (332115): ===================================================================
     Info (332115): 
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 2996 megabytes
-    Info: Processing ended: Sun Apr 09 20:38:41 2017
-    Info: Elapsed time: 00:00:21
-    Info: Total CPU time (on all processors): 00:00:23
+    Info: Peak virtual memory: 2992 megabytes
+    Info: Processing ended: Sun Apr 02 14:27:21 2017
+    Info: Elapsed time: 00:00:24
+    Info: Total CPU time (on all processors): 00:00:24
 
 
