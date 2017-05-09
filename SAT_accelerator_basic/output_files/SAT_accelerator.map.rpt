@@ -1,5 +1,5 @@
 Analysis & Synthesis report for SAT_accelerator
-Sun Apr 02 14:20:05 2017
+Sun Apr 09 02:03:33 2017
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Standard Edition
 
 
@@ -50,13 +50,13 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +-----------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Sun Apr 02 14:20:05 2017           ;
+; Analysis & Synthesis Status ; Successful - Sun Apr 09 02:03:33 2017           ;
 ; Quartus Prime Version       ; 16.1.0 Build 196 10/24/2016 SJ Standard Edition ;
 ; Revision Name               ; SAT_accelerator                                 ;
 ; Top-level Entity Name       ; SAT_accelerator_top                             ;
 ; Family                      ; Arria 10                                        ;
 ; Logic utilization (in ALMs) ; N/A                                             ;
-; Total registers             ; 11                                              ;
+; Total registers             ; 19                                              ;
 ; Total pins                  ; 11                                              ;
 ; Total virtual pins          ; 0                                               ;
 ; Total block memory bits     ; 0                                               ;
@@ -193,16 +193,16 @@ agreement for further details.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimate of Logic utilization (ALMs needed) ; 8         ;
+; Estimate of Logic utilization (ALMs needed) ; 10        ;
 ;                                             ;           ;
-; Combinational ALUT usage for logic          ; 12        ;
+; Combinational ALUT usage for logic          ; 14        ;
 ;     -- 7 input functions                    ; 0         ;
-;     -- 6 input functions                    ; 2         ;
-;     -- 5 input functions                    ; 1         ;
+;     -- 6 input functions                    ; 0         ;
+;     -- 5 input functions                    ; 2         ;
 ;     -- 4 input functions                    ; 3         ;
-;     -- <=3 input functions                  ; 6         ;
+;     -- <=3 input functions                  ; 9         ;
 ;                                             ;           ;
-; Dedicated logic registers                   ; 11        ;
+; Dedicated logic registers                   ; 19        ;
 ;                                             ;           ;
 ; I/O pins                                    ; 11        ;
 ;                                             ;           ;
@@ -211,9 +211,9 @@ agreement for further details.
 ;     -- Total Floating Point DSP Blocks      ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 11        ;
-; Total fan-out                               ; 90        ;
-; Average fan-out                             ; 2.00      ;
+; Maximum fan-out                             ; 19        ;
+; Total fan-out                               ; 114       ;
+; Average fan-out                             ; 2.07      ;
 +---------------------------------------------+-----------+
 
 
@@ -222,12 +222,12 @@ agreement for further details.
 +-------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------+---------------------+--------------+
 ; Compilation Hierarchy Node                      ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                             ; Entity Name         ; Library Name ;
 +-------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------+---------------------+--------------+
-; |SAT_accelerator_top                            ; 12 (1)              ; 11 (1)                    ; 0                 ; 0          ; 11   ; 0            ; |SAT_accelerator_top                                            ; SAT_accelerator_top ; work         ;
+; |SAT_accelerator_top                            ; 14 (1)              ; 19 (1)                    ; 0                 ; 0          ; 11   ; 0            ; |SAT_accelerator_top                                            ; SAT_accelerator_top ; work         ;
 ;    |SAT_accelerator:generate_blocks[0].SAT_acc| ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |SAT_accelerator_top|SAT_accelerator:generate_blocks[0].SAT_acc ; SAT_accelerator     ; work         ;
 ;    |SAT_accelerator:generate_blocks[1].SAT_acc| ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |SAT_accelerator_top|SAT_accelerator:generate_blocks[1].SAT_acc ; SAT_accelerator     ; work         ;
 ;    |SAT_accelerator:generate_blocks[2].SAT_acc| ; 3 (3)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |SAT_accelerator_top|SAT_accelerator:generate_blocks[2].SAT_acc ; SAT_accelerator     ; work         ;
 ;    |SAT_accelerator:generate_blocks[3].SAT_acc| ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |SAT_accelerator_top|SAT_accelerator:generate_blocks[3].SAT_acc ; SAT_accelerator     ; work         ;
-;    |SAT_synchronizer:SAT_sync|                  ; 2 (2)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |SAT_accelerator_top|SAT_synchronizer:SAT_sync                  ; SAT_synchronizer    ; work         ;
+;    |SAT_synchronizer:SAT_sync|                  ; 4 (4)               ; 10 (10)                   ; 0                 ; 0          ; 0    ; 0            ; |SAT_accelerator_top|SAT_synchronizer:SAT_sync                  ; SAT_synchronizer    ; work         ;
 +-------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -237,10 +237,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 11    ;
+; Total registers                              ; 19    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 11    ;
+; Number of registers using Asynchronous Clear ; 19    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
@@ -329,18 +329,17 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 11                          ;
-; twentynm_ff           ; 11                          ;
-;     CLR               ; 11                          ;
-; twentynm_lcell_comb   ; 12                          ;
-;     normal            ; 12                          ;
-;         2 data inputs ; 2                           ;
-;         3 data inputs ; 4                           ;
+; twentynm_ff           ; 19                          ;
+;     CLR               ; 19                          ;
+; twentynm_lcell_comb   ; 14                          ;
+;     normal            ; 14                          ;
+;         2 data inputs ; 4                           ;
+;         3 data inputs ; 5                           ;
 ;         4 data inputs ; 3                           ;
-;         5 data inputs ; 1                           ;
-;         6 data inputs ; 2                           ;
+;         5 data inputs ; 2                           ;
 ;                       ;                             ;
 ; Max LUT depth         ; 2.00                        ;
-; Average LUT depth     ; 1.09                        ;
+; Average LUT depth     ; 0.93                        ;
 +-----------------------+-----------------------------+
 
 
@@ -359,7 +358,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.1.0 Build 196 10/24/2016 SJ Standard Edition
-    Info: Processing started: Sun Apr 02 14:19:45 2017
+    Info: Processing started: Sun Apr 09 02:03:14 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off SAT_accelerator -c SAT_accelerator
 Info (20032): Parallel compilation is enabled and will use up to 2 processors
 Info (12021): Found 1 design units, including 1 entities, in source file sat_accelerator.v
@@ -375,14 +374,14 @@ Info (12128): Elaborating entity "SAT_accelerator" for hierarchy "SAT_accelerato
 Info (12128): Elaborating entity "SAT_accelerator" for hierarchy "SAT_accelerator:generate_blocks[2].SAT_acc" File: C:/Mahesh/University_of_Utah/Spring_2017/RA_Work/Arria_10/SAT_accelerator_basic/SAT_accelerator_top.v Line: 21
 Info (12128): Elaborating entity "SAT_accelerator" for hierarchy "SAT_accelerator:generate_blocks[3].SAT_acc" File: C:/Mahesh/University_of_Utah/Spring_2017/RA_Work/Arria_10/SAT_accelerator_basic/SAT_accelerator_top.v Line: 21
 Info (286030): Timing-Driven Synthesis is running
-Info (21057): Implemented 25 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 31 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 10 input pins
     Info (21059): Implemented 1 output pins
-    Info (21061): Implemented 14 logic cells
+    Info (21061): Implemented 20 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 680 megabytes
-    Info: Processing ended: Sun Apr 02 14:20:05 2017
-    Info: Elapsed time: 00:00:20
-    Info: Total CPU time (on all processors): 00:00:43
+    Info: Peak virtual memory: 673 megabytes
+    Info: Processing ended: Sun Apr 09 02:03:33 2017
+    Info: Elapsed time: 00:00:19
+    Info: Total CPU time (on all processors): 00:00:41
 
 

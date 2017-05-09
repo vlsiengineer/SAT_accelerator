@@ -4,98 +4,102 @@
 
 module SAT_accelerator_tb ();
 
-reg clk,resetN,negCtrl;
-reg [1:0] stateVal;
-reg [4:0] varPos;
+reg clk,resetN;
+reg[3:0] fifoIndexTracker;
 
+wire[7:0] command;
 wire outSATRes;
 
-parameter N=20;
+parameter N=4;
 
 SAT_accelerator_top #(.N(N)) SAT_acc_test (
 .outSATRes(outSATRes),
 .clk(clk),
 .resetN(resetN),
-.stateVal(stateVal),
-.varPos(varPos),
-.negCtrl(negCtrl));
+.stateVal(command[7:6]),
+.varPos(command[5:1]),
+.negCtrl(command[0])
+);
 
- //----------------------------------------------------------
 
-  parameter 
-  RESET          = 2'b00,  // Reset State
-  COMPUTE_CLAUSE = 2'b01,  // Compute Clause (OR operations)
-  COMPUTE_CNF    = 2'b10,  // Compute CNF (AND operation) and reset clause for next op.
-  END_COMPUTE     = 2'b11;    // End of Computation
- 
+bufferReg b1 (
+.clk(clk), 
+.reset(resetN), 
+.fifoIndexTracker(fifoIndexTracker), 
+.outVal(command));
+
  initial
- begin
- 
- stateVal = 2'd0;
+ begin 
  clk = 1'b0;
  resetN = 1'b0; 
- varPos = 5'd0;
- negCtrl = 1'b0;
- 
+ fifoIndexTracker = 3'd0;
  #20 resetN = 1'b1;
- 
  end
-
  
  always #2 clk = ~clk;
+
+always@(posedge clk)
+begin
+fifoIndexTracker <= fifoIndexTracker+1;
+end
  
- begin
+endmodule
+ 
 
-// CNF : (x1+x2)*(~x1+x2) == SAT 
+// Buffer Register for testbench 
+module bufferReg (input clk, input reset, input[3:0] fifoIndexTracker, output reg[7:0] outVal);
 
-//Command 1: Reset
-    stateVal = RESET;
-    varPos = 5'd0;
-    negCtrl = 1'b0;
-	#3
+reg[7:0] fifoVal[0:15]; 
+reg localCounter;
 
-//Command 2: Compute Clause x1
-    stateVal <= COMPUTE_CLAUSE;
-    varPos <= 5'd0;
-    negCtrl <= 1'b0;
-	#3
-	
-//Command 3: Compute Clause x2
-    stateVal <= COMPUTE_CLAUSE;
-    varPos <= 5'd1;
-    negCtrl <= 1'b0;
-	#3
+initial begin
 
-//Command 4: Compute CNF (x1+x2)
-    stateVal <= COMPUTE_CNF;
-    varPos <= 5'd0;
-    negCtrl <= 1'b0;
-	#4
+// CNF - (x1+x2)*(~x1+x2)
 
-//Command 5: Compute Clause ~x1
-    stateVal <= COMPUTE_CLAUSE;
-    varPos <= 5'd0;
-    negCtrl <= 1'b1;
-	#3
+fifoVal[0] = 8'b00000000; // RESET -- state=00,varPos=00000,negCtrl=0 ==> 00000000
+fifoVal[1] = 8'b00000000; // RESET -- state=00,varPos=00000,negCtrl=0 ==> 00000000
+fifoVal[2] = 8'b00000000; // RESET -- state=00,varPos=00000,negCtrl=0 ==> 00000000
+fifoVal[3] = 8'b00000000; // RESET -- state=00,varPos=00000,negCtrl=0 ==> 00000000
+fifoVal[4] = 8'b00000000; // RESET -- state=00,varPos=00000,negCtrl=0 ==> 00000000
+fifoVal[5] = 8'b00000000; // RESET -- state=00,varPos=00000,negCtrl=0 ==> 00000000
+fifoVal[6] = 8'b01000000; // Compute Clause x1 -- state=01,varPos=00000,negCtrl=0 ==> 01000000 
+fifoVal[7] = 8'b01000010; // Compute Clause x2 -- state=01,varPos=00001,negCtrl=0 ==> 01000010 
+fifoVal[8] = 8'b10000000; // Compute CNF -- state=10,varPos=000000,negCtrl=0 ==> 10000000
+fifoVal[9] = 8'b11000000; // Reset Clause -- state=11,varPos=000000,negCtrl=0 ==> 10000000
+fifoVal[10] = 8'b01000001; // Compute Clause x1 -- state=01,varPos=00000,negCtrl=1 ==> 01000001
+fifoVal[11] = 8'b01000010; // Compute Clause x2 -- state=01,varPos=00001,negCtrl=0 ==> 01000010
+fifoVal[12] = 8'b10000000; // Compute CNF -- state=10,varPos=00000,negCtrl=0 ==> 10000000
+fifoVal[13] = 8'b11000000; // Reset Clause -- state=11,varPos=00000,negCtrl=0 ==> 10000000
+fifoVal[14] = 8'b11000000; // Reset Clause -- state=11,varPos=00000,negCtrl=0 ==> 10000000
+fifoVal[15] = 8'b11000000; // Reset Clause -- state=11,varPos=00000,negCtrl=0 ==> 10000000
 
-//Command 6: Compute Clause x2
-    stateVal <= COMPUTE_CLAUSE;
-    varPos <= 5'd1;
-    negCtrl <= 1'b0;
-	#3
+end
 
-//Command 7: Compute CNF (~x1+x2)
-    stateVal <= COMPUTE_CNF;
-    varPos <= 5'd0;
-    negCtrl <= 1'b0;
-	#4
+always@(posedge clk, negedge reset)
+begin
 
-//Command 8: End Compute
-    stateVal <= END_COMPUTE;
-    varPos <= 5'd0;
-    negCtrl <= 1'b0;
-	#10
-
+if(~reset) begin
+outVal <= 8'd0;
+localCounter <= 1'b0;
 end 
- 
- endmodule
+
+else begin
+localCounter <= localCounter + 1;
+end
+
+always@(*)
+begin
+if(localCounter == 1'b0) begin
+outVal <= fifoVal[fifoIndexTracker];
+end
+
+else begin
+outVal <= outVal;
+end
+
+end
+
+
+end
+
+endmodule

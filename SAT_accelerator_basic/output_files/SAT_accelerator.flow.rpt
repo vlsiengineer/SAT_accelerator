@@ -1,5 +1,5 @@
 Flow report for SAT_accelerator
-Sun Apr 02 14:27:26 2017
+Sun Apr 09 02:12:22 2017
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Standard Edition
 
 
@@ -41,7 +41,7 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +-----------------------------+-------------------------------------------------+
-; Flow Status                 ; Successful - Sun Apr 02 14:27:26 2017           ;
+; Flow Status                 ; Successful - Sun Apr 09 02:12:22 2017           ;
 ; Quartus Prime Version       ; 16.1.0 Build 196 10/24/2016 SJ Standard Edition ;
 ; Revision Name               ; SAT_accelerator                                 ;
 ; Top-level Entity Name       ; SAT_accelerator_top                             ;
@@ -49,7 +49,7 @@ agreement for further details.
 ; Device                      ; 10AX115R4F40I3SG                                ;
 ; Timing Models               ; Final                                           ;
 ; Logic utilization (in ALMs) ; 7 / 427,200 ( < 1 % )                           ;
-; Total registers             ; 11                                              ;
+; Total registers             ; 19                                              ;
 ; Total pins                  ; 11 / 650 ( 2 % )                                ;
 ; Total virtual pins          ; 0                                               ;
 ; Total block memory bits     ; 0 / 55,562,240 ( 0 % )                          ;
@@ -65,7 +65,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/02/2017 14:19:46 ;
+; Start date & time ; 04/09/2017 02:03:15 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; SAT_accelerator     ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ agreement for further details.
 +-------------------------------------+----------------------------------------+-----------------+---------------------+----------------------+
 ; Assignment Name                     ; Value                                  ; Default Value   ; Entity Name         ; Section Id           ;
 +-------------------------------------+----------------------------------------+-----------------+---------------------+----------------------+
-; COMPILER_SIGNATURE_ID               ; 48791040935383.149116438631184         ; --              ; --                  ; --                   ;
+; COMPILER_SIGNATURE_ID               ; 48791040935383.149172499561840         ; --              ; --                  ; --                   ;
 ; EDA_DESIGN_ENTRY_SYNTHESIS_TOOL     ; Synplify Pro                           ; <None>          ; --                  ; --                   ;
 ; EDA_INPUT_DATA_FORMAT               ; Vqm                                    ; --              ; --                  ; eda_design_synthesis ;
 ; EDA_LMF_FILE                        ; synplcty.lmf                           ; --              ; --                  ; eda_design_synthesis ;
@@ -103,12 +103,12 @@ agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:20     ; 1.0                     ; 666 MB              ; 00:00:43                           ;
-; Fitter                    ; 00:06:11     ; 1.1                     ; 6798 MB             ; 00:07:05                           ;
-; Assembler                 ; 00:00:12     ; 1.0                     ; 933 MB              ; 00:00:10                           ;
-; TimeQuest Timing Analyzer ; 00:00:24     ; 1.0                     ; 2992 MB             ; 00:00:24                           ;
-; EDA Netlist Writer        ; 00:00:03     ; 1.0                     ; 623 MB              ; 00:00:02                           ;
-; Total                     ; 00:07:10     ; --                      ; --                  ; 00:08:24                           ;
+; Analysis & Synthesis      ; 00:00:19     ; 1.0                     ; 659 MB              ; 00:00:41                           ;
+; Fitter                    ; 00:07:24     ; 1.1                     ; 6809 MB             ; 00:07:59                           ;
+; Assembler                 ; 00:00:12     ; 1.0                     ; 929 MB              ; 00:00:10                           ;
+; TimeQuest Timing Analyzer ; 00:00:25     ; 1.0                     ; 2994 MB             ; 00:00:24                           ;
+; EDA Netlist Writer        ; 00:00:03     ; 1.0                     ; 624 MB              ; 00:00:02                           ;
+; Total                     ; 00:08:23     ; --                      ; --                  ; 00:09:16                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

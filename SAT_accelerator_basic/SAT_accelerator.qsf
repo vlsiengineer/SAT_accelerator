@@ -56,12 +56,11 @@ set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name NUM_PARALLEL_PROCESSORS 2
-set_global_assignment -name SDC_FILE SAT_accelerator.out.sdc
+set_global_assignment -name TIMEQUEST_DO_REPORT_TIMING ON
+set_global_assignment -name VERILOG_CONSTANT_LOOP_LIMIT 500000
 set_global_assignment -name SYSTEMVERILOG_FILE SAT_accelerator.v
 set_global_assignment -name VERILOG_FILE SAT_synchronizer.v
 set_global_assignment -name VERILOG_FILE SAT_accelerator_top.v
-set_global_assignment -name TIMEQUEST_DO_REPORT_TIMING ON
-set_global_assignment -name VERILOG_CONSTANT_LOOP_LIMIT 500000
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top

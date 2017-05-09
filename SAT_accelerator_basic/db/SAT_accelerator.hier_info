@@ -1,28 +1,56 @@
 |SAT_accelerator_top
-outSATRes <= outSATRes~reg0.DB_MAX_OUTPUT_PORT_TYPE
+outSATRes << outSATRes~reg0.DB_MAX_OUTPUT_PORT_TYPE
 clk => clk.IN5
 resetN => resetN.IN1
-stateVal[0] => stateVal[0].IN1
-stateVal[1] => stateVal[1].IN1
-varPos[0] => varPos[0].IN4
-varPos[1] => varPos[1].IN4
-varPos[2] => varPos[2].IN4
-varPos[3] => varPos[3].IN4
-varPos[4] => varPos[4].IN4
-negCtrl => negCtrl.IN4
+command[0] => command[0].IN1
+command[1] => command[1].IN1
+command[2] => command[2].IN1
+command[3] => command[3].IN1
+command[4] => command[4].IN1
+command[5] => command[5].IN1
+command[6] => command[6].IN1
+command[7] => command[7].IN1
 
 
 |SAT_accelerator_top|SAT_synchronizer:SAT_sync
-ResetN_Clause <= ResetN_Clause.DB_MAX_OUTPUT_PORT_TYPE
-ResetN_CNF <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
-Clause_En <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
-CNF_En <= CNF_En.DB_MAX_OUTPUT_PORT_TYPE
-clk => state[0].CLK
-clk => state[1].CLK
-resetN => state[0].ACLR
-resetN => state[1].ACLR
-stateVal[0] => state[0].DATAIN
-stateVal[1] => state[1].DATAIN
+ResetN_Clause <= ResetN_Clause~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ResetN_CNF <= ResetN_CNF~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Clause_En <= Clause_En~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CNF_En <= CNF_En~reg0.DB_MAX_OUTPUT_PORT_TYPE
+varPos[0] <= varPos[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+varPos[1] <= varPos[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+varPos[2] <= varPos[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+varPos[3] <= varPos[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+varPos[4] <= varPos[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+negCtrl <= negCtrl~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk => negCtrl~reg0.CLK
+clk => varPos[0]~reg0.CLK
+clk => varPos[1]~reg0.CLK
+clk => varPos[2]~reg0.CLK
+clk => varPos[3]~reg0.CLK
+clk => varPos[4]~reg0.CLK
+clk => CNF_En~reg0.CLK
+clk => Clause_En~reg0.CLK
+clk => ResetN_CNF~reg0.CLK
+clk => ResetN_Clause~reg0.CLK
+resetN => negCtrl~reg0.ACLR
+resetN => varPos[0]~reg0.ACLR
+resetN => varPos[1]~reg0.ACLR
+resetN => varPos[2]~reg0.ACLR
+resetN => varPos[3]~reg0.ACLR
+resetN => varPos[4]~reg0.ACLR
+resetN => CNF_En~reg0.ACLR
+resetN => Clause_En~reg0.ACLR
+resetN => ResetN_CNF~reg0.ACLR
+resetN => ResetN_Clause~reg0.ACLR
+command[0] => negCtrl~reg0.DATAIN
+command[1] => varPos[0]~reg0.DATAIN
+command[2] => varPos[1]~reg0.DATAIN
+command[3] => varPos[2]~reg0.DATAIN
+command[4] => varPos[3]~reg0.DATAIN
+command[5] => varPos[4]~reg0.DATAIN
+command[6] => Decoder0.IN1
+command[7] => Decoder0.IN0
 
 
 |SAT_accelerator_top|SAT_accelerator:generate_blocks[0].SAT_acc

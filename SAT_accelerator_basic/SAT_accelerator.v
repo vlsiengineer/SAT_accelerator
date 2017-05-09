@@ -24,8 +24,15 @@ if(~resetClause) begin
 clauseOut <= 1'b0;
 end
 
-else if(enableClause) begin
+else begin
+
+if(enableClause) begin
 clauseOut <= |inORgate;
+end
+else begin
+clauseOut <= clauseOut;
+end
+
 end
 
 end
@@ -37,8 +44,15 @@ if(~resetCNF) begin
 outCNF <= 1'b1;
 end
 
-else if(enableCNF) begin
+else begin
+if(enableCNF) begin
 outCNF <= &inANDgate;
+end
+
+else begin
+outCNF <= outCNF;
+end
+
 end
 
 end

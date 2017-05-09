@@ -1,18 +1,18 @@
 // Parameter N indicates the number of SAT accelerator instances
 // Example N = 65536 (2^16)
-module SAT_accelerator_top #(parameter N=4) (outSATRes,clk,resetN,stateVal,varPos,negCtrl);
+module SAT_accelerator_top #(parameter N=4) (outSATRes,clk,resetN,command);
 
 output reg outSATRes;
 input clk, resetN;
-input [1:0] stateVal;
-input [4:0] varPos;
-input negCtrl;
+input [7:0] command;
 
 wire ResetN_Clause, ResetN_CNF, Clause_En, CNF_En;
+wire [4:0] varPos;
+wire negCtrl;
 
 wire[(N-1):0] outCNF;
 
-SAT_synchronizer SAT_sync( .ResetN_Clause(ResetN_Clause), .ResetN_CNF(ResetN_CNF), .Clause_En(Clause_En), .CNF_En(CNF_En), .clk(clk), .resetN(resetN), .stateVal(stateVal));
+SAT_synchronizer SAT_sync( .ResetN_Clause(ResetN_Clause), .ResetN_CNF(ResetN_CNF), .Clause_En(Clause_En), .CNF_En(CNF_En), .varPos(varPos), .negCtrl(negCtrl), .clk(clk), .resetN(resetN), .command(command));
 
 genvar i;
 generate

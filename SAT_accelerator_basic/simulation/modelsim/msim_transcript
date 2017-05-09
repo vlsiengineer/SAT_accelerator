@@ -12,80 +12,83 @@
 # 
 # vlog -vlog01compat -work work +incdir+C:/Mahesh/University_of_Utah/Spring_2017/RA_Work/Arria_10/SAT_accelerator_basic {C:/Mahesh/University_of_Utah/Spring_2017/RA_Work/Arria_10/SAT_accelerator_basic/SAT_synchronizer.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:53:37 on Apr 03,2017
+# Start time: 01:09:56 on Apr 09,2017
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Mahesh/University_of_Utah/Spring_2017/RA_Work/Arria_10/SAT_accelerator_basic" C:/Mahesh/University_of_Utah/Spring_2017/RA_Work/Arria_10/SAT_accelerator_basic/SAT_synchronizer.v 
 # -- Compiling module SAT_synchronizer
 # 
 # Top level modules:
 # 	SAT_synchronizer
-# End time: 22:53:37 on Apr 03,2017, Elapsed time: 0:00:00
+# End time: 01:09:56 on Apr 09,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Mahesh/University_of_Utah/Spring_2017/RA_Work/Arria_10/SAT_accelerator_basic {C:/Mahesh/University_of_Utah/Spring_2017/RA_Work/Arria_10/SAT_accelerator_basic/SAT_accelerator_top.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:53:37 on Apr 03,2017
+# Start time: 01:09:56 on Apr 09,2017
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Mahesh/University_of_Utah/Spring_2017/RA_Work/Arria_10/SAT_accelerator_basic" C:/Mahesh/University_of_Utah/Spring_2017/RA_Work/Arria_10/SAT_accelerator_basic/SAT_accelerator_top.v 
 # -- Compiling module SAT_accelerator_top
 # 
 # Top level modules:
 # 	SAT_accelerator_top
-# End time: 22:53:37 on Apr 03,2017, Elapsed time: 0:00:00
+# End time: 01:09:56 on Apr 09,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Mahesh/University_of_Utah/Spring_2017/RA_Work/Arria_10/SAT_accelerator_basic {C:/Mahesh/University_of_Utah/Spring_2017/RA_Work/Arria_10/SAT_accelerator_basic/SAT_accelerator.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:53:37 on Apr 03,2017
+# Start time: 01:09:56 on Apr 09,2017
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Mahesh/University_of_Utah/Spring_2017/RA_Work/Arria_10/SAT_accelerator_basic" C:/Mahesh/University_of_Utah/Spring_2017/RA_Work/Arria_10/SAT_accelerator_basic/SAT_accelerator.v 
 # -- Compiling module SAT_accelerator
 # ** Warning: C:/Mahesh/University_of_Utah/Spring_2017/RA_Work/Arria_10/SAT_accelerator_basic/SAT_accelerator.v(6): (vlog-2608) Keyword "unsigned" not allowed here in Verilog 2001.
 # 
 # Top level modules:
 # 	SAT_accelerator
-# End time: 22:53:37 on Apr 03,2017, Elapsed time: 0:00:00
+# End time: 01:09:56 on Apr 09,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 1
 # 
 vlog -reportprogress 300 -work work C:/Mahesh/University_of_Utah/Spring_2017/RA_Work/Arria_10/SAT_accelerator_basic/SAT_accelerator_tb.v
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:53:47 on Apr 03,2017
+# Start time: 01:10:11 on Apr 09,2017
 # vlog -reportprogress 300 -work work C:/Mahesh/University_of_Utah/Spring_2017/RA_Work/Arria_10/SAT_accelerator_basic/SAT_accelerator_tb.v 
 # -- Compiling module SAT_accelerator_tb
 # -- Compiling module bufferReg
 # 
 # Top level modules:
 # 	SAT_accelerator_tb
-# End time: 22:53:48 on Apr 03,2017, Elapsed time: 0:00:01
+# End time: 01:10:11 on Apr 09,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vsim -gui -l msim_transcript work.SAT_accelerator_tb -t ns
-# vsim -gui -l msim_transcript work.SAT_accelerator_tb -t ns 
-# Start time: 22:54:02 on Apr 03,2017
+vsim work.SAT_accelerator_tb
+# vsim work.SAT_accelerator_tb 
+# Start time: 01:10:15 on Apr 09,2017
 # Loading work.SAT_accelerator_tb
 # Loading work.SAT_accelerator_top
 # Loading work.SAT_synchronizer
 # Loading work.bufferReg
 # Loading work.SAT_accelerator
-view -new wave
-# -new not supported on PE
 add wave -position insertpoint  \
-sim:/SAT_accelerator_tb/N \
-sim:/SAT_accelerator_tb/clk \
-sim:/SAT_accelerator_tb/resetN \
-sim:/SAT_accelerator_tb/fifoIndexTracker \
-sim:/SAT_accelerator_tb/command \
-sim:/SAT_accelerator_tb/outSATRes
-add wave -position insertpoint  \
-sim:/SAT_accelerator_tb/N \
-sim:/SAT_accelerator_tb/clk \
-sim:/SAT_accelerator_tb/resetN \
-sim:/SAT_accelerator_tb/fifoIndexTracker \
-sim:/SAT_accelerator_tb/command \
-sim:/SAT_accelerator_tb/outSATRes
-add wave -position insertpoint  \
-sim:/SAT_accelerator_tb/SAT_acc_test/stateVal \
-sim:/SAT_accelerator_tb/SAT_acc_test/varPos \
-sim:/SAT_accelerator_tb/SAT_acc_test/negCtrl \
-sim:/SAT_accelerator_tb/SAT_acc_test/ResetN_Clause \
-sim:/SAT_accelerator_tb/SAT_acc_test/ResetN_CNF \
-sim:/SAT_accelerator_tb/SAT_acc_test/Clause_En \
-sim:/SAT_accelerator_tb/SAT_acc_test/CNF_En \
-sim:/SAT_accelerator_tb/SAT_acc_test/outCNF
+sim:/SAT_accelerator_tb/N
+do C:/Mahesh/University_of_Utah/Spring_2017/RA_Work/Arria_10/SAT_accelerator_basic/simulation/modelsim/wave.do
 run
-# End time: 22:58:03 on Apr 03,2017, Elapsed time: 0:04:01
-# Errors: 1, Warnings: 0
+vlog -work work C:/Mahesh/University_of_Utah/Spring_2017/RA_Work/Arria_10/SAT_accelerator_basic/SAT_accelerator_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 01:16:32 on Apr 09,2017
+# vlog -reportprogress 300 -work work C:/Mahesh/University_of_Utah/Spring_2017/RA_Work/Arria_10/SAT_accelerator_basic/SAT_accelerator_tb.v 
+# -- Compiling module SAT_accelerator_tb
+# -- Compiling module bufferReg
+# 
+# Top level modules:
+# 	SAT_accelerator_tb
+# End time: 01:16:32 on Apr 09,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.SAT_accelerator_tb
+# End time: 01:16:35 on Apr 09,2017, Elapsed time: 0:06:20
+# Errors: 0, Warnings: 0
+# vsim work.SAT_accelerator_tb 
+# Start time: 01:16:35 on Apr 09,2017
+# Loading work.SAT_accelerator_tb
+# Loading work.SAT_accelerator_top
+# Loading work.SAT_synchronizer
+# Loading work.bufferReg
+# Loading work.SAT_accelerator
+add wave -position insertpoint  \
+sim:/SAT_accelerator_tb/clk
+do C:/Mahesh/University_of_Utah/Spring_2017/RA_Work/Arria_10/SAT_accelerator_basic/simulation/modelsim/wave.do
+run
+# End time: 01:35:28 on Apr 09,2017, Elapsed time: 0:18:53
+# Errors: 0, Warnings: 0

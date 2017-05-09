@@ -552,9 +552,9 @@ GND                          : AM7       : gnd    :                   :         
 GND                          : AM8       : gnd    :                   :         :           :                
 NC                           : AM9       :        :                   :         :           :                
 NC                           : AM10      :        :                   :         :           :                
-stateVal[1]                  : AM11      : input  : 1.8 V             :         : 3B        : N              
+command[6]                   : AM11      : input  : 1.8 V             :         : 3B        : N              
 GND                          : AM12      : gnd    :                   :         :           :                
-varPos[1]                    : AM13      : input  : 1.8 V             :         : 3B        : N              
+command[5]                   : AM13      : input  : 1.8 V             :         : 3B        : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AM14      :        :                   :         : 3B        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AM15      :        :                   :         : 3A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AM16      :        :                   :         : 3A        :                
@@ -591,10 +591,10 @@ GND                          : AN7       : gnd    :                   :         
 GND                          : AN8       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AN9       :        :                   :         : 3B        :                
 GND                          : AN10      : gnd    :                   :         :           :                
-varPos[4]                    : AN11      : input  : 1.8 V             :         : 3B        : N              
+command[2]                   : AN11      : input  : 1.8 V             :         : 3B        : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AN12      :        :                   :         : 3B        :                
-varPos[2]                    : AN13      : input  : 1.8 V             :         : 3B        : N              
-stateVal[0]                  : AN14      : input  : 1.8 V             :         : 3B        : N              
+command[4]                   : AN13      : input  : 1.8 V             :         : 3B        : N              
+command[0]                   : AN14      : input  : 1.8 V             :         : 3B        : N              
 GND                          : AN15      : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AN16      :        :                   :         : 3A        :                
 VREFB3AN0                    : AN17      : power  :                   :         : 3A        :                
@@ -633,7 +633,7 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : AP10      :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : AP11      :        :                   :         : 3B        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AP12      :        :                   :         : 3B        :                
 VCCIO3AB                     : AP13      : power  :                   : 1.8V    : 3A, 3B    :                
-varPos[0]                    : AP14      : input  : 1.8 V             :         : 3B        : N              
+command[1]                   : AP14      : input  : 1.8 V             :         : 3B        : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AP15      :        :                   :         : 3A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AP16      :        :                   :         : 3A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AP17      :        :                   :         : 3A        :                
@@ -670,7 +670,7 @@ GXB_GND*                     : AR8       :        :                   :         
 GND                          : AR9       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AR10      :        :                   :         : 3B        :                
 GND                          : AR11      : gnd    :                   :         :           :                
-varPos[3]                    : AR12      : input  : 1.8 V             :         : 3B        : N              
+command[3]                   : AR12      : input  : 1.8 V             :         : 3B        : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AR13      :        :                   :         : 3B        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AR14      :        :                   :         : 3B        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AR15      :        :                   :         : 3A        :                
@@ -828,7 +828,7 @@ GND                          : AW11      : gnd    :                   :         
 GND                          : AW12      :        :                   :         :           :                
 GND                          : AW13      : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AW14      :        :                   :         : 3B        :                
-negCtrl                      : AW15      : input  : 1.8 V             :         : 3B        : N              
+command[7]                   : AW15      : input  : 1.8 V             :         : 3B        : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AW16      :        :                   :         : 3A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AW17      :        :                   :         : 3A        :                
 GND                          : AW18      : gnd    :                   :         :           :                

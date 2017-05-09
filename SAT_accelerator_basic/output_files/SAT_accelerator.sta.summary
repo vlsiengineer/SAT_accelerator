@@ -3,83 +3,83 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 900mV 100C Model Setup 'clk'
-Slack : 1.090
+Slack : 0.230
 TNS   : 0.000
 
 Type  : Slow 900mV 100C Model Hold 'clk'
-Slack : 0.089
+Slack : 0.092
 TNS   : 0.000
 
 Type  : Slow 900mV 100C Model Recovery 'clk'
-Slack : 0.711
+Slack : 0.145
 TNS   : 0.000
 
 Type  : Slow 900mV 100C Model Removal 'clk'
-Slack : 0.690
+Slack : 0.377
 TNS   : 0.000
 
 Type  : Slow 900mV 100C Model Minimum Pulse Width 'clk'
-Slack : 0.450
-TNS   : 0.000
+Slack : -0.550
+TNS   : -0.550
 
 Type  : Slow 900mV -40C Model Setup 'clk'
-Slack : 1.161
+Slack : 0.206
 TNS   : 0.000
 
 Type  : Slow 900mV -40C Model Hold 'clk'
-Slack : 0.064
+Slack : 0.085
 TNS   : 0.000
 
 Type  : Slow 900mV -40C Model Recovery 'clk'
-Slack : 0.652
+Slack : 0.089
 TNS   : 0.000
 
 Type  : Slow 900mV -40C Model Removal 'clk'
-Slack : 0.692
+Slack : 0.384
 TNS   : 0.000
 
 Type  : Slow 900mV -40C Model Minimum Pulse Width 'clk'
-Slack : 0.450
-TNS   : 0.000
+Slack : -0.550
+TNS   : -0.550
 
 Type  : Fast 900mV 100C Model Setup 'clk'
-Slack : 1.459
+Slack : 0.564
 TNS   : 0.000
 
 Type  : Fast 900mV 100C Model Hold 'clk'
-Slack : 0.020
-TNS   : 0.000
-
-Type  : Fast 900mV 100C Model Recovery 'clk'
-Slack : 1.280
-TNS   : 0.000
-
-Type  : Fast 900mV 100C Model Removal 'clk'
-Slack : 0.391
-TNS   : 0.000
-
-Type  : Fast 900mV 100C Model Minimum Pulse Width 'clk'
-Slack : 0.450
-TNS   : 0.000
-
-Type  : Fast 900mV -40C Model Setup 'clk'
-Slack : 1.587
-TNS   : 0.000
-
-Type  : Fast 900mV -40C Model Hold 'clk'
 Slack : 0.019
 TNS   : 0.000
 
+Type  : Fast 900mV 100C Model Recovery 'clk'
+Slack : 0.551
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Removal 'clk'
+Slack : 0.178
+TNS   : 0.000
+
+Type  : Fast 900mV 100C Model Minimum Pulse Width 'clk'
+Slack : -0.550
+TNS   : -0.550
+
+Type  : Fast 900mV -40C Model Setup 'clk'
+Slack : 0.639
+TNS   : 0.000
+
+Type  : Fast 900mV -40C Model Hold 'clk'
+Slack : 0.017
+TNS   : 0.000
+
 Type  : Fast 900mV -40C Model Recovery 'clk'
-Slack : 1.386
+Slack : 0.609
 TNS   : 0.000
 
 Type  : Fast 900mV -40C Model Removal 'clk'
-Slack : 0.304
+Slack : 0.137
 TNS   : 0.000
 
 Type  : Fast 900mV -40C Model Minimum Pulse Width 'clk'
-Slack : 0.450
-TNS   : 0.000
+Slack : -0.550
+TNS   : -0.550
 
 ------------------------------------------------------------

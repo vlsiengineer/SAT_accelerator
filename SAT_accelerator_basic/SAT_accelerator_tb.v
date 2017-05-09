@@ -16,9 +16,7 @@ SAT_accelerator_top #(.N(N)) SAT_acc_test (
 .outSATRes(outSATRes),
 .clk(clk),
 .resetN(resetN),
-.stateVal(command[7:6]),
-.varPos(command[5:1]),
-.negCtrl(command[0])
+.command(command)
 );
 
 
@@ -30,10 +28,10 @@ bufferReg b1 (
 
  initial
  begin 
- clk = 1'b0;
+ clk = 1'b1;
  resetN = 1'b0; 
  fifoIndexTracker = 3'd0;
- #20 resetN = 1'b1;
+ #4 resetN = 1'b1;
  end
  
  always #2 clk = ~clk;
@@ -69,8 +67,8 @@ fifoVal[10] = 8'b01000001; // Compute Clause x1 -- state=01,varPos=00000,negCtrl
 fifoVal[11] = 8'b01000010; // Compute Clause x2 -- state=01,varPos=00001,negCtrl=0 ==> 01000010
 fifoVal[12] = 8'b10000000; // Compute CNF -- state=10,varPos=00000,negCtrl=0 ==> 10000000
 fifoVal[13] = 8'b11000000; // Reset Clause -- state=11,varPos=00000,negCtrl=0 ==> 10000000
-fifoVal[14] = 8'b11000000; // Reset Clause -- state=11,varPos=00000,negCtrl=0 ==> 10000000
-fifoVal[15] = 8'b11000000; // Reset Clause -- state=11,varPos=00000,negCtrl=0 ==> 10000000
+fifoVal[14] = 8'b00000000; // Reset Clause -- state=11,varPos=00000,negCtrl=0 ==> 10000000
+fifoVal[15] = 8'b00000000; // Reset Clause -- state=11,varPos=00000,negCtrl=0 ==> 10000000
 
 end
 

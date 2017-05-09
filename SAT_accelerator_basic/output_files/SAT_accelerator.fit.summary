@@ -1,4 +1,4 @@
-Fitter Status : Successful - Sun Apr 02 14:26:17 2017
+Fitter Status : Successful - Sun Apr 09 02:10:58 2017
 Quartus Prime Version : 16.1.0 Build 196 10/24/2016 SJ Standard Edition
 Revision Name : SAT_accelerator
 Top-level Entity Name : SAT_accelerator_top
@@ -6,7 +6,7 @@ Family : Arria 10
 Device : 10AX115R4F40I3SG
 Timing Models : Final
 Logic utilization (in ALMs) : 7 / 427,200 ( < 1 % )
-Total registers : 11
+Total registers : 19
 Total pins : 11 / 650 ( 2 % )
 Total virtual pins : 0
 Total block memory bits : 0 / 55,562,240 ( 0 % )
